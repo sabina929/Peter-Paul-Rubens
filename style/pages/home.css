@@ -849,10 +849,10 @@ main section#about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -907,5 +907,14 @@ main section#about {
   main section#about {
     margin: 0px auto 0px auto;
   }
+}
+
+main section#about img {
+  -webkit-transition: all 3s ease;
+  transition: all 3s ease;
+}
+
+main section#about img:hover {
+  mix-blend-mode: normal;
 }
 /*# sourceMappingURL=home.css.map */
