@@ -59,7 +59,8 @@ section#artworks{
        position: absolute;
        top: -25px;
        left: 35px;
-       @include transform-center;
+       transform: translate(-50%, -50%);
+       animation: rotateReverse 30s linear 0s infinite;
 
     }
 }
