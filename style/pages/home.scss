@@ -1,0 +1,16 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+@import "../abstracts/animations";
+
+@import "../base/base";
+@import "../base/typography";
+
+@import "../layouts/header";
+@import "../layouts/footer";
+
+@import "../components/hero-section";
+@import "../components/about-section";
+@import "../components/services-section";
+@import "../components/projects-section";
+@import "../components/team-section";
+// @import "../components/contact-section";

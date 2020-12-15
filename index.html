@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fcffff">
+
+    <!-- FAVICON -->
+    <!-- <link rel="shortcut icon" type="image/png" sizes="334x334" href="./assets/images/favicon.png" /> -->
+
+    <!-- FONTS -->
+     <!-- Roboto & Montserrat -->
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Oranienbaum&family=Roboto&display=swap" rel="stylesheet">
+
+
+
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="./style/pages/home.css">
+
+    <!-- LOCOMOTIVE SCROLL -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js" integrity="sha256-p4OuLeAtmp2jz4BehPUj4k7TIllujbqDopoQKaSdsVo=" crossorigin="anonymous"></script> -->
+
+    
+    <title>P.P.RUBENS</title>
+</head>
+<body data-scroll-container>
+    
+
+     <!-- HEADER FOR BIG SCREENS -->
+    <header class="big-screen">
+    <div class="logo">
+        <a href="#"><p>P.P.RUBENS</p></a>
+    </div>
+    <nav class="header-nav">
+        <ul class="menu-items">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <ul class="contact">
+            <li>
+                <p>Website by</p>
+                <a href="#">Sabina Abbasova</a>
+            </li>
+        </ul>
+    </nav> 
+    <div class="menu-btn">
+        <button>Menu
+            <div class="menu-icon">
+                <div class="one"></div>
+                <div class="two"></div>
+            </div>
+        </button>
+        
+    </div>
+    <nav class="menu-nav">
+        <ul class="menu-items">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <ul class="contact">
+            <li>
+                <p>Website by</p>
+                <a href="#">Sabina Abbasova</a>
+            </li>
+        </ul>
+    </nav>        
+    </header>
+    <main data-scroll-section>
+        <section id="hero">
+            <div class="hero-text-content">
+                <div class="hero-img">
+                    <img src="./assets/images/peace_and_war.png" alt="Peace & War">
+                    <h1 class="heading-primary">Peace & War</h1>
+                </div>
+                
+                <a href="#contact">Get in touch <img src="./assets/images/right-arrow.svg" alt="right arrow"></a>
+            </div>
+           
+           
+        </section>
+       
+        <section id="artworks">
+            <h2 class="heading-secondary">Services that we offer</h2>
+            <div class="artworks-container">
+                <article class="artwork">
+                    <img src="./assets/images/artworks/artwork-1.png" alt="artwork" class="artwork__img">
+                    <div class="artwork__info">
+                        <h3 class="heading-tertiary">Artwork name</h3>
+                        <p class="paragraph">About artwork.</p>
+                    </div>
+                
+                </article>
+                
+            </div>
+
+        </section>
+
+        <section id="about">
+          <div class="text-container">
+            <h2 class="heading-secondary">Peter Paul Rubens</h2>
+            <p class="paragraph paragraph--regular">Sir Peter Paul Rubens; 28 June 1577 – 30 May 1640) was a Flemish artist and diplomat from the Duchy of Brabant in the Southern Netherlands (modern-day Belgium). He is considered the most influential artist of the Flemish Baroque tradition.</p>
+            <p class="paragraph paragraph--regular">Rubens's highly charged compositions reference erudite aspects of classical and Christian history.</p>
+          </div>
+
+            <div class="img-container">
+                <img src="./assets/images/rubens_self-portrait.png" alt="Peter Paul Rubens self-portrait" class="self-portrait">
+            </div>
+
+        </section>
+      
+    </main>
+
+    <footer id="contact" class="big-screen" data-scroll-section>
+        <article class="upper">
+            <div class="logo">
+                <img src="./assets/images/three-arrows.svg" alt="three arrows"/>
+             </div>
+            <p class="paragraph paragraph--regular">Get in touch with us to speak more about your project.</p>
+            <div class="social-icons">
+              
+                <a href="#">
+                    <img src="./assets/images/footer/twitter-icon.svg" alt="twitter icon">
+                </a>
+                <a href="#">
+                    <img src="./assets/images/footer/instagram-icon.svg" alt="instagram icon">
+                </a>
+                <a href="#">
+                    <img src="./assets/images/footer/facebook-icon.svg" alt="facebook icon">
+                </a>
+            </div>
+        </article>
+        <article class="lower">
+            <div class="copyright">
+              <p>© Copyright, P.P.Rubens 2020</p>
+            </div>
+            <div class="privacy-terms">
+                <div>
+                    <a href="#">Privacy policy <span>- </span></a>
+                    <a href="#">Terms of Use</a>
+                </div>
+               
+            </div>
+            <div class="social-icons">
+                <p>
+                    Website by 
+                    <a href="#">
+                        Sabina Abbasova
+                    </a>
+                </p>
+                
+            </div>
+        </article>
+        
+    </footer>
+
+<!-- ! locomotive-scroll v3.3.11 | MIT License | https://github.com/locomotivemtl/locomotive-scroll  -->
+<!--  START  -->
+<!-- <script>
+    (function () {
+  var scroll = new LocomotiveScroll({
+    el: document.querySelector("[data-scroll-container]"),
+    smooth: true,
+    smoothMobile: true,
+    // direction:"horizontal",
+    // inertia:1,
+    // repeat:true,
+    // offset: ["10%", 100]
+  });
+})();
+</script> -->
+<!--  END  -->
+
+<script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+@keyframes moveToRight {
+    50%{
+        transform: translate(8px, 0px);
+
+    }
+}
+
+@keyframes menuDown {
+    0% {
+      top: -640px;
+    }
+  
+    100% {
+      top: 0px;
+    }
+  }
+  
+  @keyframes itemAppear {
+    0% {
+      clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+      transform: translateY(25px);
+    }
+    
+    100% {
+      transform: translateY(0px);
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+  }
