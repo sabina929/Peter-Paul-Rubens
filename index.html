@@ -34,29 +34,31 @@
     <div class="logo">
         <a href="#"><p>P.P.RUBENS</p></a>
     </div>
-    <nav class="header-nav">
-        <ul class="menu-items">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <ul class="contact">
-            <li>
-                <p>Website by</p>
-                <a href="#">Sabina Abbasova</a>
-            </li>
-        </ul>
-    </nav> 
-    <div class="menu-btn">
-        <button>Menu
-            <div class="menu-icon">
-                <div class="one"></div>
-                <div class="two"></div>
+    <div class="header-nav-search-menu-btns">
+        <nav class="header-nav">
+            <ul class="menu-items">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+           
+        </nav> 
+        <div class="search-menu-btns">
+            <div class="seacrh-btn">
+                <img src="./assets/images/search-icon.svg" alt="search icon">
             </div>
-        </button>
-        
+            <div class="menu-btn">
+                <button>
+                    <div class="menu-icon">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                    </div>
+                </button>
+            </div>
+        </div>
     </div>
+  
     <nav class="menu-nav">
         <ul class="menu-items">
             <li><a href="#">Home</a></li>
@@ -75,22 +77,50 @@
     <main data-scroll-section>
         <section id="hero">
             <div class="hero-text-content">
-                <div class="hero-img">
-                    <img src="./assets/images/peace_and_war.png" alt="Peace & War">
+                    <img src="./assets/images/peace_and_war.png" alt="Peace & War" class="hero-img">
                     <h1 class="heading-primary">Peace & War</h1>
-                </div>
+                    <div class="lines">
+                        <div class="line-v"></div>
+                        <div class="line-h"></div>
+                    </div>
+                    <div class="scroll-down">
+                        <img src="./assets/images/circle-text.svg" alt="circle text" class="circle-text">
+                        <img src="./assets/images/down-arrow.svg" alt="down arrow" class="down-arrow">
+                    </div>
                 
-                <a href="#contact">Get in touch <img src="./assets/images/right-arrow.svg" alt="right arrow"></a>
+                <a href="#artworks" class="cta-btn">Go to Gallery
+                    <svg width="46" height="17" viewBox="0 0 46 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="0.191406" y1="8.16602" x2="45.093" y2="8.16602" stroke="#AD8E55"/>
+                        <line y1="-0.5" x2="10.3605" y2="-0.5" transform="matrix(0.672673 0.73994 -0.290007 0.957024 38.3242 1)" stroke="#AD8E55"/>
+                        <line y1="-0.5" x2="10.3605" y2="-0.5" transform="matrix(0.672673 -0.73994 0.290008 0.957024 38.3242 16.3325)" stroke="#AD8E55"/>
+                    </svg>
+                </a>
             </div>
            
            
         </section>
        
         <section id="artworks">
-            <h2 class="heading-secondary">Services that we offer</h2>
+        <img src="./assets/images/graphic-el-lines.svg" alt="lines" class="circle-lines">
             <div class="artworks-container">
                 <article class="artwork">
                     <img src="./assets/images/artworks/artwork-1.png" alt="artwork" class="artwork__img">
+                    <div class="artwork__info">
+                        <h3 class="heading-tertiary">Artwork name</h3>
+                        <p class="paragraph">About artwork.</p>
+                    </div>
+                
+                </article>
+                <article class="artwork">
+                    <img src="./assets/images/artworks/artwork-2.png" alt="artwork" class="artwork__img">
+                    <div class="artwork__info">
+                        <h3 class="heading-tertiary">Artwork name</h3>
+                        <p class="paragraph">About artwork.</p>
+                    </div>
+                
+                </article>
+                <article class="artwork">
+                    <img src="./assets/images/artworks/artwork-3.png" alt="artwork" class="artwork__img">
                     <div class="artwork__info">
                         <h3 class="heading-tertiary">Artwork name</h3>
                         <p class="paragraph">About artwork.</p>
