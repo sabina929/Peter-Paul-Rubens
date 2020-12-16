@@ -242,6 +242,10 @@ header.big-screen .logo a {
   letter-spacing: 3px;
 }
 
+header.big-screen .logo a p {
+  font-size: 24px;
+}
+
 header.big-screen div.header-nav-search-menu-btns {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -272,49 +276,51 @@ header.big-screen div.header-nav-search-menu-btns nav.header-nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-right: 100px;
+  margin-right: 20px;
 }
 
-header.big-screen div.header-nav-search-menu-btns nav.header-nav ul {
-  list-style: none;
-}
-
-header.big-screen div.header-nav-search-menu-btns nav.header-nav ul.menu-items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-header.big-screen div.header-nav-search-menu-btns nav.header-nav ul.menu-items li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-header.big-screen div.header-nav-search-menu-btns nav.header-nav ul.menu-items li:not(:last-child) {
-  margin-right: 80px;
-}
-
-header.big-screen div.header-nav-search-menu-btns nav.header-nav ul.menu-items li a {
+header.big-screen div.header-nav-search-menu-btns nav.header-nav a {
   text-decoration: none;
   font-family: "Oranienbaum", serif;
   font-size: 20px;
   color: #AD8E55;
   letter-spacing: 2px;
+}
+
+header.big-screen div.header-nav-search-menu-btns nav.header-nav a.nav-item {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  padding: 10px 5px;
+  margin: 20px 40px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+header.big-screen div.header-nav-search-menu-btns nav.header-nav a.nav-item-active {
+  color: #FFF8F0;
+}
+
+header.big-screen div.header-nav-search-menu-btns .follow {
+  position: fixed;
+  z-index: -1;
+  left: 5px;
+  top: 5px;
+  width: 25px;
+  height: 25px;
+  background-color: #AD8E55;
+  border-radius: 100%;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  pointer-events: none;
+}
+
+header.big-screen div.header-nav-search-menu-btns .follow-mouse-active {
+  left: -40px;
+  top: -18px;
+  width: 50px;
+  height: 50px;
 }
 
 header.big-screen div.header-nav-search-menu-btns div.search-menu-btns {
@@ -751,11 +757,48 @@ main section#hero a.cta-btn {
   font-size: 22px;
   color: #AD8E55;
   font-family: "Roboto", sans-serif;
+  outline: 0;
   cursor: pointer;
+}
+
+main section#hero a.cta-btn::before {
+  content: '';
+  position: absolute;
+  background-color: #AD8E55;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+  top: 0;
+  bottom: 0;
+  right: -1px;
+  height: 100%;
+  width: 39%;
+  z-index: -1;
+  -webkit-clip-path: polygon(26% 0, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(26% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 main section#hero a.cta-btn svg {
   margin-left: 20px;
+  margin-bottom: -2px;
+}
+
+main section#hero a.cta-btn svg line {
+  stroke: #FFF8F0;
+}
+
+main section#hero a.cta-btn:active, main section#hero a.cta-btn:hover, main section#hero a.cta-btn:focus {
+  outline: 0;
+}
+
+main section#hero a.cta-btn:hover::before {
+  width: 101%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+main section#hero a.cta-btn:hover {
+  color: #FFF8F0;
+  font-weight: 300;
 }
 
 main {
