@@ -2,6 +2,7 @@ main{
     
 
 section#about{
+    position: relative;
     width: 100%;
     height: auto; 
     margin: 60px 80px 80px 80px;
@@ -45,5 +46,30 @@ section#about{
             mix-blend-mode: normal;
         }
     }
+
+    div.lines{
+        position: absolute;
+        top: 95%;
+        right: 10%;
+        width: 168px;
+        height: 68.11px;
+        transform: translate(-50%, -50%);
+
+        div.line-v{
+            width: 1px;
+            height:  68.11px;
+            background-color: $lighter-brown;
+        }
+        div.line-h{
+            position: absolute;
+            top: 50%;
+            left: 0%;
+            transform: translate(-50%, -50%);
+            width: 168px;
+            height: 1px;
+            background-color: $lighter-brown;
+        }
+    }
+
 }
 }

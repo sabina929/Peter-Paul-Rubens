@@ -176,7 +176,7 @@ body {
 
 /* HEADER FOR BIG SCREENS */
 header.big-screen {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -909,6 +909,7 @@ main section#artworks img.circle-lines {
 }
 
 main section#about {
+  position: relative;
   width: 100%;
   height: auto;
   margin: 60px 80px 80px 80px;
@@ -983,5 +984,32 @@ main section#about img {
 
 main section#about img:hover {
   mix-blend-mode: normal;
+}
+
+main section#about div.lines {
+  position: absolute;
+  top: 95%;
+  right: 10%;
+  width: 168px;
+  height: 68.11px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+main section#about div.lines div.line-v {
+  width: 1px;
+  height: 68.11px;
+  background-color: #AD8E55;
+}
+
+main section#about div.lines div.line-h {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 168px;
+  height: 1px;
+  background-color: #AD8E55;
 }
 /*# sourceMappingURL=home.css.map */
