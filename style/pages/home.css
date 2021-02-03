@@ -144,6 +144,23 @@ body {
   background: transparent;
 }
 
+.cursor {
+  width: 40px;
+  height: 40px;
+  background-color: #AD8E55;
+  border-radius: 50%;
+  position: absolute;
+  opacity: .99;
+  pointer-events: none;
+  z-index: 999999;
+}
+
+.cursor.active {
+  width: 50px;
+  height: 50px;
+  mix-blend-mode: screen;
+}
+
 /*! locomotive-scroll v3.3.11 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
 /* START */
 /* END */
@@ -176,7 +193,7 @@ body {
 
 /* HEADER FOR BIG SCREENS */
 header.big-screen {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -281,10 +298,6 @@ header.big-screen div.header-nav-search-menu-btns nav.header-nav {
 
 header.big-screen div.header-nav-search-menu-btns nav.header-nav a {
   text-decoration: none;
-  font-family: "Oranienbaum", serif;
-  font-size: 20px;
-  color: #AD8E55;
-  letter-spacing: 2px;
 }
 
 header.big-screen div.header-nav-search-menu-btns nav.header-nav a.nav-item {
@@ -298,29 +311,13 @@ header.big-screen div.header-nav-search-menu-btns nav.header-nav a.nav-item {
   transition: all .3s ease;
 }
 
-header.big-screen div.header-nav-search-menu-btns nav.header-nav a.nav-item-active {
-  color: #FFF8F0;
-}
-
-header.big-screen div.header-nav-search-menu-btns .follow {
-  position: fixed;
-  z-index: -1;
-  left: 5px;
-  top: 5px;
-  width: 25px;
-  height: 25px;
-  background-color: #AD8E55;
-  border-radius: 100%;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
-  pointer-events: none;
-}
-
-header.big-screen div.header-nav-search-menu-btns .follow-mouse-active {
-  left: -40px;
-  top: -18px;
-  width: 50px;
-  height: 50px;
+header.big-screen div.header-nav-search-menu-btns nav.header-nav a.nav-item span {
+  font-family: "Oranienbaum", serif;
+  font-size: 20px;
+  color: #AD8E55;
+  letter-spacing: 2px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
 }
 
 header.big-screen div.header-nav-search-menu-btns div.search-menu-btns {

@@ -147,4 +147,35 @@ menuItemLinks.forEach(menuItemLink => {
 });
 
 
+const navItems = document.querySelectorAll(".nav-item");
+const tracker = document.querySelector(".cursor");
+
+navItems.forEach(navItem => navItem.addEventListener('mousemove', function(e) {
+  const pos = this.getBoundingClientRect();
+  const mx = e.clientX - pos.left - pos.width/2; 
+  const my = e.clientY - pos.top - pos.height/2;
+  //  console.log(this, pos)
+  this.style.transform = 'translate('+ mx * 0.3 +'px, '+ my * 0.6 +'px)';
+  this.style.transform += 'rotate3d('+ mx * -0.1 +', '+ my * -0.3 +', 0, 12deg)';
+  this.children[0].style.transform = 'translate('+ mx * 0.075 +'px, '+ my * 0.125 +'px)';
+
+  // this.classList.add('active')
+  tracker.classList.add('active')
+}));
+
+navItems.forEach(navItem => navItem.addEventListener('mouseleave', function() {
+  this.style.transform = 'translate3d(0px, 0px, 0px)';
+  this.style.transform += 'rotate3d(0, 0, 0, 0deg)';
+  this.children[0].style.transform = 'translate3d(0px, 0px, 0px)';
+  // this.classList.remove('active')
+  tracker.classList.remove('active')
+}));
+
+document.addEventListener("mousemove", e => {
+  tracker.setAttribute(
+    "style",
+    "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;"
+  );
+});
+
 
