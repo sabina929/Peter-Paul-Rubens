@@ -38,6 +38,17 @@ section#about{
         margin: 0px auto 0px auto;
     }
  
+    div.text-container{
+        width: 40%;
+        margin-right: 240px;
+
+        h2.heading-secondary{
+            margin-bottom: 60px;
+        }
+        p:nth-child(2){
+            margin-bottom: 40px;
+        }
+    }
     img{
         // mix-blend-mode: lighten;
         transition: all 3s ease;

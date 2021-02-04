@@ -24,38 +24,109 @@ main{
         margin: 0px 80px 80px 80px;
         // padding: 160px 0;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
         // border: $border-check-2;
-
-     
-        // div.hero-img{
-        //     position: absolute;
-        //     top: 50%;
-        //     left: 50%;
-        //     // width: 800px;
-        //     transform: translate(-50%, -50%);
+        
+        
+        div.hero-text-content{
+            position: relative;
+            width: 50%;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            // border: $border-check-2;
             
             img.hero-img{
                 position: absolute;
-                top: 55%;
-                left: 51%;
+                top: 50%;
+                left: 50%;
                 transform: translate(-50%, -50%);
                 mix-blend-mode: lighten;
-                transition: all 3s ease;
+                // transition: all 0.5s linear;
                 &:hover{
                     mix-blend-mode: normal;
                 }
-    
+                
             }
             h1{
                 position: absolute;
-                top: 26%;
-                left: 63.5%;
+                top: 3%;
+                left: 82%;
                 transform: translate(-50%, -50%);
+                width: 400px;
+                // transition: all 1s ease-out;
             }
-        // }
+            a.cta-btn{
+                // transition: all 1s ease-out;
+                position: absolute;
+                top: 76.5%;
+                left: -10.5%;
+                transform: translate(-50%, -50%);
+                border: 1px solid rgba($lighter-brown, 1);
+                text-decoration: none;
+                padding: 24px 24px;
+                font-size: $paragraph-font-size-2;
+                color: $lighter-brown;
+                font-family: $font-family-2;
+    
+                outline: 0;
+                cursor: pointer;
+    
+                &::before {
+                    content: '';
+                    position: absolute;
+                    background-color: $lighter-brown;
+                    transition: 0.2s linear;
+                    top: 0;
+                    bottom: 0;
+                    // right: 0; 
+                    right: -1px; 
+                    height: 100%;
+                    // width: 0%;
+                    width: 39%;
+                    z-index: -1;
+                    clip-path: polygon(26% 0, 100% 0, 100% 100%, 0% 100%);
+                  }
+    
+                
+    
+                svg{
+                    margin-left: 20px;
+                    margin-bottom: -2px;
+    
+                    line{
+                            stroke: $cream-color;
+                            // transition: 0.3s ease;
+                    }
+                }
+    
+                &:active, &:hover, &:focus {
+                    outline: 0;
+                }
+    
+                &:hover::before {
+                    width: 101%;
+                    // right: 1px;
+                    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+                }
+                &:hover {
+                    color: $cream-color;
+                    font-weight: 300;
+                    // letter-spacing: .1px;
+                    
+                    // svg{
+                    //     // line{
+                    //     //     stroke: $cream-color;
+                    //     //     transition: 0.3s ease;
+                    //     // }
+                    // }
+                }
+            }
+        }
 
         div.lines{
             position: absolute;
@@ -98,70 +169,6 @@ main{
                 animation: rotate 30s linear 0s infinite;
             }
         }
-        a.cta-btn{
-            position: absolute;
-            top: 72.5%;
-            left: 25.4%;
-            transform: translate(-50%, -50%);
-            border: 1px solid rgba($lighter-brown, 1);
-            text-decoration: none;
-            padding: 24px 24px;
-            font-size: $paragraph-font-size-2;
-            color: $lighter-brown;
-            font-family: $font-family-2;
-
-            outline: 0;
-            cursor: pointer;
-
-            &::before {
-                content: '';
-                position: absolute;
-                background-color: $lighter-brown;
-                transition: 0.2s linear;
-                top: 0;
-                bottom: 0;
-                // right: 0; 
-                right: -1px; 
-                height: 100%;
-                // width: 0%;
-                width: 39%;
-                z-index: -1;
-                clip-path: polygon(26% 0, 100% 0, 100% 100%, 0% 100%);
-              }
-
-            
-
-            svg{
-                margin-left: 20px;
-                margin-bottom: -2px;
-
-                line{
-                        stroke: $cream-color;
-                        // transition: 0.3s ease;
-                }
-            }
-
-            &:active, &:hover, &:focus {
-                outline: 0;
-            }
-
-            &:hover::before {
-                width: 101%;
-                // right: 1px;
-                clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-            }
-            &:hover {
-                color: $cream-color;
-                font-weight: 300;
-                // letter-spacing: .1px;
-                
-                // svg{
-                //     // line{
-                //     //     stroke: $cream-color;
-                //     //     transition: 0.3s ease;
-                //     // }
-                // }
-            }
-        }
+       
     }
 }

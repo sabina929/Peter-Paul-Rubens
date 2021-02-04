@@ -189,6 +189,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 24px;
   color: #AD8E55;
+  line-height: 30px;
 }
 
 /* HEADER FOR BIG SCREENS */
@@ -336,7 +337,7 @@ header.big-screen div.header-nav-search-menu-btns div.search-menu-btns {
           justify-content: space-between;
 }
 
-header.big-screen div.header-nav-search-menu-btns div.search-menu-btns .seacrh-btn {
+header.big-screen div.header-nav-search-menu-btns div.search-menu-btns .search-btn {
   margin-right: 36px;
 }
 
@@ -659,39 +660,113 @@ main section#hero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-main section#hero img.hero-img {
+main section#hero div.hero-text-content {
+  position: relative;
+  width: 50%;
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section#hero div.hero-text-content img.hero-img {
   position: absolute;
-  top: 55%;
-  left: 51%;
+  top: 50%;
+  left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   mix-blend-mode: lighten;
-  -webkit-transition: all 3s ease;
-  transition: all 3s ease;
 }
 
-main section#hero img.hero-img:hover {
+main section#hero div.hero-text-content img.hero-img:hover {
   mix-blend-mode: normal;
 }
 
-main section#hero h1 {
+main section#hero div.hero-text-content h1 {
   position: absolute;
-  top: 26%;
-  left: 63.5%;
+  top: 3%;
+  left: 82%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  width: 400px;
+}
+
+main section#hero div.hero-text-content a.cta-btn {
+  position: absolute;
+  top: 76.5%;
+  left: -10.5%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 1px solid #ad8e55;
+  text-decoration: none;
+  padding: 24px 24px;
+  font-size: 22px;
+  color: #AD8E55;
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  cursor: pointer;
+}
+
+main section#hero div.hero-text-content a.cta-btn::before {
+  content: '';
+  position: absolute;
+  background-color: #AD8E55;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+  top: 0;
+  bottom: 0;
+  right: -1px;
+  height: 100%;
+  width: 39%;
+  z-index: -1;
+  -webkit-clip-path: polygon(26% 0, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(26% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+main section#hero div.hero-text-content a.cta-btn svg {
+  margin-left: 20px;
+  margin-bottom: -2px;
+}
+
+main section#hero div.hero-text-content a.cta-btn svg line {
+  stroke: #FFF8F0;
+}
+
+main section#hero div.hero-text-content a.cta-btn:active, main section#hero div.hero-text-content a.cta-btn:hover, main section#hero div.hero-text-content a.cta-btn:focus {
+  outline: 0;
+}
+
+main section#hero div.hero-text-content a.cta-btn:hover::before {
+  width: 101%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+main section#hero div.hero-text-content a.cta-btn:hover {
+  color: #FFF8F0;
+  font-weight: 300;
 }
 
 main section#hero div.lines {
@@ -740,62 +815,6 @@ main section#hero div.scroll-down img {
 main section#hero div.scroll-down img.circle-text {
   -webkit-animation: rotate 30s linear 0s infinite;
           animation: rotate 30s linear 0s infinite;
-}
-
-main section#hero a.cta-btn {
-  position: absolute;
-  top: 72.5%;
-  left: 25.4%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  border: 1px solid #ad8e55;
-  text-decoration: none;
-  padding: 24px 24px;
-  font-size: 22px;
-  color: #AD8E55;
-  font-family: "Roboto", sans-serif;
-  outline: 0;
-  cursor: pointer;
-}
-
-main section#hero a.cta-btn::before {
-  content: '';
-  position: absolute;
-  background-color: #AD8E55;
-  -webkit-transition: 0.2s linear;
-  transition: 0.2s linear;
-  top: 0;
-  bottom: 0;
-  right: -1px;
-  height: 100%;
-  width: 39%;
-  z-index: -1;
-  -webkit-clip-path: polygon(26% 0, 100% 0, 100% 100%, 0% 100%);
-          clip-path: polygon(26% 0, 100% 0, 100% 100%, 0% 100%);
-}
-
-main section#hero a.cta-btn svg {
-  margin-left: 20px;
-  margin-bottom: -2px;
-}
-
-main section#hero a.cta-btn svg line {
-  stroke: #FFF8F0;
-}
-
-main section#hero a.cta-btn:active, main section#hero a.cta-btn:hover, main section#hero a.cta-btn:focus {
-  outline: 0;
-}
-
-main section#hero a.cta-btn:hover::before {
-  width: 101%;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-}
-
-main section#hero a.cta-btn:hover {
-  color: #FFF8F0;
-  font-weight: 300;
 }
 
 main {
@@ -859,7 +878,6 @@ main section#artworks {
 
 main section#artworks div.artworks-container {
   width: 100%;
-  height: 460px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -873,7 +891,41 @@ main section#artworks div.artworks-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 60px;
+  height: 650px;
+  padding: 0px 0px 0 200px;
+  width: 100vw;
+  /*     border: 1px solid white; */
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  /*     will-change: transform; */
+  position: relative;
+}
+
+main section#artworks div.artworks-container::-webkit-scrollbar {
+  width: 0px;
+  /*   display: none; */
+}
+
+main section#artworks div.artworks-container::-webkit-scrollbar-track {
+  background: rgba(229, 194, 229, 0);
+}
+
+main section#artworks div.artworks-container::-webkit-scrollbar-thumb {
+  background: rgba(148, 201, 209, 0);
+}
+
+main section#artworks div.artworks-container.active {
+  cursor: grabbing;
+  cursor: -webkit-grabbing;
+  /*     transform: scale(1); */
 }
 
 main section#artworks div.artworks-container article.artwork {
@@ -893,6 +945,10 @@ main section#artworks div.artworks-container article.artwork img {
 
 main section#artworks div.artworks-container article.artwork img:hover {
   mix-blend-mode: normal;
+}
+
+main section#artworks div.artworks-container article.artwork .artwork__info {
+  margin-top: -120px;
 }
 
 main section#artworks img.circle-lines {
@@ -972,6 +1028,19 @@ main section#about {
   main section#about {
     margin: 0px auto 0px auto;
   }
+}
+
+main section#about div.text-container {
+  width: 40%;
+  margin-right: 240px;
+}
+
+main section#about div.text-container h2.heading-secondary {
+  margin-bottom: 60px;
+}
+
+main section#about div.text-container p:nth-child(2) {
+  margin-bottom: 40px;
 }
 
 main section#about img {
