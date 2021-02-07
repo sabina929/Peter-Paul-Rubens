@@ -891,6 +891,8 @@ main section#artworks div.artworks-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: -webkit-grab;
+  cursor: grab;
   height: 650px;
   padding: 0px 0px 0 200px;
   width: 100vw;
@@ -902,11 +904,14 @@ main section#artworks div.artworks-container {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  cursor: pointer;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  /*     will-change: transform; */
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+  will-change: transform;
   position: relative;
+  -webkit-perspective: 6000px;
+          perspective: 6000px;
 }
 
 main section#artworks div.artworks-container::-webkit-scrollbar {
@@ -925,12 +930,14 @@ main section#artworks div.artworks-container::-webkit-scrollbar-thumb {
 main section#artworks div.artworks-container.active {
   cursor: grabbing;
   cursor: -webkit-grabbing;
-  /*     transform: scale(1); */
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 main section#artworks div.artworks-container article.artwork {
-  cursor: -webkit-grab;
-  cursor: grab;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  position: relative;
 }
 
 main section#artworks div.artworks-container article.artwork:not(:last-child) {
@@ -948,8 +955,75 @@ main section#artworks div.artworks-container article.artwork img:hover {
 }
 
 main section#artworks div.artworks-container article.artwork .artwork__info {
-  margin-top: -100px;
-  margin-left: 150px;
+  position: absolute;
+  top: 83%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 100;
+  width: 50%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  padding: 10px 20px;
+  background-color: #AD8E55;
+  color: #FFF8F0;
+}
+
+main section#artworks div.artworks-container article.artwork .artwork__info h3 {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+main section#artworks div.artworks-container article.artwork .artwork__info p {
+  font-size: 20px;
+}
+
+main section#artworks div.artworks-container article.artwork:nth-child(even) {
+  -webkit-transform: scale(1.2) rotate3d(-40, -40, -40, 20deg);
+          transform: scale(1.2) rotate3d(-40, -40, -40, 20deg);
+}
+
+main section#artworks div.artworks-container article.artwork:nth-child(even):hover {
+  -webkit-transform: scale(1.4) rotate3d(0, 0, 0, 0deg);
+          transform: scale(1.4) rotate3d(0, 0, 0, 0deg);
+  margin: 0 170px 0 50px;
+}
+
+main section#artworks div.artworks-container article.artwork:nth-child(odd) {
+  -webkit-transform: scale(1.2) rotate3d(40, 40, 40, 20deg);
+          transform: scale(1.2) rotate3d(40, 40, 40, 20deg);
+}
+
+main section#artworks div.artworks-container article.artwork:nth-child(odd):hover {
+  margin: 0 180px 0 50px;
+  -webkit-transform: scale(1.4) rotate3d(0, 0, 0, 0deg);
+          transform: scale(1.4) rotate3d(0, 0, 0, 0deg);
+}
+
+main section#artworks div.artworks-container article.artwork::before {
+  content: '';
+  position: absolute;
+  top: 48.9%;
+  left: 50.7%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 101.5%;
+  height: 100%;
+  opacity: 0.9;
+  z-index: 99;
 }
 
 main section#artworks img.circle-lines {

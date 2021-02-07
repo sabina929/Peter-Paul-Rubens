@@ -155,12 +155,31 @@ const heroSection = document.querySelector(".hero-text-content");
 const heroImg = document.querySelector(".hero-img");
 const headingPrimary = document.querySelector(".heading-primary");
 const ctaBtn = document.querySelector(".cta-btn");
+const textContainer = document.querySelector(".text-container");
 const imgContainer = document.querySelector(".img-container");
 const artworks = document.querySelectorAll(".artwork");
 // const artworkInfos = document.querySelectorAll(".artwork__info");
 const tracker = document.querySelector(".cursor");
 
 // HERO SECTION
+headingPrimary.addEventListener('mousemove', function(e) {
+  tracker.classList.add('active')
+  
+})
+
+headingPrimary.addEventListener('mouseleave', function() {
+  tracker.classList.remove('active')
+
+})
+ctaBtn.addEventListener('mousemove', function(e) {
+  tracker.classList.add('active')
+  
+})
+
+ctaBtn.addEventListener('mouseleave', function() {
+  tracker.classList.remove('active')
+
+})
 heroSection.addEventListener('mousemove', function(e) {
   const pos = this.getBoundingClientRect();
   const mx = e.clientX - pos.left - pos.width/2; 
@@ -231,6 +250,15 @@ imgContainer.addEventListener('mouseleave', function() {
   this.style.transform = 'translate3d(0px, 0px, 0px)';
   this.style.transform += 'rotate3d(0, 0, 0, 0deg)';
   this.children[0].style.transform = 'translate3d(0px, 0px, 0px)';
+
+})
+textContainer.addEventListener('mousemove', function(e) {
+  tracker.classList.add('active')
+  
+})
+
+textContainer.addEventListener('mouseleave', function() {
+  tracker.classList.remove('active')
 
 })
 
@@ -362,6 +390,6 @@ slider.addEventListener('mousemove', (e) => {
     if (!isDown) return;
     e.preventDefault();
     const x = e.pageX - slider.offsetLeft;
-    const walk = (x - startX) * 1.2;
+    const walk = (x - startX) * 1.4;
     slider.scrollLeft = scrollLeft - walk;
 });

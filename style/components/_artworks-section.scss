@@ -39,6 +39,7 @@ section#artworks{
         justify-content: space-between;
         align-items: center;
         // padding-left: 60px;
+        cursor: grab;  
 
 
 
@@ -50,11 +51,12 @@ section#artworks{
         overflow-y: hidden;
         white-space: nowrap;
         user-select: none;
-        cursor: pointer;
+        // cursor: pointer;
         transition: all 0.5s ease;
-        // transform: scale(0.98);
-    /*     will-change: transform; */
+        transform: scale(0.98);
+    will-change: transform; 
         position: relative;
+        perspective: 6000px;
 
 
 
@@ -73,11 +75,12 @@ section#artworks{
         &.active {
             cursor: grabbing;
             cursor: -webkit-grabbing;
-        /*     transform: scale(1); */
+            transform: scale(1); 
         }
 
         article.artwork{
-            cursor: grab;
+            transition: all .5s ease;
+            position: relative;
             &:not(:last-child){
                 margin-right: 80px; 
             }
@@ -89,9 +92,62 @@ section#artworks{
                 }
             }
 
+          
+
             .artwork__info{
-                margin-top: -100px;
-                margin-left: 150px;
+                position: absolute;
+                // top: 84%;
+                // top: 88%;
+                // left: 24%;
+                top: 83%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                z-index: 100;
+                width: 50%;
+                height: auto;
+                @include  center;
+                border-radius: 50%;
+                padding: 10px 20px;
+                background-color: $lighter-brown;
+                color: $cream-color;
+                h3{
+                    font-size: $paragraph-font-size-3;
+                    font-weight: 300;
+                }
+                p{
+                    font-size: $paragraph-font-size-3;
+                }
+            }
+
+            &:nth-child(even) {
+                transform: scale(1.2) rotate3d(-40, -40, -40, 20deg);
+                
+                &:hover{
+                    transform: scale(1.4) rotate3d(0, 0, 0, 0deg);
+                    margin: 0 170px 0 50px;
+                }
+            }
+            
+            &:nth-child(odd) {
+                transform: scale(1.2) rotate3d(40, 40, 40, 20deg);
+                &:hover{
+                    margin: 0 180px 0 50px;
+                    transform: scale(1.4) rotate3d(0, 0, 0, 0deg);
+                }
+            }
+
+            &::before{
+                content: '';
+                position: absolute;
+                top: 48.9%;
+                left: 50.7%;
+                @include transform-center;
+                width: 101.5%;
+                height: 100%;
+                // background-image: linear-gradient(0deg, $brown-color 10%, transparent 45%);
+                // background-image: linear-gradient(0deg, $brown-color, transparent);
+                opacity: 0.9;
+                z-index: 99;
             }
         }
   }
