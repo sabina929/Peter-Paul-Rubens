@@ -161,6 +161,7 @@ header.big-screen {
 
         .search-btn{
           margin-right: 36px;
+          cursor: pointer;
         }
         .menu-btn{
             width: 80px;
@@ -190,15 +191,34 @@ header.big-screen {
                     flex-direction: column;
                     align-items: center;
                     justify-content: space-between;
-    
+                  
+                    
                   
                     div{
                         width: 30px;
                         height: 1px;
                         background-color: $lighter-brown;
-
+                        transition: all .5s ease;
+                        
+                        
                         &.two{
                           margin-left: 30px;
+                        }
+                        &.opened{
+                          transform: translate(0px, 4px) rotate(45deg);
+
+                          &.two{
+                            transform: translate(-15px, -6px) rotate(-45deg);
+                          }
+                        }
+                      }
+                      &.opened{
+                        div{
+                          transform: translate(0px, 4px) rotate(45deg);
+
+                          &.two{
+                            transform: translate(-15px, -6px) rotate(-45deg);
+                          }
                         }
                     }
                 }
@@ -216,44 +236,29 @@ header.big-screen {
     // right: 0;
     // transform: translate(-50%, -1200px);
     transform: translate(-50%, -50%);
-    clip-path: circle(0% at 50% 0);
+    // clip-path: circle(0% at 50% 0);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     // display: none;
     height: 100vh;
-    width: 100vw;
+    width: 101vw;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     background-color: $brown-color;
-    padding:0px 48px 0 310px;
-    // transition: all .7s ease;
-    transition: all .7s cubic-bezier(0.77,-0.01, 0.59, 0.87);
+    transition: all .6s cubic-bezier(0.77,-0.01, 0.59, 0.87);
 
-    @media only screen and (max-width: 1300px) {
-      padding:0px 0px 0 280px;
-    }
-
-    @media only screen and (max-width: 1200px) {
-      padding:0px 0px 0 170px;
-    }
-    @media only screen and (max-width: 800px) {
-      padding:0px 0px 0 140px;
-    }
-    @media only screen and (max-width: 500px) {
-      padding:0px 0px 0 115px;
-    }
-    @media only screen and (max-width: 400px) {
-      padding:0px 0px 0 95px;
-    }
-    @media only screen and (max-width: 360px) {
-      padding:0px 0px 0 84px;
-    }
+  
 
 
       ul {
         list-style: none;
 
         &.menu-items{
+          display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
      
           li{
             position: relative;
@@ -267,16 +272,16 @@ header.big-screen {
 
 
             &:not(:last-child){
-              margin-bottom: 30px;
+              margin-right: 60px;
 
               @media only screen and (max-width: 900px) {
-                margin-bottom: 28px;
+                margin-right: 40px;
               }
               @media only screen and (max-width: 700px) {
-                margin-bottom: 24px;
+                margin-right: 36px;
               }
               @media only screen and (max-width: 400px) {
-                margin-bottom: 20px;
+                margin-right: 24px;
               }
               
             }
@@ -286,9 +291,10 @@ header.big-screen {
               font-size: $heading-1-font-size;
               color: $lighter-brown;
               // transition: all .5s ease; 
-              clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+              // clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+              clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
               transition: all .5s cubic-bezier(0.77,-0.01, 0.59, 0.87);
-              transform: translateY(40px);
+              transform: translateX(-40px);
 
               @media only screen and (max-width: 1300px) {
                 font-size: 48px;
@@ -309,6 +315,74 @@ header.big-screen {
                 font-size: 30px;
               }
             }
+           
+            
+         
+          }
+        }
+        &.contact{
+          position: absolute;
+          bottom: 30px;
+          right: 0px;
+          transform: translate(-50%, -50%);
+
+          li{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: center;            
+            transition: all 0.3s ease;
+            // clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+            transition: all .5s cubic-bezier(0.77,-0.01, 0.59, 0.87);
+            transform: translateX(-10px);
+
+            p{
+              font-family: $font-family-2;
+              font-size: $paragraph-font-size-4;
+              letter-spacing: 0.9px;
+              opacity: 0.6;
+              color: $lighter-brown;
+              margin-right: 10px;
+            }
+            
+            a{
+              text-decoration: none;
+              font-family: $font-family-2;
+              font-size: $paragraph-font-size-4;
+              letter-spacing: 0.9px;
+              opacity: 0.6;
+              color: $lighter-brown;
+              transition: all .3s ease;
+
+            //   clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+            // transition: all .5s cubic-bezier(0.77,-0.01, 0.59, 0.87);
+            // transform: translateY(10px);
+
+            @media only screen and (max-width: 1300px) {
+              font-size: 48px;
+            }
+            @media only screen and (max-width: 1000px) {
+              font-size: 42px;
+            }
+            @media only screen and (max-width: 900px) {
+              font-size: 36px;
+            }
+            @media only screen and (max-width: 700px) {
+              font-size: 34px;
+            }
+            @media only screen and (max-width: 400px) {
+              font-size: 32px;
+            }
+            @media only screen and (max-width: 400px) {
+              font-size: 30px;
+            }
+              &:hover{
+                // opacity: 0.8;
+                text-decoration: underline;
+              }
+            }
+            
            
             
          

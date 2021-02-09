@@ -39,14 +39,20 @@ section#about{
     }
  
     div.text-container{
-        width: 40%;
-        margin-right: 240px;
+        width: 42%;
+        margin-right: 272px;
 
         h2.heading-secondary{
             margin-bottom: 60px;
         }
         p:nth-child(2){
             margin-bottom: 40px;
+        }
+
+        p.paragraph.paragraph--regular{
+            font-size: $paragraph-font-size-2;
+            letter-spacing: 1px;
+            line-height: 33px;
         }
     }
     img{

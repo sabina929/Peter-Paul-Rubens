@@ -82,9 +82,11 @@ section#artworks{
             transition: all .5s ease;
             position: relative;
             &:not(:last-child){
-                margin-right: 80px; 
+                margin-right: -60px; 
             }
             img{
+                width: 607px;
+                height: 536px;
                 mix-blend-mode: lighten;
                 transition: all 3s ease;
                 &:hover{
@@ -96,18 +98,16 @@ section#artworks{
 
             .artwork__info{
                 position: absolute;
-                // top: 84%;
-                // top: 88%;
-                // left: 24%;
-                top: 83%;
+                // top: 83%;
+                top: 86%;
                 left: 50%;
                 transform: translate(-50%,-50%);
                 z-index: 100;
-                width: 50%;
+                width: 56%;
                 height: auto;
                 @include  center;
                 border-radius: 50%;
-                padding: 10px 20px;
+                padding: 12px 20px;
                 background-color: $lighter-brown;
                 color: $cream-color;
                 h3{
@@ -120,19 +120,19 @@ section#artworks{
             }
 
             &:nth-child(even) {
-                transform: scale(1.2) rotate3d(-40, -40, -40, 20deg);
+                transform: scale(0.9) rotate3d(-40, -40, -40, 20deg);
                 
                 &:hover{
-                    transform: scale(1.4) rotate3d(0, 0, 0, 0deg);
-                    margin: 0 170px 0 50px;
+                    transform: scale(1) rotate3d(0, 0, 0, 0deg);
+                    margin: 0 80px 0 50px;
                 }
             }
             
             &:nth-child(odd) {
-                transform: scale(1.2) rotate3d(40, 40, 40, 20deg);
+                transform: scale(0.9) rotate3d(40, 40, 40, 20deg);
                 &:hover{
-                    margin: 0 180px 0 50px;
-                    transform: scale(1.4) rotate3d(0, 0, 0, 0deg);
+                    margin: 0 80px 0 50px;
+                    transform: scale(1) rotate3d(0, 0, 0, 0deg);
                 }
             }
 
