@@ -1,0 +1,51 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    margin: 240px auto 60px auto;
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        
+        article{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            div{
+                width: 50%;
+                height: auto;
+                transition: all .3s ease-out;
+                margin-bottom: 120px;
+                img{
+                    width: 100%;
+                    height: auto;
+                    transition: all .3s ease-out;
+                }
+            }
+            div.artwork__info{
+                h1{
+                    font-size: $heading-1-font-size;
+                }
+            }
+        }
+
+        img.circle-lines{
+            // position: absolute;
+            // top: -25px;
+            // left: 35px;
+            // transform: translate(-50%, -50%);
+            animation: rotateReverse 30s linear 0s infinite;
+     
+         }
+    }
+}
