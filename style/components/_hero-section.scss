@@ -46,7 +46,6 @@ main{
                 left: 50%;
                 transform: translate(-50%, -50%);
                 mix-blend-mode: lighten;
-                // transition: all 0.5s linear;
                 &:hover{
                     mix-blend-mode: normal;
                 }
@@ -57,7 +56,7 @@ main{
                 top: 3%;
                 left: 82%;
                 transform: translate(-50%, -50%);
-                width: 400px;
+                width: 420px;
                 // transition: all 1s ease-out;
             }
             a.cta-btn{
