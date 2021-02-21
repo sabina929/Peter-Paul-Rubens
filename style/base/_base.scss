@@ -25,6 +25,16 @@ html {
 body{
     background-color: $brown-color;
     overflow-x: hidden;
+
+    // header{
+    //   display: none;
+    // }
+    main{
+      display: none;
+    }
+    // footer{
+    //   display: none;
+    // }
 }
 ::-moz-selection {
     background-color: $lighter-brown;

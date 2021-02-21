@@ -11,3 +11,32 @@
 @import "../components/hero-section";
 @import "../components/artworks-section";
 @import "../components/about-section";
+
+
+div.loading-screen{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 99999999999;
+    background-color: $brown-color;
+    transition: all .5s ease-in; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    p{
+        font-size: 36px;
+        transition: all .1s ease-in; 
+    }
+    
+    // img{
+    //     width: 180px;
+    //     height: auto;
+    //     transition: all .5s ease-in; 
+    // }
+}

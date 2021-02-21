@@ -8,7 +8,8 @@ header.big-screen {
     right: 0;
     // background-color: $brown-color;
     background-color: transparent;
-    display: flex;
+    // display: flex;
+    display: none;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -17,17 +18,26 @@ header.big-screen {
     z-index: 9999;
     padding: 40px 80px;
     // border: $border-check-1;
-
+    @media only screen and (max-width: 1260px) {
+      padding: 40px 50px;
+    }
     
     .logo{
         // border: $border-check-2;        
         flex-basis: 120px;
         z-index: 99999;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+        @media only screen and (max-width: 1260px) {
+          flex-basis: 100px;
+        }
+
+        @media screen {
+          
+        }
             a {
               width: 120px;
               height: auto;
@@ -40,8 +50,13 @@ header.big-screen {
               color: $lighter-brown;
               text-decoration: none;
               letter-spacing: 3px;
+
+              @media only screen and (max-width: 1260px) {
+                flex-basis: 100px;
+              }
+
                  p{
-                  font-size: $paragraph-font-size-1;
+                  font-size: $paragraph-font-size-2;
                  }           
             }
         
@@ -59,6 +74,9 @@ header.big-screen {
         align-items: center;
         justify-content: space-between;
         margin-right: 20px;
+        @media only screen and (max-width: 1260px) {
+          margin-right: 10px;
+        }
 
               a{
                 text-decoration: none;
@@ -76,6 +94,10 @@ header.big-screen {
                   padding: 10px 5px;
                   margin: 20px 40px;
                   transition: all .3s ease;
+                  @media only screen and (max-width: 1260px) {
+                    // padding: 10px 5px;
+                    margin: 20px 20px;
+                  }
 
                   span{
                     font-family: $font-family-1;
@@ -167,6 +189,10 @@ header.big-screen {
             width: 80px;
             // margin-right: 624px;
             z-index: 99999;
+
+            @media only screen and (max-width: 1260px) {
+              width: 50px;
+            }
     
             button{
                 width: 80px;
@@ -182,6 +208,10 @@ header.big-screen {
                 align-items: center;
                 justify-content: space-between;
                 cursor: pointer;
+
+                @media only screen and (max-width: 1260px) {
+                  width: 50px;
+                }
     
                 .menu-icon{
                     // border: $border-check-2;
@@ -359,24 +389,7 @@ header.big-screen {
             // transition: all .5s cubic-bezier(0.77,-0.01, 0.59, 0.87);
             // transform: translateY(10px);
 
-            @media only screen and (max-width: 1300px) {
-              font-size: 48px;
-            }
-            @media only screen and (max-width: 1000px) {
-              font-size: 42px;
-            }
-            @media only screen and (max-width: 900px) {
-              font-size: 36px;
-            }
-            @media only screen and (max-width: 700px) {
-              font-size: 34px;
-            }
-            @media only screen and (max-width: 400px) {
-              font-size: 32px;
-            }
-            @media only screen and (max-width: 400px) {
-              font-size: 30px;
-            }
+         
               &:hover{
                 // opacity: 0.8;
                 text-decoration: underline;

@@ -1,3 +1,39 @@
+const bodyEl = document.querySelector('body')
+const headerEl = document.querySelector('header')
+const mainEl = document.querySelector('main')
+const footerEl = document.querySelector('footer')
+const loadigScreen = document.querySelector('div.loading-screen')
+// const loadigScreenLogo = document.querySelector('div.loading-screen>img')
+
+
+function loading() {
+    setTimeout(() => {
+        // loadigScreenLogo.style.opacity = 0;
+        
+        setTimeout(() => {
+
+            loadigScreen.style.opacity = 0;
+            // bodyEl.style.overflowY = "scroll"
+            headerEl.style.display = 'flex';
+            mainEl.style.display = 'flex';
+            footerEl.style.display = 'flex';
+            
+            setTimeout(() => {
+                loadigScreen.style.display = 'none';
+            }, 450);
+        }, 250);
+        
+    }, 10);
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    window.addEventListener("load", function() {
+      setTimeout(() => {
+        loading()
+      }, 810);
+    }, false);
+  })
+
 // NAVIGATION
 // Toggle menu
 const hamburgerMenuButton = document.querySelector('header.big-screen .menu-btn');
