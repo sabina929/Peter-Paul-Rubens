@@ -44,3 +44,12 @@
       transform: translate(-50%, -50%) rotateZ(-360deg);
     }
   }
+  @keyframes rotateReverse-sm {
+    0% {
+      transform: translate(-50%, -50%) rotateZ(0deg) scale(0.84);
+    }
+    
+    100% {
+      transform: translate(-50%, -50%) rotateZ(-360deg) scale(0.84);
+    }
+  }

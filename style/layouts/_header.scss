@@ -21,6 +21,9 @@ header.big-screen {
     @media only screen and (max-width: 1260px) {
       padding: 40px 50px;
     }
+    @media only screen and (max-width: 760px) {
+      padding: 36px 30px;
+    }
     
     .logo{
         // border: $border-check-2;        
@@ -76,6 +79,9 @@ header.big-screen {
         margin-right: 20px;
         @media only screen and (max-width: 1260px) {
           margin-right: 10px;
+        }
+        @media only screen and (max-width: 760px) {
+          display: none;
         }
 
               a{
@@ -261,11 +267,16 @@ header.big-screen {
     position: fixed;
     // top: -640px;
     // top: 0px;
-    top: 50%;
-    left: 50%;
-    // right: 0;
-    // transform: translate(-50%, -1200px);
-    transform: translate(-50%, -50%);
+    // top: 50%;
+    // left: 50%;
+    // // right: 0;
+    // // transform: translate(-50%, -1200px);
+    // transform: translate(-50%, -50%);
+
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
     // clip-path: circle(0% at 50% 0);
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     // display: none;
@@ -289,6 +300,12 @@ header.big-screen {
             flex-direction: row;
             align-items: center;
             justify-content: space-between;
+
+            @media only screen and (max-width: 760px) {
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-between;
+          }
      
           li{
             position: relative;
@@ -307,11 +324,9 @@ header.big-screen {
               @media only screen and (max-width: 900px) {
                 margin-right: 40px;
               }
-              @media only screen and (max-width: 700px) {
-                margin-right: 36px;
-              }
-              @media only screen and (max-width: 400px) {
-                margin-right: 24px;
+              @media only screen and (max-width: 760px) {
+                margin-right: 0px;
+                margin-bottom: 20px;
               }
               
             }
@@ -355,6 +370,11 @@ header.big-screen {
           bottom: 30px;
           right: 0px;
           transform: translate(-50%, -50%);
+
+          @media only screen and (max-width: 760px) {
+            left: 50%;
+            width: 80%;
+          }
 
           li{
             display: flex;
