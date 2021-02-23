@@ -1465,7 +1465,7 @@ div.loading-screen p {
   transition: all .1s ease-in;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
           clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  -webkit-animation: fade-down 1.2s ease 0.8 forwards;
-          animation: fade-down 1.2s ease 0.8 forwards;
+  -webkit-animation: fade-down 1.2s ease 0.8s forwards;
+          animation: fade-down 1.2s ease 0.8s forwards;
 }
 /*# sourceMappingURL=artwork.css.map */
