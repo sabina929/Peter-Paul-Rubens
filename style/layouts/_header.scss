@@ -22,6 +22,9 @@ header.big-screen {
       padding: 40px 50px;
     }
     @media only screen and (max-width: 760px) {
+      padding: 36px 40px;
+    }
+    @media only screen and (max-width: 680px) {
       padding: 36px 30px;
     }
     
@@ -80,7 +83,7 @@ header.big-screen {
         @media only screen and (max-width: 1260px) {
           margin-right: 10px;
         }
-        @media only screen and (max-width: 760px) {
+        @media only screen and (max-width: 920px) {
           display: none;
         }
 
@@ -104,6 +107,11 @@ header.big-screen {
                     // padding: 10px 5px;
                     margin: 20px 20px;
                   }
+
+                  @media only screen and (max-width: 1000px) {
+                    margin: 15px 15px;
+                  }
+          
 
                   span{
                     font-family: $font-family-1;

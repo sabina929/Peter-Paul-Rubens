@@ -13,8 +13,11 @@ main{
         padding: 0px 60px;
     }
     @media only screen and (max-width: 760px) {
+        padding: 0px 40px;
+      }
+      @media only screen and (max-width: 680px) {
         padding: 0px 30px;
-    }
+      }
 
 section#artworks{
     position: relative;
@@ -155,7 +158,7 @@ section#artworks{
         }
   }
 
-    img.circle-lines{
+    img.radial-beams{
         position: absolute;
         top: -25px;
         left: 35px;

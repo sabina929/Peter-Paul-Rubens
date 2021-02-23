@@ -104,6 +104,28 @@
   }
 }
 
+@-webkit-keyframes rotateReverse2 {
+  0% {
+    -webkit-transform: rotateZ(0deg) scale(1);
+            transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    -webkit-transform: rotateZ(-360deg) scale(1);
+            transform: rotateZ(-360deg) scale(1);
+  }
+}
+
+@keyframes rotateReverse2 {
+  0% {
+    -webkit-transform: rotateZ(0deg) scale(1);
+            transform: rotateZ(0deg) scale(1);
+  }
+  100% {
+    -webkit-transform: rotateZ(-360deg) scale(1);
+            transform: rotateZ(-360deg) scale(1);
+  }
+}
+
 @-webkit-keyframes rotateReverse-sm {
   0% {
     -webkit-transform: translate(-50%, -50%) rotateZ(0deg) scale(0.84);
@@ -123,6 +145,50 @@
   100% {
     -webkit-transform: translate(-50%, -50%) rotateZ(-360deg) scale(0.84);
             transform: translate(-50%, -50%) rotateZ(-360deg) scale(0.84);
+  }
+}
+
+@-webkit-keyframes rotateReverse-sm2 {
+  0% {
+    -webkit-transform: rotateZ(0deg) scale(0.84);
+            transform: rotateZ(0deg) scale(0.84);
+  }
+  100% {
+    -webkit-transform: rotateZ(-360deg) scale(0.84);
+            transform: rotateZ(-360deg) scale(0.84);
+  }
+}
+
+@keyframes rotateReverse-sm2 {
+  0% {
+    -webkit-transform: rotateZ(0deg) scale(0.84);
+            transform: rotateZ(0deg) scale(0.84);
+  }
+  100% {
+    -webkit-transform: rotateZ(-360deg) scale(0.84);
+            transform: rotateZ(-360deg) scale(0.84);
+  }
+}
+
+@-webkit-keyframes fade-down {
+  0% {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  100% {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+
+@keyframes fade-down {
+  0% {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  100% {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
 }
 
@@ -250,6 +316,12 @@ header.big-screen {
 
 @media only screen and (max-width: 760px) {
   header.big-screen {
+    padding: 36px 40px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  header.big-screen {
     padding: 36px 30px;
   }
 }
@@ -353,7 +425,7 @@ header.big-screen div.header-nav-search-menu-btns nav.header-nav {
   }
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 920px) {
   header.big-screen div.header-nav-search-menu-btns nav.header-nav {
     display: none;
   }
@@ -377,6 +449,12 @@ header.big-screen div.header-nav-search-menu-btns nav.header-nav a.nav-item {
 @media only screen and (max-width: 1260px) {
   header.big-screen div.header-nav-search-menu-btns nav.header-nav a.nav-item {
     margin: 20px 20px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  header.big-screen div.header-nav-search-menu-btns nav.header-nav a.nav-item {
+    margin: 15px 15px;
   }
 }
 
@@ -736,13 +814,19 @@ footer#contact.big-screen {
   display: none;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1260px) {
   footer#contact.big-screen {
-    padding: 60px 60px 20px 60px;
+    padding: 60px 50px 20px 50px;
   }
 }
 
 @media only screen and (max-width: 760px) {
+  footer#contact.big-screen {
+    padding: 60px 40px 16px 40px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
   footer#contact.big-screen {
     padding: 60px 30px 16px 30px;
   }
@@ -1045,13 +1129,13 @@ main {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 760px) {
   main {
     padding: 0px 40px;
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 680px) {
   main {
     padding: 0px 30px;
   }
@@ -1308,6 +1392,12 @@ main {
 
 @media only screen and (max-width: 760px) {
   main {
+    padding: 0px 40px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  main {
     padding: 0px 30px;
   }
 }
@@ -1501,7 +1591,7 @@ main section#artworks div.artworks-container article.artwork::before {
   z-index: 99;
 }
 
-main section#artworks img.circle-lines {
+main section#artworks img.radial-beams {
   position: absolute;
   top: -25px;
   left: 35px;
@@ -1512,7 +1602,7 @@ main section#artworks img.circle-lines {
 }
 
 @media only screen and (max-width: 760px) {
-  main section#artworks img.circle-lines {
+  main section#artworks img.radial-beams {
     top: -10px;
     -webkit-animation: rotateReverse-sm 30s linear 0s infinite;
             animation: rotateReverse-sm 30s linear 0s infinite;
@@ -1740,11 +1830,17 @@ div.loading-screen {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 div.loading-screen p {
-  font-size: 36px;
+  font-size: 42px;
   -webkit-transition: all .1s ease-in;
   transition: all .1s ease-in;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+          clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  -webkit-animation: fade-down 1.2s ease 0.8s forwards;
+          animation: fade-down 1.2s ease 0.8s forwards;
 }
 /*# sourceMappingURL=home.css.map */

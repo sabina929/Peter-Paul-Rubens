@@ -44,6 +44,15 @@
       transform: translate(-50%, -50%) rotateZ(-360deg);
     }
   }
+  @keyframes rotateReverse2 {
+    0% {
+      transform: rotateZ(0deg) scale(1);
+    }
+    
+    100% {
+      transform: rotateZ(-360deg) scale(1);
+    }
+  }
   @keyframes rotateReverse-sm {
     0% {
       transform: translate(-50%, -50%) rotateZ(0deg) scale(0.84);
@@ -51,5 +60,23 @@
     
     100% {
       transform: translate(-50%, -50%) rotateZ(-360deg) scale(0.84);
+    }
+  }
+  @keyframes rotateReverse-sm2 {
+    0% {
+      transform: rotateZ(0deg) scale(0.84);
+    }
+    
+    100% {
+      transform: rotateZ(-360deg) scale(0.84);
+    }
+  }
+  @keyframes fade-down {
+    0% {
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    
+    100% {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
   }

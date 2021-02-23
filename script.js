@@ -6,25 +6,18 @@ const loadigScreen = document.querySelector('div.loading-screen')
 // const loadigScreenLogo = document.querySelector('div.loading-screen>img')
 
 
-function loading() {
-    setTimeout(() => {
-        // loadigScreenLogo.style.opacity = 0;
-        
-        setTimeout(() => {
-
-            loadigScreen.style.opacity = 0;
-            // bodyEl.style.overflowY = "scroll"
-            headerEl.style.display = 'flex';
-            mainEl.style.display = 'flex';
-            footerEl.style.display = 'flex';
-            
-            setTimeout(() => {
-                loadigScreen.style.display = 'none';
-            }, 450);
-        }, 250);
-        
-    }, 10);
-  }
+function loading() {      
+      setTimeout(() => {
+          // bodyEl.style.overflowY = "scroll"
+          headerEl.style.display = 'flex';
+          mainEl.style.display = 'flex';
+          footerEl.style.display = 'flex';
+          
+          setTimeout(() => {
+              loadigScreen.style.clipPath = "polygon(0 0, 100% 0, 100% 0, 0 0)"
+          }, 550);
+      }, 250);
+}
 
   document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener("load", function() {

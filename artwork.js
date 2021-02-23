@@ -4,24 +4,17 @@ const mainEl = document.querySelector('main')
 const footerEl = document.querySelector('footer')
 const loadigScreen = document.querySelector('div.loading-screen')
 
-function loading() {
+function loading() {      
   setTimeout(() => {
-      // loadigScreenLogo.style.opacity = 0;
+      // bodyEl.style.overflowY = "scroll"
+      headerEl.style.display = 'flex';
+      mainEl.style.display = 'flex';
+      footerEl.style.display = 'flex';
       
       setTimeout(() => {
-
-          loadigScreen.style.opacity = 0;
-          // bodyEl.style.overflowY = "scroll"
-          headerEl.style.display = 'flex';
-          mainEl.style.display = 'flex';
-          footerEl.style.display = 'flex';
-          
-          setTimeout(() => {
-              loadigScreen.style.display = 'none';
-          }, 450);
-      }, 250);
-      
-  }, 10);
+          loadigScreen.style.clipPath = "polygon(0 0, 100% 0, 100% 0, 0 0)"
+      }, 550);
+  }, 250);
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -214,9 +207,12 @@ imgContainer.addEventListener('mousemove', function(e) {
     const mx = e.clientX - pos.left - pos.width/2; 
     const my = e.clientY - pos.top - pos.height/2;
     //  console.log(this, pos)
-    this.style.transform = 'translate('+ mx * 0.3 +'px, '+ my * 0.6 +'px)';
-    this.style.transform += 'rotate3d('+ mx * -0.1 +', '+ my * -0.3 +', 0, 12deg)';
-    this.children[0].style.transform = 'translate('+ mx * 0.075 +'px, '+ my * 0.125 +'px) scale(1.12)';
+    this.style.transform = 'translate('+ mx * 0.15 +'px, '+ my * 0.2 +'px)';
+    this.style.transform += 'rotate3d('+ mx * -0.05 +', '+ my * -0.1 +', 0, 12deg)';
+    this.children[0].style.transform = 'translate('+ mx * 0.025 +'px, '+ my * 0.075 +'px) scale(1.05)';
+    // this.style.transform = 'translate('+ mx * 0.3 +'px, '+ my * 0.6 +'px)';
+    // this.style.transform += 'rotate3d('+ mx * -0.1 +', '+ my * -0.3 +', 0, 12deg)';
+    // this.children[0].style.transform = 'translate('+ mx * 0.075 +'px, '+ my * 0.125 +'px) scale(1.1)';
   
     
   })

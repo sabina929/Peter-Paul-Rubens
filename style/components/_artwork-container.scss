@@ -21,31 +21,172 @@ main{
             align-items: center;
             width: 100%;
             height: auto;
-            div{
-                width: 50%;
+            padding: 0 80px;
+
+            @media only screen and (max-width: 1260px) {
+                padding: 0px 50px;
+              }
+              @media only screen and (max-width: 760px) {
+                padding: 6px 40px;
+              }
+              @media only screen and (max-width: 680px) {
+                padding: 6px 30px;
+              }
+            div.img-container{
+                width: 60%;
                 height: auto;
                 transition: all .3s ease-out;
                 margin-bottom: 120px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                @media only screen and (max-width: 1380px) {
+                    width: 70%;
+                 }
+                 @media only screen and (max-width: 920px) {
+                    width: 80%;
+                 }
+                @media only screen and (max-width: 760px) {
+                    width: 100%;
+                }
                 img{
                     width: 100%;
                     height: auto;
-                    transition: all .3s ease-out;
+                    transition: all .2s ease-out;
                 }
             }
             div.artwork__info{
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                margin-bottom: 130px;
+                @media only screen and (max-width: 1380px) {
+                    width: 70%;
+                 }
+                @media only screen and (max-width: 920px) {
+                    width: 80%;
+                 }
+                 @media only screen and (max-width: 760px) {
+                     
+                     width: 100%;
+                 }
                 h1{
-                    font-size: $heading-1-font-size;
+                    font-size: 200px;
+                    line-height: 210px;
+                    margin-bottom: 60px;
+                    width: 490px;
+                }
+
+                div.radial-beams-paragraphs{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    width: 100%;
+                    margin-bottom: 0px;
+
+                    @media only screen and (max-width: 1120px) {
+                        flex-direction: column-reverse;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                    }
+
+                    img.radial-beams{
+                        width: 180px;
+                        height: 180px;
+                        animation: rotateReverse2 30s linear 0s infinite;
+                        margin-right: 60px;
+
+                        @media only screen and (max-width: 1120px) {
+                            margin-right: 0px;
+                        }
+                        
+                        @media only screen and (max-width: 760px) {
+                            animation: rotateReverse-sm2 30s linear 0s infinite;
+                        }
+                    }
+                    div.paragraphs{
+                        position: relative;
+                        margin-bottom: 0px;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        @media only screen and (max-width: 1120px) {
+                            margin-bottom: 60px;
+                        }
+
+                        p{
+                            font-size: $paragraph-font-size-2;
+                            letter-spacing: 1px;
+                            line-height: 33px;
+                        }
+                        p:nth-child(1){
+                            margin-bottom: 40px;
+                        }
+
+                        div.pagination{
+                            position: absolute;
+                            bottom: -100px;
+                            left: 100%;
+                            transform: translate(-50%,-50%);
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            img.prev-arrow{
+                                transform: rotate(180deg);
+                            }
+
+                            div.pages{
+                                height: 36px;
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                                align-items: flex-end;
+                                margin: 0 32px;
+                                
+                                p.current-page{
+                                    height: 100%;
+                                    margin: 0 5px;
+                                    font-size: 28px;
+                                    margin-bottom: 0px;
+                                    letter-spacing: 0px;
+                                    line-height: 35px;
+                                }
+                                span.forwardslash{
+                                    height: 70%;
+                                    font-size: 16px;
+                                    letter-spacing: 0px;
+                                    line-height: 21px;
+                                }
+                                p.total-pages{
+                                    height: 70%;
+                                    margin: 0 5px;
+                                    font-size: 16px;
+                                    margin-bottom: 0px;
+                                    letter-spacing: 0px;
+                                    line-height: 21px;
+                                }
+
+                            }
+                            button{
+                                cursor: pointer;
+                                background-color: transparent;
+                                border: none;
+                                outline: none;
+                            }
+                        }
+                    }
                 }
             }
         }
 
-        img.circle-lines{
-            // position: absolute;
-            // top: -25px;
-            // left: 35px;
-            // transform: translate(-50%, -50%);
-            animation: rotateReverse 30s linear 0s infinite;
-     
-         }
     }
 }

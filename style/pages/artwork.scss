@@ -25,10 +25,13 @@ div.loading-screen{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     
     p{
-        font-size: 36px;
+        font-size: 42px;
         transition: all .1s ease-in; 
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        animation: fade-down 1.2s ease 0.8 forwards;
     }
     
     // img{
