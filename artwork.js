@@ -209,7 +209,7 @@ imgContainer.addEventListener('mousemove', function(e) {
     //  console.log(this, pos)
     this.style.transform = 'translate('+ mx * 0.15 +'px, '+ my * 0.2 +'px)';
     this.style.transform += 'rotate3d('+ mx * -0.05 +', '+ my * -0.1 +', 0, 12deg)';
-    this.children[0].style.transform = 'translate('+ mx * 0.025 +'px, '+ my * 0.075 +'px) scale(1.05)';
+    this.children[0].style.transform = 'translate('+ mx * 0.025 +'px, '+ my * 0.075 +'px) scale(1.01)';
     // this.style.transform = 'translate('+ mx * 0.3 +'px, '+ my * 0.6 +'px)';
     // this.style.transform += 'rotate3d('+ mx * -0.1 +', '+ my * -0.3 +', 0, 12deg)';
     // this.children[0].style.transform = 'translate('+ mx * 0.075 +'px, '+ my * 0.125 +'px) scale(1.1)';

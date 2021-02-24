@@ -5,7 +5,16 @@ main{
     align-items: center;
     width: 100vw;
     height: auto;
-    margin: 240px auto 60px auto;
+    margin: 300px auto 60px auto;
+    
+    @media only screen and (max-width: 1000px) {
+        margin: 240px auto 60px auto;
+        
+    }
+    @media only screen and (max-width: 760px) {
+        margin: 240px auto 170px auto;
+        
+    }
     section{
         display: flex;
         flex-direction: column;
@@ -35,28 +44,45 @@ main{
               }
 
               div.img-wrapper{
-                    width: 60%;
+                    width: 76%;
                   position: relative;
                   margin-bottom: 260px;
-                  @media only screen and (max-width: 1380px) {
-                    width: 70%;
+                  @media only screen and (max-width: 1200px) {
+                    margin-bottom: 240px;
+                 }
+                  @media only screen and (max-width: 1100px) {
+                    margin-bottom: 220px;
+                 }
+                  @media only screen and (max-width: 1000px) {
+                    margin-bottom: 200px;
                  }
                  @media only screen and (max-width: 920px) {
                     width: 80%;
                  }
                 @media only screen and (max-width: 760px) {
+                    margin-bottom: 294px;
                     width: 100%;
                 }
                     div.lines{
                         position: absolute;
-                        top: -28%;
-                        left: 27%;
+                        top: -10%;
+                        left: 10%;
                         width: 168px;
                         height: 68.11px;
                         transform: translate(-50%, -50%);
-            
+                        
                         @media only screen and (max-width: 760px) {
+                            top: -16%;
+                            left: 27%;
                             transform: translate(-50%, -50%) scale(0.8);
+                        }
+                        @media only screen and (max-width: 600px) {
+                            top: -20%;
+                            left: 27%;
+                        }
+                        @media only screen and (max-width: 500px) {
+                            top: -24%;
+                            left: 27%;
                         }
             
                         div.line-v{
@@ -95,15 +121,82 @@ main{
 
                   div.scroll-down{
                     position: absolute;
-                    top: 82%;
-                    left: 88%;
+                    top: 40%;
+                    left: 105%;
                     transform: translate(-50%, -50%);
                     
+                    @media only screen and (max-width: 1400px) {
+                        top: 48%;
+                        
+                    }
+                    @media only screen and (max-width: 1300px) {
+                        top: 54%;
+                        
+                    }
+                    @media only screen and (max-width: 1200px) {
+                        top: 58%;
+                        
+                    }
+                    @media only screen and (max-width: 1100px) {
+                        top: 64%;
+                    }
+                    @media only screen and (max-width: 920px) {
+                        top: 60%;
+                        left: 100%;
+                        
+                    }
                     @media only screen and (max-width: 760px) {
-                        top:160%;
+                        top:130%;
                         left: 50%;
                         transform: translate(-50%, -50%) scale(0.9);
-                        
+                    }
+                    @media only screen and (max-width: 700px) {
+                        top:132%;
+                    }
+                    @media only screen and (max-width: 640px) {
+                        top:134%;
+                    }
+                    @media only screen and (max-width: 600px) {
+                        top:136%;
+                    }
+                    @media only screen and (max-width: 580px) {
+                        top:138%;
+                    }
+                    @media only screen and (max-width: 540px) {
+                        top:140%;
+                    }
+                    @media only screen and (max-width: 520px) {
+                        top:142%;
+                    }
+                    @media only screen and (max-width: 500px) {
+                        top:144%;
+                    }
+                    @media only screen and (max-width: 480px) {
+                        top:146%;
+                    }
+                    @media only screen and (max-width: 460px) {
+                        top:148%;
+                    }
+                    @media only screen and (max-width: 440px) {
+                        top:152%;
+                    }
+                    @media only screen and (max-width: 420px) {
+                        top:154%;
+                    }
+                    @media only screen and (max-width: 400px) {
+                        top:158%;
+                    }
+                    @media only screen and (max-width: 380px) {
+                        top:162%;
+                    }
+                    @media only screen and (max-width: 360px) {
+                        top:166%;
+                    }
+                    @media only screen and (max-width: 340px) {
+                        top:170%;
+                    }
+                    @media only screen and (max-width: 320px) {
+                        top:172%;
                     }
                    
                     img{
@@ -119,15 +212,14 @@ main{
                 }
               }
             div.artwork__info{
-                width: 60%;
+                width: 76%;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: flex-start;
-                margin-bottom: 130px;
-                @media only screen and (max-width: 1380px) {
-                    width: 70%;
-                 }
+                margin-bottom: 300px;
+                position: relative;
+
                 @media only screen and (max-width: 920px) {
                     width: 80%;
                  }
@@ -142,10 +234,20 @@ main{
                     width: 490px;
 
                     @media only screen and (max-width: 760px) {
+                        font-size: 140px;
+                        line-height: 160px;
+                        margin-bottom: 40px;
+                        width: auto;    
+                    }
+                    @media only screen and (max-width: 640px) {
+                        font-size: 120px;
+                        line-height: 140px;  
+                    }
+                    @media only screen and (max-width: 550px) {
                         font-size: 100px;
                         line-height: 120px;
                         margin-bottom: 40px;
-                        width: 260px;    
+                        width: auto;    
                     }
                 }
 
@@ -158,7 +260,7 @@ main{
                     margin-bottom: 0px;
 
                     @media only screen and (max-width: 1120px) {
-                        flex-direction: column-reverse;
+                        flex-direction: column;
                         justify-content: flex-start;
                         align-items: flex-start;
                     }
@@ -173,8 +275,34 @@ main{
                             margin-right: 0px;
                         }
                         
+                        @media only screen and (max-width: 1120px) {
+                            margin-bottom: 60px;
+                            position: absolute;
+                            bottom: -49%;
+                            right: 4%;
+                            transform: translate(-50%,-50%);
+                        }
+                        
+                        @media only screen and (max-width: 1000px) {
+                            bottom: -46%;
+                            right: 4%;
+                        }
+                        @media only screen and (max-width: 900px) {
+                            bottom: -43%;
+                            right: 4%;
+                        }
                         @media only screen and (max-width: 760px) {
+                            bottom: -37%;
+                            right: 4%;
                             animation: rotateReverse-sm2 30s linear 0s infinite;
+                        }
+                        @media only screen and (max-width: 500px) {
+                            bottom: -31%;
+                            right: -4%;
+                        }
+                        @media only screen and (max-width: 320px) {
+                            bottom: -28%;
+                            right: -4%;
                         }
                     }
                     div.paragraphs{
@@ -271,13 +399,14 @@ main{
         }
         div.lines{
             position: absolute;
-            bottom: -3%;
-            left: 80%;
+            bottom: -2%;
+            left: 28%;
             width: 84px;
             height: 68.11px;
             transform: translate(-50%, -50%);
 
             @media only screen and (max-width: 760px) {
+                left: 22%;
                 transform: translate(-50%, -50%) scale(0.8);
             }
 

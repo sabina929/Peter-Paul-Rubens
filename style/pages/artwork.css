@@ -1123,7 +1123,19 @@ main {
           align-items: center;
   width: 100vw;
   height: auto;
-  margin: 240px auto 60px auto;
+  margin: 300px auto 60px auto;
+}
+
+@media only screen and (max-width: 1000px) {
+  main {
+    margin: 240px auto 60px auto;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  main {
+    margin: 240px auto 170px auto;
+  }
 }
 
 main section {
@@ -1183,14 +1195,26 @@ main section article {
 }
 
 main section article div.img-wrapper {
-  width: 60%;
+  width: 76%;
   position: relative;
   margin-bottom: 260px;
 }
 
-@media only screen and (max-width: 1380px) {
+@media only screen and (max-width: 1200px) {
   main section article div.img-wrapper {
-    width: 70%;
+    margin-bottom: 240px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  main section article div.img-wrapper {
+    margin-bottom: 220px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  main section article div.img-wrapper {
+    margin-bottom: 200px;
   }
 }
 
@@ -1202,14 +1226,15 @@ main section article div.img-wrapper {
 
 @media only screen and (max-width: 760px) {
   main section article div.img-wrapper {
+    margin-bottom: 294px;
     width: 100%;
   }
 }
 
 main section article div.img-wrapper div.lines {
   position: absolute;
-  top: -28%;
-  left: 27%;
+  top: -10%;
+  left: 10%;
   width: 168px;
   height: 68.11px;
   -webkit-transform: translate(-50%, -50%);
@@ -1218,8 +1243,24 @@ main section article div.img-wrapper div.lines {
 
 @media only screen and (max-width: 760px) {
   main section article div.img-wrapper div.lines {
+    top: -16%;
+    left: 27%;
     -webkit-transform: translate(-50%, -50%) scale(0.8);
             transform: translate(-50%, -50%) scale(0.8);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  main section article div.img-wrapper div.lines {
+    top: -20%;
+    left: 27%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  main section article div.img-wrapper div.lines {
+    top: -24%;
+    left: 27%;
   }
 }
 
@@ -1269,18 +1310,145 @@ main section article div.img-wrapper div.img-container img {
 
 main section article div.img-wrapper div.scroll-down {
   position: absolute;
-  top: 82%;
-  left: 88%;
+  top: 40%;
+  left: 105%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 
+@media only screen and (max-width: 1400px) {
+  main section article div.img-wrapper div.scroll-down {
+    top: 48%;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  main section article div.img-wrapper div.scroll-down {
+    top: 54%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  main section article div.img-wrapper div.scroll-down {
+    top: 58%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  main section article div.img-wrapper div.scroll-down {
+    top: 64%;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  main section article div.img-wrapper div.scroll-down {
+    top: 60%;
+    left: 100%;
+  }
+}
+
 @media only screen and (max-width: 760px) {
   main section article div.img-wrapper div.scroll-down {
-    top: 160%;
+    top: 130%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%) scale(0.9);
             transform: translate(-50%, -50%) scale(0.9);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  main section article div.img-wrapper div.scroll-down {
+    top: 132%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  main section article div.img-wrapper div.scroll-down {
+    top: 134%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  main section article div.img-wrapper div.scroll-down {
+    top: 136%;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  main section article div.img-wrapper div.scroll-down {
+    top: 138%;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  main section article div.img-wrapper div.scroll-down {
+    top: 140%;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  main section article div.img-wrapper div.scroll-down {
+    top: 142%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  main section article div.img-wrapper div.scroll-down {
+    top: 144%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  main section article div.img-wrapper div.scroll-down {
+    top: 146%;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  main section article div.img-wrapper div.scroll-down {
+    top: 148%;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  main section article div.img-wrapper div.scroll-down {
+    top: 152%;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  main section article div.img-wrapper div.scroll-down {
+    top: 154%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  main section article div.img-wrapper div.scroll-down {
+    top: 158%;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  main section article div.img-wrapper div.scroll-down {
+    top: 162%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  main section article div.img-wrapper div.scroll-down {
+    top: 166%;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  main section article div.img-wrapper div.scroll-down {
+    top: 170%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  main section article div.img-wrapper div.scroll-down {
+    top: 172%;
   }
 }
 
@@ -1298,7 +1466,7 @@ main section article div.img-wrapper div.scroll-down img.circle-text {
 }
 
 main section article div.artwork__info {
-  width: 60%;
+  width: 76%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1312,13 +1480,8 @@ main section article div.artwork__info {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-bottom: 130px;
-}
-
-@media only screen and (max-width: 1380px) {
-  main section article div.artwork__info {
-    width: 70%;
-  }
+  margin-bottom: 300px;
+  position: relative;
 }
 
 @media only screen and (max-width: 920px) {
@@ -1343,10 +1506,26 @@ main section article div.artwork__info h1 {
 
 @media only screen and (max-width: 760px) {
   main section article div.artwork__info h1 {
+    font-size: 140px;
+    line-height: 160px;
+    margin-bottom: 40px;
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  main section article div.artwork__info h1 {
+    font-size: 120px;
+    line-height: 140px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  main section article div.artwork__info h1 {
     font-size: 100px;
     line-height: 120px;
     margin-bottom: 40px;
-    width: 260px;
+    width: auto;
   }
 }
 
@@ -1371,9 +1550,9 @@ main section article div.artwork__info div.radial-beams-paragraphs {
 @media only screen and (max-width: 1120px) {
   main section article div.artwork__info div.radial-beams-paragraphs {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -1397,10 +1576,51 @@ main section article div.artwork__info div.radial-beams-paragraphs img.radial-be
   }
 }
 
+@media only screen and (max-width: 1120px) {
+  main section article div.artwork__info div.radial-beams-paragraphs img.radial-beams {
+    margin-bottom: 60px;
+    position: absolute;
+    bottom: -49%;
+    right: 4%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  main section article div.artwork__info div.radial-beams-paragraphs img.radial-beams {
+    bottom: -46%;
+    right: 4%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  main section article div.artwork__info div.radial-beams-paragraphs img.radial-beams {
+    bottom: -43%;
+    right: 4%;
+  }
+}
+
 @media only screen and (max-width: 760px) {
   main section article div.artwork__info div.radial-beams-paragraphs img.radial-beams {
+    bottom: -37%;
+    right: 4%;
     -webkit-animation: rotateReverse-sm2 30s linear 0s infinite;
             animation: rotateReverse-sm2 30s linear 0s infinite;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  main section article div.artwork__info div.radial-beams-paragraphs img.radial-beams {
+    bottom: -31%;
+    right: -4%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  main section article div.artwork__info div.radial-beams-paragraphs img.radial-beams {
+    bottom: -28%;
+    right: -4%;
   }
 }
 
@@ -1535,8 +1755,8 @@ main section article div.artwork__info div.radial-beams-paragraphs div.paragraph
 
 main section div.lines {
   position: absolute;
-  bottom: -3%;
-  left: 80%;
+  bottom: -2%;
+  left: 28%;
   width: 84px;
   height: 68.11px;
   -webkit-transform: translate(-50%, -50%);
@@ -1545,6 +1765,7 @@ main section div.lines {
 
 @media only screen and (max-width: 760px) {
   main section div.lines {
+    left: 22%;
     -webkit-transform: translate(-50%, -50%) scale(0.8);
             transform: translate(-50%, -50%) scale(0.8);
   }
