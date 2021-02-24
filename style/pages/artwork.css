@@ -1183,8 +1183,27 @@ main section article {
 }
 
 main section article div.img-wrapper {
+  width: 60%;
   position: relative;
   margin-bottom: 260px;
+}
+
+@media only screen and (max-width: 1380px) {
+  main section article div.img-wrapper {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  main section article div.img-wrapper {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  main section article div.img-wrapper {
+    width: 100%;
+  }
 }
 
 main section article div.img-wrapper div.lines {
@@ -1222,7 +1241,7 @@ main section article div.img-wrapper div.lines div.line-h {
 }
 
 main section article div.img-wrapper div.img-container {
-  width: 60%;
+  width: 100%;
   height: auto;
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
@@ -1239,24 +1258,6 @@ main section article div.img-wrapper div.img-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-@media only screen and (max-width: 1380px) {
-  main section article div.img-wrapper div.img-container {
-    width: 70%;
-  }
-}
-
-@media only screen and (max-width: 920px) {
-  main section article div.img-wrapper div.img-container {
-    width: 80%;
-  }
-}
-
-@media only screen and (max-width: 760px) {
-  main section article div.img-wrapper div.img-container {
-    width: 100%;
-  }
 }
 
 main section article div.img-wrapper div.img-container img {
