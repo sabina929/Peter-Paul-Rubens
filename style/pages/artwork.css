@@ -353,7 +353,6 @@ header.big-screen .logo {
 }
 
 header.big-screen .logo a {
-  width: 120px;
   height: auto;
   outline: none;
   display: -webkit-box;
@@ -495,7 +494,7 @@ header.big-screen div.header-nav-search-menu-btns div.search-menu-btns .menu-btn
 
 @media only screen and (max-width: 1260px) {
   header.big-screen div.header-nav-search-menu-btns div.search-menu-btns .menu-btn {
-    width: 50px;
+    width: 46px;
   }
 }
 
@@ -526,7 +525,7 @@ header.big-screen div.header-nav-search-menu-btns div.search-menu-btns .menu-btn
 
 @media only screen and (max-width: 1260px) {
   header.big-screen div.header-nav-search-menu-btns div.search-menu-btns .menu-btn button {
-    width: 50px;
+    width: 46px;
   }
 }
 
@@ -895,6 +894,12 @@ footer#contact.big-screen article.upper::after {
 
 @media only screen and (max-width: 760px) {
   footer#contact.big-screen article.upper::after {
+    width: 78%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  footer#contact.big-screen article.upper::after {
     width: 80%;
   }
 }
@@ -1137,6 +1142,7 @@ main section {
           align-items: center;
   width: 100%;
   height: auto;
+  position: relative;
 }
 
 main section article {
@@ -1176,12 +1182,50 @@ main section article {
   }
 }
 
-main section article div.img-container {
+main section article div.img-wrapper {
+  position: relative;
+  margin-bottom: 260px;
+}
+
+main section article div.img-wrapper div.lines {
+  position: absolute;
+  top: -28%;
+  left: 27%;
+  width: 168px;
+  height: 68.11px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 760px) {
+  main section article div.img-wrapper div.lines {
+    -webkit-transform: translate(-50%, -50%) scale(0.8);
+            transform: translate(-50%, -50%) scale(0.8);
+  }
+}
+
+main section article div.img-wrapper div.lines div.line-v {
+  width: 1px;
+  height: 68.11px;
+  background-color: #AD8E55;
+}
+
+main section article div.img-wrapper div.lines div.line-h {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 168px;
+  height: 1px;
+  background-color: #AD8E55;
+}
+
+main section article div.img-wrapper div.img-container {
   width: 60%;
   height: auto;
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
-  margin-bottom: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1198,28 +1242,58 @@ main section article div.img-container {
 }
 
 @media only screen and (max-width: 1380px) {
-  main section article div.img-container {
+  main section article div.img-wrapper div.img-container {
     width: 70%;
   }
 }
 
 @media only screen and (max-width: 920px) {
-  main section article div.img-container {
+  main section article div.img-wrapper div.img-container {
     width: 80%;
   }
 }
 
 @media only screen and (max-width: 760px) {
-  main section article div.img-container {
+  main section article div.img-wrapper div.img-container {
     width: 100%;
   }
 }
 
-main section article div.img-container img {
+main section article div.img-wrapper div.img-container img {
   width: 100%;
   height: auto;
   -webkit-transition: all .2s ease-out;
   transition: all .2s ease-out;
+}
+
+main section article div.img-wrapper div.scroll-down {
+  position: absolute;
+  top: 82%;
+  left: 88%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 760px) {
+  main section article div.img-wrapper div.scroll-down {
+    top: 160%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(0.9);
+            transform: translate(-50%, -50%) scale(0.9);
+  }
+}
+
+main section article div.img-wrapper div.scroll-down img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+main section article div.img-wrapper div.scroll-down img.circle-text {
+  -webkit-animation: rotate 30s linear 0s infinite;
+          animation: rotate 30s linear 0s infinite;
 }
 
 main section article div.artwork__info {
@@ -1254,6 +1328,7 @@ main section article div.artwork__info {
 
 @media only screen and (max-width: 760px) {
   main section article div.artwork__info {
+    margin-bottom: 80px;
     width: 100%;
   }
 }
@@ -1263,6 +1338,15 @@ main section article div.artwork__info h1 {
   line-height: 210px;
   margin-bottom: 60px;
   width: 490px;
+}
+
+@media only screen and (max-width: 760px) {
+  main section article div.artwork__info h1 {
+    font-size: 100px;
+    line-height: 120px;
+    margin-bottom: 40px;
+    width: 260px;
+  }
 }
 
 main section article div.artwork__info div.radial-beams-paragraphs {
@@ -1344,6 +1428,12 @@ main section article div.artwork__info div.radial-beams-paragraphs div.paragraph
   }
 }
 
+@media only screen and (max-width: 760px) {
+  main section article div.artwork__info div.radial-beams-paragraphs div.paragraphs {
+    margin-bottom: 120px;
+  }
+}
+
 main section article div.artwork__info div.radial-beams-paragraphs div.paragraphs p {
   font-size: 22px;
   letter-spacing: 1px;
@@ -1375,6 +1465,12 @@ main section article div.artwork__info div.radial-beams-paragraphs div.paragraph
           align-items: center;
 }
 
+@media only screen and (max-width: 760px) {
+  main section article div.artwork__info div.radial-beams-paragraphs div.paragraphs div.pagination {
+    left: 69%;
+  }
+}
+
 main section article div.artwork__info div.radial-beams-paragraphs div.paragraphs div.pagination img.prev-arrow {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -1396,6 +1492,12 @@ main section article div.artwork__info div.radial-beams-paragraphs div.paragraph
       -ms-flex-align: end;
           align-items: flex-end;
   margin: 0 32px;
+}
+
+@media only screen and (max-width: 760px) {
+  main section article div.artwork__info div.radial-beams-paragraphs div.paragraphs div.pagination div.pages {
+    margin: 0 12px;
+  }
 }
 
 main section article div.artwork__info div.radial-beams-paragraphs div.paragraphs div.pagination div.pages p.current-page {
@@ -1428,6 +1530,40 @@ main section article div.artwork__info div.radial-beams-paragraphs div.paragraph
   background-color: transparent;
   border: none;
   outline: none;
+}
+
+main section div.lines {
+  position: absolute;
+  bottom: -3%;
+  left: 80%;
+  width: 84px;
+  height: 68.11px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 760px) {
+  main section div.lines {
+    -webkit-transform: translate(-50%, -50%) scale(0.8);
+            transform: translate(-50%, -50%) scale(0.8);
+  }
+}
+
+main section div.lines div.line-v {
+  width: 1px;
+  height: 68.11px;
+  background-color: #AD8E55;
+}
+
+main section div.lines div.line-h {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 168px;
+  height: 1px;
+  background-color: #AD8E55;
 }
 
 div.loading-screen {

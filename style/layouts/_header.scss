@@ -45,7 +45,7 @@ header.big-screen {
           
         }
             a {
-              width: 120px;
+              // width: 100px;
               height: auto;
               outline: none;
               display: flex;
@@ -205,7 +205,7 @@ header.big-screen {
             z-index: 99999;
 
             @media only screen and (max-width: 1260px) {
-              width: 50px;
+              width: 46px;
             }
     
             button{
@@ -224,7 +224,7 @@ header.big-screen {
                 cursor: pointer;
 
                 @media only screen and (max-width: 1260px) {
-                  width: 50px;
+                  width: 46px;
                 }
     
                 .menu-icon{

@@ -353,7 +353,6 @@ header.big-screen .logo {
 }
 
 header.big-screen .logo a {
-  width: 120px;
   height: auto;
   outline: none;
   display: -webkit-box;
@@ -495,7 +494,7 @@ header.big-screen div.header-nav-search-menu-btns div.search-menu-btns .menu-btn
 
 @media only screen and (max-width: 1260px) {
   header.big-screen div.header-nav-search-menu-btns div.search-menu-btns .menu-btn {
-    width: 50px;
+    width: 46px;
   }
 }
 
@@ -526,7 +525,7 @@ header.big-screen div.header-nav-search-menu-btns div.search-menu-btns .menu-btn
 
 @media only screen and (max-width: 1260px) {
   header.big-screen div.header-nav-search-menu-btns div.search-menu-btns .menu-btn button {
-    width: 50px;
+    width: 46px;
   }
 }
 
@@ -894,6 +893,12 @@ footer#contact.big-screen article.upper::after {
 }
 
 @media only screen and (max-width: 760px) {
+  footer#contact.big-screen article.upper::after {
+    width: 78%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
   footer#contact.big-screen article.upper::after {
     width: 80%;
   }
