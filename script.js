@@ -796,8 +796,6 @@ myFunction(mediaQuery);
 mediaQuery.addEventListener('change', myFunction);
 
 
-
-
 // --------------------
 const slider = document.querySelector('.artworks-container');
 

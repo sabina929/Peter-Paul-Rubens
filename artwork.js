@@ -202,48 +202,237 @@ const imgContainer = document.querySelector(".img-container");
 const tracker = document.querySelector(".cursor");
 
 
-imgContainer.addEventListener('mousemove', function(e) {
-    const pos = this.getBoundingClientRect();
-    const mx = e.clientX - pos.left - pos.width/2; 
-    const my = e.clientY - pos.top - pos.height/2;
-    //  console.log(this, pos)
-    this.style.transform = 'translate('+ mx * 0.15 +'px, '+ my * 0.2 +'px)';
-    this.style.transform += 'rotate3d('+ mx * -0.05 +', '+ my * -0.1 +', 0, 12deg)';
-    this.children[0].style.transform = 'translate('+ mx * 0.025 +'px, '+ my * 0.075 +'px) scale(1.01)';
-    // this.style.transform = 'translate('+ mx * 0.3 +'px, '+ my * 0.6 +'px)';
-    // this.style.transform += 'rotate3d('+ mx * -0.1 +', '+ my * -0.3 +', 0, 12deg)';
-    // this.children[0].style.transform = 'translate('+ mx * 0.075 +'px, '+ my * 0.125 +'px) scale(1.1)';
+// imgContainer.addEventListener('mousemove', function(e) {
+//     const pos = this.getBoundingClientRect();
+//     const mx = e.clientX - pos.left - pos.width/2; 
+//     const my = e.clientY - pos.top - pos.height/2;
+//     //  console.log(this, pos)
+//     this.style.transform = 'translate('+ mx * 0.15 +'px, '+ my * 0.2 +'px)';
+//     this.style.transform += 'rotate3d('+ mx * -0.05 +', '+ my * -0.1 +', 0, 12deg)';
+//     this.children[0].style.transform = 'translate('+ mx * 0.025 +'px, '+ my * 0.075 +'px) scale(1.01)';
+//     // this.style.transform = 'translate('+ mx * 0.3 +'px, '+ my * 0.6 +'px)';
+//     // this.style.transform += 'rotate3d('+ mx * -0.1 +', '+ my * -0.3 +', 0, 12deg)';
+//     // this.children[0].style.transform = 'translate('+ mx * 0.075 +'px, '+ my * 0.125 +'px) scale(1.1)';
   
     
-  })
+// })
+
+// imgContainer.addEventListener('mouseleave', function() {
+//   this.style.transform = 'translate3d(0px, 0px, 0px)';
+//   this.style.transform += 'rotate3d(0, 0, 0, 0deg)';
+//   this.children[0].style.transform = 'translate3d(0px, 0px, 0px) scale(1)';
+
+// })
+
+// // FOOTER
+// copyright.addEventListener('mousemove', function(e) {
+//   tracker.classList.add('active')
+// })
+// copyright.addEventListener('mouseleave', function() {
+//   tracker.classList.remove('active')
+// })
+// privacyTerms.addEventListener('mousemove', function(e) {
+//   tracker.classList.add('active')
+// })
+// privacyTerms.addEventListener('mouseleave', function() {
+//   tracker.classList.remove('active')
+// })
+// developedBy.addEventListener('mousemove', function(e) {
+//   tracker.classList.add('active')
+// })
+// developedBy.addEventListener('mouseleave', function() {
+//   tracker.classList.remove('active')
+// })
+// socialIcons.forEach(socialIcon => socialIcon.addEventListener('mousemove', function(e) {
+//   const pos = this.getBoundingClientRect();
+//   const mx = e.clientX - pos.left - pos.width/2; 
+//   const my = e.clientY - pos.top - pos.height/2;
+
+//   //  console.log(this, pos)
+//   this.style.transform = 'translate('+ mx * 0.3 +'px, '+ my * 0.6 +'px)';
+//   this.style.transform += 'rotate3d('+ mx * -0.1 +', '+ my * -0.3 +', 0, 12deg)';
+//   this.children[0].style.transform = 'translate('+ mx * 0.075 +'px, '+ my * 0.125 +'px)';
+
+//   tracker.classList.add('active')
+// }));
+
+// socialIcons.forEach(socialIcon => socialIcon.addEventListener('mouseleave', function() {
+//   this.style.transform = 'translate3d(0px, 0px, 0px)';
+//   this.style.transform += 'rotate3d(0, 0, 0, 0deg)';
+//   this.children[0].style.transform = 'translate3d(0px, 0px, 0px)';
+//   // this.classList.remove('active')
+//   tracker.classList.remove('active')
+// }));
+
+// // MENU NAV ITEMS
+// menuNavItems.forEach(navItem => navItem.addEventListener('mousemove', function(e) {
+//   const pos = this.getBoundingClientRect();
+//   const mx = e.clientX - pos.left - pos.width/2; 
+//   const my = e.clientY - pos.top - pos.height/2;
+
+//   //  console.log(this, pos)
+//   this.style.transform = 'translate('+ mx * 0.3 +'px, '+ my * 0.6 +'px)';
+//   this.style.transform += 'rotate3d('+ mx * -0.1 +', '+ my * -0.3 +', 0, 12deg)';
+//   this.children[0].style.transform = 'translate('+ mx * 0.075 +'px, '+ my * 0.125 +'px)';
+
+//   tracker.classList.add('active')
+// }));
+
+// menuNavItems.forEach(navItem => navItem.addEventListener('mouseleave', function() {
+//   this.style.transform = 'translate3d(0px, 0px, 0px)';
+//   this.style.transform += 'rotate3d(0, 0, 0, 0deg)';
+//   this.children[0].style.transform = 'translate3d(0px, 0px, 0px)';
+//   // this.classList.remove('active')
+//   tracker.classList.remove('active')
+// }));
+
+// menuContactText.addEventListener('mousemove', function(e) {
+//   tracker.classList.add('active')
   
-  imgContainer.addEventListener('mouseleave', function() {
-    this.style.transform = 'translate3d(0px, 0px, 0px)';
-    this.style.transform += 'rotate3d(0, 0, 0, 0deg)';
-    this.children[0].style.transform = 'translate3d(0px, 0px, 0px) scale(1)';
-  
-  })
+// })
+
+// menuContactText.addEventListener('mouseleave', function() {
+//   tracker.classList.remove('active')
+
+// })
+
+
+
+// //NAV ITEMS
+// navItems.forEach(navItem => navItem.addEventListener('mousemove', function(e) {
+//   const pos = this.getBoundingClientRect();
+//   const mx = e.clientX - pos.left - pos.width/2; 
+//   const my = e.clientY - pos.top - pos.height/2;
+//   //  console.log(this, pos)
+//   this.style.transform = 'translate('+ mx * 0.3 +'px, '+ my * 0.6 +'px)';
+//   this.style.transform += 'rotate3d('+ mx * -0.1 +', '+ my * -0.3 +', 0, 12deg)';
+//   this.children[0].style.transform = 'translate('+ mx * 0.075 +'px, '+ my * 0.125 +'px)';
+
+//   // this.classList.add('active')
+//   tracker.classList.add('active')
+// }));
+
+// navItems.forEach(navItem => navItem.addEventListener('mouseleave', function() {
+//   this.style.transform = 'translate3d(0px, 0px, 0px)';
+//   this.style.transform += 'rotate3d(0, 0, 0, 0deg)';
+//   this.children[0].style.transform = 'translate3d(0px, 0px, 0px)';
+//   // this.classList.remove('active')
+//   tracker.classList.remove('active')
+// }));
+
+// // SEARCH BTN
+// searchBtn.addEventListener('mousemove', function(e) {
+//   const pos = this.getBoundingClientRect();
+//   const mx = e.clientX - pos.left - pos.width/2; 
+//   const my = e.clientY - pos.top - pos.height/2;
+//   //  console.log(this, pos)
+//   this.style.transform = 'translate('+ mx * 0.3 +'px, '+ my * 0.6 +'px)';
+//   this.style.transform += 'rotate3d('+ mx * -0.1 +', '+ my * -0.3 +', 0, 12deg)';
+//   this.children[0].style.transform = 'translate('+ mx * 0.075 +'px, '+ my * 0.125 +'px)';
+
+//   // this.classList.add('active')
+//   tracker.classList.add('active')
+// })
+
+// searchBtn.addEventListener('mouseleave', function() {
+//   this.style.transform = 'translate3d(0px, 0px, 0px)';
+//   this.style.transform += 'rotate3d(0, 0, 0, 0deg)';
+//   this.children[0].style.transform = 'translate3d(0px, 0px, 0px)';
+//   // this.classList.remove('active')
+//   tracker.classList.remove('active')
+// })
+
+// // MENU BTN
+// menuBtn.addEventListener('mousemove', function(e) {
+//   const pos = this.getBoundingClientRect();
+//   const mx = e.clientX - pos.left - pos.width/2; 
+//   const my = e.clientY - pos.top - pos.height/2;
+//   //  console.log(this, pos)
+//   this.style.transform = 'translate('+ mx * 0.3 +'px, '+ my * 0.6 +'px)';
+//   this.style.transform += 'rotate3d('+ mx * -0.1 +', '+ my * -0.3 +', 0, 12deg)';
+//   this.children[0].style.transform = 'translate('+ mx * 0.075 +'px, '+ my * 0.125 +'px)';
+
+//   // this.classList.add('active')
+//   tracker.classList.add('active')
+// })
+
+// menuBtn.addEventListener('mouseleave', function() {
+//   this.style.transform = 'translate3d(0px, 0px, 0px)';
+//   this.style.transform += 'rotate3d(0, 0, 0, 0deg)';
+//   this.children[0].style.transform = 'translate3d(0px, 0px, 0px)';
+//   // this.classList.remove('active')
+//   tracker.classList.remove('active')
+// })
+// // LOGO
+// logo.addEventListener('mousemove', function(e) {
+//   const pos = this.getBoundingClientRect();
+//   const mx = e.clientX - pos.left - pos.width/2; 
+//   const my = e.clientY - pos.top - pos.height/2;
+//   //  console.log(this, pos)
+//   this.style.transform = 'translate('+ mx * 0.3 +'px, '+ my * 0.6 +'px)';
+//   this.style.transform += 'rotate3d('+ mx * -0.1 +', '+ my * -0.3 +', 0, 12deg)';
+//   this.children[0].style.transform = 'translate('+ mx * 0.075 +'px, '+ my * 0.125 +'px)';
+
+//   // this.classList.add('active')
+//   tracker.classList.add('active')
+// })
+
+// logo.addEventListener('mouseleave', function() {
+//   this.style.transform = 'translate3d(0px, 0px, 0px)';
+//   this.style.transform += 'rotate3d(0, 0, 0, 0deg)';
+//   this.children[0].style.transform = 'translate3d(0px, 0px, 0px)';
+//   // this.classList.remove('active')
+//   tracker.classList.remove('active')
+// })
+
+// document.addEventListener("mousemove", e => {
+//   tracker.setAttribute(
+//     "style",
+//     "top: " + (e.pageY - 15) + "px; left: " + (e.pageX - 15) + "px;"
+//   );
+// });
+
+
+// IMG CONTAINER
+function interactWithImgContainer(e){
+  const pos = this.getBoundingClientRect();
+  const mx = e.clientX - pos.left - pos.width/2; 
+  const my = e.clientY - pos.top - pos.height/2;
+  //  console.log(this, pos)
+  this.style.transform = 'translate('+ mx * 0.15 +'px, '+ my * 0.2 +'px)';
+  this.style.transform += 'rotate3d('+ mx * -0.05 +', '+ my * -0.1 +', 0, 12deg)';
+  this.children[0].style.transform = 'translate('+ mx * 0.025 +'px, '+ my * 0.075 +'px) scale(1.01)';
+  // this.style.transform = 'translate('+ mx * 0.3 +'px, '+ my * 0.6 +'px)';
+  // this.style.transform += 'rotate3d('+ mx * -0.1 +', '+ my * -0.3 +', 0, 12deg)';
+  // this.children[0].style.transform = 'translate('+ mx * 0.075 +'px, '+ my * 0.125 +'px) scale(1.1)';
+}
+function dontInteractWithImgContainer(e){
+  this.style.transform = 'translate3d(0px, 0px, 0px)';
+  this.style.transform += 'rotate3d(0, 0, 0, 0deg)';
+  this.children[0].style.transform = 'translate3d(0px, 0px, 0px) scale(1)';
+}
+
 
 // FOOTER
-copyright.addEventListener('mousemove', function(e) {
+function interactWithCopyright(e) {
   tracker.classList.add('active')
-})
-copyright.addEventListener('mouseleave', function() {
+}
+function dontInteractWithCopyright(e) {
   tracker.classList.remove('active')
-})
-privacyTerms.addEventListener('mousemove', function(e) {
+}
+function interactWithPrivacyTerms(e) {
   tracker.classList.add('active')
-})
-privacyTerms.addEventListener('mouseleave', function() {
+}
+function dontInteractWithPrivacyTerms(e) {
   tracker.classList.remove('active')
-})
-developedBy.addEventListener('mousemove', function(e) {
+}
+function interactWithDevelopedBy(e) {
   tracker.classList.add('active')
-})
-developedBy.addEventListener('mouseleave', function() {
+}
+function dontInteractWithDevelopedBy(e) {
   tracker.classList.remove('active')
-})
-socialIcons.forEach(socialIcon => socialIcon.addEventListener('mousemove', function(e) {
+}
+function interactWithSocialIcon(e) {
   const pos = this.getBoundingClientRect();
   const mx = e.clientX - pos.left - pos.width/2; 
   const my = e.clientY - pos.top - pos.height/2;
@@ -254,18 +443,17 @@ socialIcons.forEach(socialIcon => socialIcon.addEventListener('mousemove', funct
   this.children[0].style.transform = 'translate('+ mx * 0.075 +'px, '+ my * 0.125 +'px)';
 
   tracker.classList.add('active')
-}));
-
-socialIcons.forEach(socialIcon => socialIcon.addEventListener('mouseleave', function() {
+}
+function dontInteractWithSocialIcon(e) {
   this.style.transform = 'translate3d(0px, 0px, 0px)';
   this.style.transform += 'rotate3d(0, 0, 0, 0deg)';
   this.children[0].style.transform = 'translate3d(0px, 0px, 0px)';
   // this.classList.remove('active')
   tracker.classList.remove('active')
-}));
+}
 
 // MENU NAV ITEMS
-menuNavItems.forEach(navItem => navItem.addEventListener('mousemove', function(e) {
+function interactWithNavItem(e){
   const pos = this.getBoundingClientRect();
   const mx = e.clientX - pos.left - pos.width/2; 
   const my = e.clientY - pos.top - pos.height/2;
@@ -276,30 +464,25 @@ menuNavItems.forEach(navItem => navItem.addEventListener('mousemove', function(e
   this.children[0].style.transform = 'translate('+ mx * 0.075 +'px, '+ my * 0.125 +'px)';
 
   tracker.classList.add('active')
-}));
-
-menuNavItems.forEach(navItem => navItem.addEventListener('mouseleave', function() {
+}
+function dontInteractWithNavItem(e){
   this.style.transform = 'translate3d(0px, 0px, 0px)';
   this.style.transform += 'rotate3d(0, 0, 0, 0deg)';
   this.children[0].style.transform = 'translate3d(0px, 0px, 0px)';
   // this.classList.remove('active')
   tracker.classList.remove('active')
-}));
+}
 
-menuContactText.addEventListener('mousemove', function(e) {
+function interactWithMenuContactText(e){
   tracker.classList.add('active')
-  
-})
-
-menuContactText.addEventListener('mouseleave', function() {
+}
+function dontInteractWithMenuContactText(e){
   tracker.classList.remove('active')
-
-})
-
+}
 
 
 //NAV ITEMS
-navItems.forEach(navItem => navItem.addEventListener('mousemove', function(e) {
+function interactWithNavItem(e){
   const pos = this.getBoundingClientRect();
   const mx = e.clientX - pos.left - pos.width/2; 
   const my = e.clientY - pos.top - pos.height/2;
@@ -310,18 +493,17 @@ navItems.forEach(navItem => navItem.addEventListener('mousemove', function(e) {
 
   // this.classList.add('active')
   tracker.classList.add('active')
-}));
-
-navItems.forEach(navItem => navItem.addEventListener('mouseleave', function() {
+}
+function dontInteractWithNavItem(e){
   this.style.transform = 'translate3d(0px, 0px, 0px)';
   this.style.transform += 'rotate3d(0, 0, 0, 0deg)';
   this.children[0].style.transform = 'translate3d(0px, 0px, 0px)';
   // this.classList.remove('active')
   tracker.classList.remove('active')
-}));
+}
 
 // SEARCH BTN
-searchBtn.addEventListener('mousemove', function(e) {
+function interactWithSearchBtn(e){
   const pos = this.getBoundingClientRect();
   const mx = e.clientX - pos.left - pos.width/2; 
   const my = e.clientY - pos.top - pos.height/2;
@@ -332,18 +514,17 @@ searchBtn.addEventListener('mousemove', function(e) {
 
   // this.classList.add('active')
   tracker.classList.add('active')
-})
-
-searchBtn.addEventListener('mouseleave', function() {
+}
+function dontInteractWithSearchBtn(e){
   this.style.transform = 'translate3d(0px, 0px, 0px)';
   this.style.transform += 'rotate3d(0, 0, 0, 0deg)';
   this.children[0].style.transform = 'translate3d(0px, 0px, 0px)';
   // this.classList.remove('active')
   tracker.classList.remove('active')
-})
+}
 
 // MENU BTN
-menuBtn.addEventListener('mousemove', function(e) {
+function interactWithMenuBtn(e){
   const pos = this.getBoundingClientRect();
   const mx = e.clientX - pos.left - pos.width/2; 
   const my = e.clientY - pos.top - pos.height/2;
@@ -354,17 +535,17 @@ menuBtn.addEventListener('mousemove', function(e) {
 
   // this.classList.add('active')
   tracker.classList.add('active')
-})
-
-menuBtn.addEventListener('mouseleave', function() {
+}
+function dontInteractWithMenuBtn(e){
   this.style.transform = 'translate3d(0px, 0px, 0px)';
   this.style.transform += 'rotate3d(0, 0, 0, 0deg)';
   this.children[0].style.transform = 'translate3d(0px, 0px, 0px)';
   // this.classList.remove('active')
   tracker.classList.remove('active')
-})
+}
+
 // LOGO
-logo.addEventListener('mousemove', function(e) {
+function interactWithLogo(e){
   const pos = this.getBoundingClientRect();
   const mx = e.clientX - pos.left - pos.width/2; 
   const my = e.clientY - pos.top - pos.height/2;
@@ -375,19 +556,105 @@ logo.addEventListener('mousemove', function(e) {
 
   // this.classList.add('active')
   tracker.classList.add('active')
-})
-
-logo.addEventListener('mouseleave', function() {
+}
+function dontInteractWithLogo(e){
   this.style.transform = 'translate3d(0px, 0px, 0px)';
   this.style.transform += 'rotate3d(0, 0, 0, 0deg)';
   this.children[0].style.transform = 'translate3d(0px, 0px, 0px)';
   // this.classList.remove('active')
   tracker.classList.remove('active')
-})
+}
 
-document.addEventListener("mousemove", e => {
-  tracker.setAttribute(
-    "style",
-    "top: " + (e.pageY - 15) + "px; left: " + (e.pageX - 15) + "px;"
-  );
-});
+
+
+// MOUSE TRACKER
+const mediaQuery = window.matchMedia("(min-width: 1120px)");
+function myFunction(mediaQuery) {
+  if (mediaQuery.matches) {
+    // IMG CONTAINER
+    imgContainer.addEventListener('mousemove', interactWithImgContainer)
+    imgContainer.addEventListener('mouseleave', dontInteractWithImgContainer)
+
+    // FOOTER
+    copyright.addEventListener('mousemove', interactWithCopyright)
+    copyright.addEventListener('mouseleave', dontInteractWithCopyright)
+    privacyTerms.addEventListener('mousemove', interactWithPrivacyTerms)
+    privacyTerms.addEventListener('mouseleave', dontInteractWithPrivacyTerms)
+    developedBy.addEventListener('mousemove', interactWithDevelopedBy)
+    developedBy.addEventListener('mouseleave', dontInteractWithDevelopedBy)
+    socialIcons.forEach(socialIcon => socialIcon.addEventListener('mousemove', interactWithSocialIcon));
+    socialIcons.forEach(socialIcon => socialIcon.addEventListener('mouseleave', dontInteractWithSocialIcon));
+
+    // MENU NAV ITEMS
+    menuNavItems.forEach(navItem => navItem.addEventListener('mousemove', interactWithNavItem));
+    menuNavItems.forEach(navItem => navItem.addEventListener('mouseleave', dontInteractWithNavItem));
+    menuContactText.addEventListener('mousemove', interactWithMenuContactText)
+    menuContactText.addEventListener('mouseleave', dontInteractWithMenuContactText)
+
+    //NAV ITEMS
+    navItems.forEach(navItem => navItem.addEventListener('mousemove', interactWithNavItem));
+    navItems.forEach(navItem => navItem.addEventListener('mouseleave', dontInteractWithNavItem));
+
+    // SEARCH BTN
+    searchBtn.addEventListener('mousemove', interactWithSearchBtn)
+    searchBtn.addEventListener('mouseleave', dontInteractWithSearchBtn)
+
+    // MENU BTN
+    menuBtn.addEventListener('mousemove', interactWithMenuBtn)
+    menuBtn.addEventListener('mouseleave', dontInteractWithMenuBtn)
+
+    // LOGO
+    logo.addEventListener('mousemove', interactWithLogo)
+    logo.addEventListener('mouseleave', dontInteractWithLogo)
+
+    const tracker = document.querySelector(".cursor");
+      document.addEventListener("mousemove", e => {
+        tracker.setAttribute(
+          "style",
+          "top: " + (e.pageY - 15) + "px; left: " + (e.pageX - 15) + "px;"
+        );
+      });
+      
+  } else {
+        // IMG CONTAINER
+        imgContainer.removeEventListener('mousemove', interactWithImgContainer)
+        imgContainer.removeEventListener('mouseleave', dontInteractWithImgContainer)
+
+        // FOOTER
+        copyright.removeEventListener('mousemove', interactWithCopyright)
+        copyright.removeEventListener('mouseleave', dontInteractWithCopyright)
+        privacyTerms.removeEventListener('mousemove', interactWithPrivacyTerms)
+        privacyTerms.removeEventListener('mouseleave', dontInteractWithPrivacyTerms)
+        developedBy.removeEventListener('mousemove', interactWithDevelopedBy)
+        developedBy.removeEventListener('mouseleave', dontInteractWithDevelopedBy)
+        socialIcons.forEach(socialIcon => socialIcon.removeEventListener('mousemove', interactWithSocialIcon));
+        socialIcons.forEach(socialIcon => socialIcon.removeEventListener('mouseleave', dontInteractWithSocialIcon));
+    
+        // MENU NAV ITEMS
+        menuNavItems.forEach(navItem => navItem.removeEventListener('mousemove', interactWithNavItem));
+        menuNavItems.forEach(navItem => navItem.removeEventListener('mouseleave', dontInteractWithNavItem));
+        menuContactText.removeEventListener('mousemove', interactWithMenuContactText)
+        menuContactText.removeEventListener('mouseleave', dontInteractWithMenuContactText)
+    
+        //NAV ITEMS
+        navItems.forEach(navItem => navItem.removeEventListener('mousemove', interactWithNavItem));
+        navItems.forEach(navItem => navItem.removeEventListener('mouseleave', dontInteractWithNavItem));
+    
+        // SEARCH BTN
+        searchBtn.removeEventListener('mousemove', interactWithSearchBtn)
+        searchBtn.removeEventListener('mouseleave', dontInteractWithSearchBtn)
+    
+        // MENU BTN
+        menuBtn.removeEventListener('mousemove', interactWithMenuBtn)
+        menuBtn.removeEventListener('mouseleave', dontInteractWithMenuBtn)
+    
+        // LOGO
+        logo.removeEventListener('mousemove', interactWithLogo)
+        logo.removeEventListener('mouseleave', dontInteractWithLogo)
+
+      const tracker = document.querySelector(".cursor");
+      tracker.style.display = "none";
+  }
+}
+myFunction(mediaQuery);
+mediaQuery.addEventListener('change', myFunction);
