@@ -6,6 +6,7 @@ const loadigScreen = document.querySelector('div.loading-screen')
 // const loadigScreenLogo = document.querySelector('div.loading-screen>img')
 
 
+
 function loading() {      
       setTimeout(() => {
           // bodyEl.style.overflowY = "scroll"
@@ -206,26 +207,275 @@ const artworks = document.querySelectorAll(".artwork");
 // const artworkInfos = document.querySelectorAll(".artwork__info");
 const tracker = document.querySelector(".cursor");
 
+// // FOOTER
+// copyright.addEventListener('mousemove', function(e) {
+//   tracker.classList.add('active')
+// })
+// copyright.addEventListener('mouseleave', function() {
+//   tracker.classList.remove('active')
+// })
+// privacyTerms.addEventListener('mousemove', function(e) {
+//   tracker.classList.add('active')
+// })
+// privacyTerms.addEventListener('mouseleave', function() {
+//   tracker.classList.remove('active')
+// })
+// developedBy.addEventListener('mousemove', function(e) {
+//   tracker.classList.add('active')
+// })
+// developedBy.addEventListener('mouseleave', function() {
+//   tracker.classList.remove('active')
+// })
+// socialIcons.forEach(socialIcon => socialIcon.addEventListener('mousemove', function(e) {
+//   const pos = this.getBoundingClientRect();
+//   const mx = e.clientX - pos.left - pos.width/2; 
+//   const my = e.clientY - pos.top - pos.height/2;
+
+//   //  console.log(this, pos)
+//   this.style.transform = 'translate('+ mx * 0.3 +'px, '+ my * 0.6 +'px)';
+//   this.style.transform += 'rotate3d('+ mx * -0.1 +', '+ my * -0.3 +', 0, 12deg)';
+//   this.children[0].style.transform = 'translate('+ mx * 0.075 +'px, '+ my * 0.125 +'px)';
+
+//   tracker.classList.add('active')
+// }));
+
+// socialIcons.forEach(socialIcon => socialIcon.addEventListener('mouseleave', function() {
+//   this.style.transform = 'translate3d(0px, 0px, 0px)';
+//   this.style.transform += 'rotate3d(0, 0, 0, 0deg)';
+//   this.children[0].style.transform = 'translate3d(0px, 0px, 0px)';
+//   // this.classList.remove('active')
+//   tracker.classList.remove('active')
+// }));
+
+// // MENU NAV ITEMS
+// menuNavItems.forEach(navItem => navItem.addEventListener('mousemove', function(e) {
+//   const pos = this.getBoundingClientRect();
+//   const mx = e.clientX - pos.left - pos.width/2; 
+//   const my = e.clientY - pos.top - pos.height/2;
+
+//   //  console.log(this, pos)
+//   this.style.transform = 'translate('+ mx * 0.3 +'px, '+ my * 0.6 +'px)';
+//   this.style.transform += 'rotate3d('+ mx * -0.1 +', '+ my * -0.3 +', 0, 12deg)';
+//   this.children[0].style.transform = 'translate('+ mx * 0.075 +'px, '+ my * 0.125 +'px)';
+
+//   tracker.classList.add('active')
+// }));
+
+// menuNavItems.forEach(navItem => navItem.addEventListener('mouseleave', function() {
+//   this.style.transform = 'translate3d(0px, 0px, 0px)';
+//   this.style.transform += 'rotate3d(0, 0, 0, 0deg)';
+//   this.children[0].style.transform = 'translate3d(0px, 0px, 0px)';
+//   // this.classList.remove('active')
+//   tracker.classList.remove('active')
+// }));
+
+// menuContactText.addEventListener('mousemove', function(e) {
+//   tracker.classList.add('active')
+  
+// })
+
+// menuContactText.addEventListener('mouseleave', function() {
+//   tracker.classList.remove('active')
+
+// })
+
+
+// // HERO SECTION
+// headingPrimary.addEventListener('mousemove', function(e) {
+//   tracker.classList.add('active')
+  
+// })
+
+// headingPrimary.addEventListener('mouseleave', function() {
+//   tracker.classList.remove('active')
+
+// })
+// ctaBtn.addEventListener('mousemove', function(e) {
+//   tracker.classList.add('active')
+  
+// })
+
+// ctaBtn.addEventListener('mouseleave', function() {
+//   tracker.classList.remove('active')
+
+// })
+// heroSection.addEventListener('mousemove', function(e) {
+//   const pos = this.getBoundingClientRect();
+//   const mx = e.clientX - pos.left - pos.width/2; 
+//   const my = e.clientY - pos.top - pos.height/2;
+//   //  console.log(this, pos)
+
+//   const xWalk1 = (50 + mx*0.02)+1
+//   const yWalk1 = (50 + my*0.02)+1
+//   const xWalk2 = (82 + -mx*0.04)+0
+//   const yWalk2 = (3 + my*0.04)+0
+//   const xWalk3 = (-10.5 + mx*0.04)+0
+//   const yWalk3 = (76.5 + -my*0.04)+0
+//   heroImg.style.top = yWalk1 +'%';
+//   heroImg.style.left = xWalk1 +'%';
+//   headingPrimary.style.top = yWalk2 +'%';
+//   headingPrimary.style.left = xWalk2 +'%';
+//   ctaBtn.style.top = yWalk3 +'%';
+//   ctaBtn.style.left = xWalk3 +'%';
+//   // heroSection.style.transform = 'translate('+ mx * 0.3 +'px, '+ my * 0.6 +'px)';
+//   // heroSection.style.transform += 'rotate3d('+ mx * -0.1 +', '+ my * -0.3 +', 0, 12deg)';
+
+// })
+
+// heroSection.addEventListener('mouseleave', function() {
+//   heroImg.style.transform = 'translate3d(-50%, -50%, 0px)';
+//   heroImg.style.transform += 'rotate3d(0, 0, 0, 0deg)';
+//   headingPrimary.style.transform = 'translate3d(-50%, -50%, 0px)';
+//   headingPrimary.style.transform += 'rotate3d(0, 0, 0, 0deg)';
+//   ctaBtn.style.transform = 'translate3d(-50%, -50%, 0px)';
+//   ctaBtn.style.transform += 'rotate3d(0, 0, 0, 0deg)';
+//   // heroSection.style.transform = 'translate3d(0px, 0px, 0px)';
+//   // heroSection.style.transform += 'rotate3d(0, 0, 0, 0deg)';
+// })
+
+// // ABOUT
+// imgContainer.addEventListener('mousemove', function(e) {
+//   const pos = this.getBoundingClientRect();
+//   const mx = e.clientX - pos.left - pos.width/2; 
+//   const my = e.clientY - pos.top - pos.height/2;
+//   //  console.log(this, pos)
+//   this.style.transform = 'translate('+ mx * 0.3 +'px, '+ my * 0.6 +'px)';
+//   this.style.transform += 'rotate3d('+ mx * -0.1 +', '+ my * -0.3 +', 0, 12deg)';
+//   this.children[0].style.transform = 'translate('+ mx * 0.075 +'px, '+ my * 0.125 +'px)';
+
+  
+// })
+
+// imgContainer.addEventListener('mouseleave', function() {
+//   this.style.transform = 'translate3d(0px, 0px, 0px)';
+//   this.style.transform += 'rotate3d(0, 0, 0, 0deg)';
+//   this.children[0].style.transform = 'translate3d(0px, 0px, 0px)';
+
+// })
+// textContainer.addEventListener('mousemove', function(e) {
+//   tracker.classList.add('active')
+  
+// })
+
+// textContainer.addEventListener('mouseleave', function() {
+//   tracker.classList.remove('active')
+
+// })
+
+// //NAV ITEMS
+// navItems.forEach(navItem => navItem.addEventListener('mousemove', function(e) {
+//   const pos = this.getBoundingClientRect();
+//   const mx = e.clientX - pos.left - pos.width/2; 
+//   const my = e.clientY - pos.top - pos.height/2;
+//   //  console.log(this, pos)
+//   this.style.transform = 'translate('+ mx * 0.3 +'px, '+ my * 0.6 +'px)';
+//   this.style.transform += 'rotate3d('+ mx * -0.1 +', '+ my * -0.3 +', 0, 12deg)';
+//   this.children[0].style.transform = 'translate('+ mx * 0.075 +'px, '+ my * 0.125 +'px)';
+
+//   // this.classList.add('active')
+//   tracker.classList.add('active')
+// }));
+
+// navItems.forEach(navItem => navItem.addEventListener('mouseleave', function() {
+//   this.style.transform = 'translate3d(0px, 0px, 0px)';
+//   this.style.transform += 'rotate3d(0, 0, 0, 0deg)';
+//   this.children[0].style.transform = 'translate3d(0px, 0px, 0px)';
+//   // this.classList.remove('active')
+//   tracker.classList.remove('active')
+// }));
+
+// // SEARCH BTN
+// searchBtn.addEventListener('mousemove', function(e) {
+//   const pos = this.getBoundingClientRect();
+//   const mx = e.clientX - pos.left - pos.width/2; 
+//   const my = e.clientY - pos.top - pos.height/2;
+//   //  console.log(this, pos)
+//   this.style.transform = 'translate('+ mx * 0.3 +'px, '+ my * 0.6 +'px)';
+//   this.style.transform += 'rotate3d('+ mx * -0.1 +', '+ my * -0.3 +', 0, 12deg)';
+//   this.children[0].style.transform = 'translate('+ mx * 0.075 +'px, '+ my * 0.125 +'px)';
+
+//   // this.classList.add('active')
+//   tracker.classList.add('active')
+// })
+
+// searchBtn.addEventListener('mouseleave', function() {
+//   this.style.transform = 'translate3d(0px, 0px, 0px)';
+//   this.style.transform += 'rotate3d(0, 0, 0, 0deg)';
+//   this.children[0].style.transform = 'translate3d(0px, 0px, 0px)';
+//   // this.classList.remove('active')
+//   tracker.classList.remove('active')
+// })
+
+// // MENU BTN
+// menuBtn.addEventListener('mousemove', function(e) {
+//   const pos = this.getBoundingClientRect();
+//   const mx = e.clientX - pos.left - pos.width/2; 
+//   const my = e.clientY - pos.top - pos.height/2;
+//   //  console.log(this, pos)
+//   this.style.transform = 'translate('+ mx * 0.3 +'px, '+ my * 0.6 +'px)';
+//   this.style.transform += 'rotate3d('+ mx * -0.1 +', '+ my * -0.3 +', 0, 12deg)';
+//   this.children[0].style.transform = 'translate('+ mx * 0.075 +'px, '+ my * 0.125 +'px)';
+
+//   // this.classList.add('active')
+//   tracker.classList.add('active')
+// })
+
+// menuBtn.addEventListener('mouseleave', function() {
+//   this.style.transform = 'translate3d(0px, 0px, 0px)';
+//   this.style.transform += 'rotate3d(0, 0, 0, 0deg)';
+//   this.children[0].style.transform = 'translate3d(0px, 0px, 0px)';
+//   // this.classList.remove('active')
+//   tracker.classList.remove('active')
+// })
+// // LOGO
+// logo.addEventListener('mousemove', function(e) {
+//   const pos = this.getBoundingClientRect();
+//   const mx = e.clientX - pos.left - pos.width/2; 
+//   const my = e.clientY - pos.top - pos.height/2;
+//   //  console.log(this, pos)
+//   this.style.transform = 'translate('+ mx * 0.3 +'px, '+ my * 0.6 +'px)';
+//   this.style.transform += 'rotate3d('+ mx * -0.1 +', '+ my * -0.3 +', 0, 12deg)';
+//   this.children[0].style.transform = 'translate('+ mx * 0.075 +'px, '+ my * 0.125 +'px)';
+
+//   // this.classList.add('active')
+//   tracker.classList.add('active')
+// })
+
+// logo.addEventListener('mouseleave', function() {
+//   this.style.transform = 'translate3d(0px, 0px, 0px)';
+//   this.style.transform += 'rotate3d(0, 0, 0, 0deg)';
+//   this.children[0].style.transform = 'translate3d(0px, 0px, 0px)';
+//   // this.classList.remove('active')
+//   tracker.classList.remove('active')
+// })
+
+// document.addEventListener("mousemove", e => {
+//   tracker.setAttribute(
+//     "style",
+//     "top: " + (e.pageY - 15) + "px; left: " + (e.pageX - 15) + "px;"
+//   );
+// });
+
 // FOOTER
-copyright.addEventListener('mousemove', function(e) {
+function interactWithCopyright(e) {
   tracker.classList.add('active')
-})
-copyright.addEventListener('mouseleave', function() {
+}
+function dontInteractWithCopyright(e) {
   tracker.classList.remove('active')
-})
-privacyTerms.addEventListener('mousemove', function(e) {
+}
+function interactWithPrivacyTerms(e) {
   tracker.classList.add('active')
-})
-privacyTerms.addEventListener('mouseleave', function() {
+}
+function dontInteractWithPrivacyTerms(e) {
   tracker.classList.remove('active')
-})
-developedBy.addEventListener('mousemove', function(e) {
+}
+function interactWithDevelopedBy(e) {
   tracker.classList.add('active')
-})
-developedBy.addEventListener('mouseleave', function() {
+}
+function dontInteractWithDevelopedBy(e) {
   tracker.classList.remove('active')
-})
-socialIcons.forEach(socialIcon => socialIcon.addEventListener('mousemove', function(e) {
+}
+function interactWithSocialIcon(e) {
   const pos = this.getBoundingClientRect();
   const mx = e.clientX - pos.left - pos.width/2; 
   const my = e.clientY - pos.top - pos.height/2;
@@ -236,18 +486,17 @@ socialIcons.forEach(socialIcon => socialIcon.addEventListener('mousemove', funct
   this.children[0].style.transform = 'translate('+ mx * 0.075 +'px, '+ my * 0.125 +'px)';
 
   tracker.classList.add('active')
-}));
-
-socialIcons.forEach(socialIcon => socialIcon.addEventListener('mouseleave', function() {
+}
+function dontInteractWithSocialIcon(e) {
   this.style.transform = 'translate3d(0px, 0px, 0px)';
   this.style.transform += 'rotate3d(0, 0, 0, 0deg)';
   this.children[0].style.transform = 'translate3d(0px, 0px, 0px)';
   // this.classList.remove('active')
   tracker.classList.remove('active')
-}));
+}
 
 // MENU NAV ITEMS
-menuNavItems.forEach(navItem => navItem.addEventListener('mousemove', function(e) {
+function interactWithNavItem(e){
   const pos = this.getBoundingClientRect();
   const mx = e.clientX - pos.left - pos.width/2; 
   const my = e.clientY - pos.top - pos.height/2;
@@ -258,47 +507,36 @@ menuNavItems.forEach(navItem => navItem.addEventListener('mousemove', function(e
   this.children[0].style.transform = 'translate('+ mx * 0.075 +'px, '+ my * 0.125 +'px)';
 
   tracker.classList.add('active')
-}));
-
-menuNavItems.forEach(navItem => navItem.addEventListener('mouseleave', function() {
+}
+function dontInteractWithNavItem(e){
   this.style.transform = 'translate3d(0px, 0px, 0px)';
   this.style.transform += 'rotate3d(0, 0, 0, 0deg)';
   this.children[0].style.transform = 'translate3d(0px, 0px, 0px)';
   // this.classList.remove('active')
   tracker.classList.remove('active')
-}));
+}
 
-menuContactText.addEventListener('mousemove', function(e) {
+function interactWithMenuContactText(e){
   tracker.classList.add('active')
-  
-})
-
-menuContactText.addEventListener('mouseleave', function() {
+}
+function dontInteractWithMenuContactText(e){
   tracker.classList.remove('active')
-
-})
-
+}
 
 // HERO SECTION
-headingPrimary.addEventListener('mousemove', function(e) {
+function interactWithHeadingPrimary(e){
   tracker.classList.add('active')
-  
-})
-
-headingPrimary.addEventListener('mouseleave', function() {
+}
+function dontInteractWithHeadingPrimary(e){
   tracker.classList.remove('active')
-
-})
-ctaBtn.addEventListener('mousemove', function(e) {
+}
+function interactWithCtaBtn(e){
   tracker.classList.add('active')
-  
-})
-
-ctaBtn.addEventListener('mouseleave', function() {
+}
+function dontInteractWithCtaBtn(e){
   tracker.classList.remove('active')
-
-})
-heroSection.addEventListener('mousemove', function(e) {
+}
+function interactWithHeroSection(e){
   const pos = this.getBoundingClientRect();
   const mx = e.clientX - pos.left - pos.width/2; 
   const my = e.clientY - pos.top - pos.height/2;
@@ -318,10 +556,8 @@ heroSection.addEventListener('mousemove', function(e) {
   ctaBtn.style.left = xWalk3 +'%';
   // heroSection.style.transform = 'translate('+ mx * 0.3 +'px, '+ my * 0.6 +'px)';
   // heroSection.style.transform += 'rotate3d('+ mx * -0.1 +', '+ my * -0.3 +', 0, 12deg)';
-
-})
-
-heroSection.addEventListener('mouseleave', function() {
+}
+function dontInteractWithHeroSection(e){
   heroImg.style.transform = 'translate3d(-50%, -50%, 0px)';
   heroImg.style.transform += 'rotate3d(0, 0, 0, 0deg)';
   headingPrimary.style.transform = 'translate3d(-50%, -50%, 0px)';
@@ -330,39 +566,32 @@ heroSection.addEventListener('mouseleave', function() {
   ctaBtn.style.transform += 'rotate3d(0, 0, 0, 0deg)';
   // heroSection.style.transform = 'translate3d(0px, 0px, 0px)';
   // heroSection.style.transform += 'rotate3d(0, 0, 0, 0deg)';
-})
+}
 
 // ABOUT
-imgContainer.addEventListener('mousemove', function(e) {
+function interactWithImgContainer(e){
   const pos = this.getBoundingClientRect();
   const mx = e.clientX - pos.left - pos.width/2; 
   const my = e.clientY - pos.top - pos.height/2;
   //  console.log(this, pos)
   this.style.transform = 'translate('+ mx * 0.3 +'px, '+ my * 0.6 +'px)';
   this.style.transform += 'rotate3d('+ mx * -0.1 +', '+ my * -0.3 +', 0, 12deg)';
-  this.children[0].style.transform = 'translate('+ mx * 0.075 +'px, '+ my * 0.125 +'px)';
-
-  
-})
-
-imgContainer.addEventListener('mouseleave', function() {
+  this.children[0].style.transform = 'translate('+ mx * 0.075 +'px, '+ my * 0.125 +'px)'; 
+}
+function dontInteractWithImgContainer(e){
   this.style.transform = 'translate3d(0px, 0px, 0px)';
   this.style.transform += 'rotate3d(0, 0, 0, 0deg)';
   this.children[0].style.transform = 'translate3d(0px, 0px, 0px)';
-
-})
-textContainer.addEventListener('mousemove', function(e) {
+}
+function interactWithTextContainer(e){
   tracker.classList.add('active')
-  
-})
-
-textContainer.addEventListener('mouseleave', function() {
+}
+function dontInteractWithTextContainer(e){
   tracker.classList.remove('active')
-
-})
+}
 
 //NAV ITEMS
-navItems.forEach(navItem => navItem.addEventListener('mousemove', function(e) {
+function interactWithNavItem(e){
   const pos = this.getBoundingClientRect();
   const mx = e.clientX - pos.left - pos.width/2; 
   const my = e.clientY - pos.top - pos.height/2;
@@ -373,18 +602,17 @@ navItems.forEach(navItem => navItem.addEventListener('mousemove', function(e) {
 
   // this.classList.add('active')
   tracker.classList.add('active')
-}));
-
-navItems.forEach(navItem => navItem.addEventListener('mouseleave', function() {
+}
+function dontInteractWithNavItem(e){
   this.style.transform = 'translate3d(0px, 0px, 0px)';
   this.style.transform += 'rotate3d(0, 0, 0, 0deg)';
   this.children[0].style.transform = 'translate3d(0px, 0px, 0px)';
   // this.classList.remove('active')
   tracker.classList.remove('active')
-}));
+}
 
 // SEARCH BTN
-searchBtn.addEventListener('mousemove', function(e) {
+function interactWithSearchBtn(e){
   const pos = this.getBoundingClientRect();
   const mx = e.clientX - pos.left - pos.width/2; 
   const my = e.clientY - pos.top - pos.height/2;
@@ -395,18 +623,17 @@ searchBtn.addEventListener('mousemove', function(e) {
 
   // this.classList.add('active')
   tracker.classList.add('active')
-})
-
-searchBtn.addEventListener('mouseleave', function() {
+}
+function dontInteractWithSearchBtn(e){
   this.style.transform = 'translate3d(0px, 0px, 0px)';
   this.style.transform += 'rotate3d(0, 0, 0, 0deg)';
   this.children[0].style.transform = 'translate3d(0px, 0px, 0px)';
   // this.classList.remove('active')
   tracker.classList.remove('active')
-})
+}
 
 // MENU BTN
-menuBtn.addEventListener('mousemove', function(e) {
+function interactWithMenuBtn(e){
   const pos = this.getBoundingClientRect();
   const mx = e.clientX - pos.left - pos.width/2; 
   const my = e.clientY - pos.top - pos.height/2;
@@ -417,17 +644,17 @@ menuBtn.addEventListener('mousemove', function(e) {
 
   // this.classList.add('active')
   tracker.classList.add('active')
-})
-
-menuBtn.addEventListener('mouseleave', function() {
+}
+function dontInteractWithMenuBtn(e){
   this.style.transform = 'translate3d(0px, 0px, 0px)';
   this.style.transform += 'rotate3d(0, 0, 0, 0deg)';
   this.children[0].style.transform = 'translate3d(0px, 0px, 0px)';
   // this.classList.remove('active')
   tracker.classList.remove('active')
-})
+}
+
 // LOGO
-logo.addEventListener('mousemove', function(e) {
+function interactWithLogo(e){
   const pos = this.getBoundingClientRect();
   const mx = e.clientX - pos.left - pos.width/2; 
   const my = e.clientY - pos.top - pos.height/2;
@@ -438,22 +665,135 @@ logo.addEventListener('mousemove', function(e) {
 
   // this.classList.add('active')
   tracker.classList.add('active')
-})
-
-logo.addEventListener('mouseleave', function() {
+}
+function dontInteractWithLogo(e){
   this.style.transform = 'translate3d(0px, 0px, 0px)';
   this.style.transform += 'rotate3d(0, 0, 0, 0deg)';
   this.children[0].style.transform = 'translate3d(0px, 0px, 0px)';
   // this.classList.remove('active')
   tracker.classList.remove('active')
-})
+}
 
-document.addEventListener("mousemove", e => {
-  tracker.setAttribute(
-    "style",
-    "top: " + (e.pageY - 15) + "px; left: " + (e.pageX - 15) + "px;"
-  );
-});
+
+// MOUSE TRACKER
+const mediaQuery = window.matchMedia("(min-width: 1120px)");
+function myFunction(mediaQuery) {
+  if (mediaQuery.matches) {
+    // FOOTER
+    copyright.addEventListener('mousemove', interactWithCopyright)
+    copyright.addEventListener('mouseleave', dontInteractWithCopyright)
+    privacyTerms.addEventListener('mousemove', interactWithPrivacyTerms)
+    privacyTerms.addEventListener('mouseleave', dontInteractWithPrivacyTerms)
+    developedBy.addEventListener('mousemove', interactWithDevelopedBy)
+    developedBy.addEventListener('mouseleave', dontInteractWithDevelopedBy)
+    socialIcons.forEach(socialIcon => socialIcon.addEventListener('mousemove', interactWithSocialIcon));
+    socialIcons.forEach(socialIcon => socialIcon.addEventListener('mouseleave', dontInteractWithSocialIcon));
+
+    // MENU NAV ITEMS
+    menuNavItems.forEach(navItem => navItem.addEventListener('mousemove', interactWithNavItem));
+    menuNavItems.forEach(navItem => navItem.addEventListener('mouseleave', dontInteractWithNavItem));
+    menuContactText.addEventListener('mousemove', interactWithMenuContactText)
+    menuContactText.addEventListener('mouseleave', dontInteractWithMenuContactText)
+
+    // HERO SECTION
+    headingPrimary.addEventListener('mousemove', interactWithHeadingPrimary)
+    headingPrimary.addEventListener('mouseleave', dontInteractWithHeadingPrimary)
+    ctaBtn.addEventListener('mousemove', interactWithCtaBtn)
+    ctaBtn.addEventListener('mouseleave', dontInteractWithCtaBtn)
+    heroSection.addEventListener('mousemove', interactWithHeroSection)
+    heroSection.addEventListener('mouseleave', dontInteractWithHeroSection)
+
+    // ABOUT
+    imgContainer.addEventListener('mousemove', interactWithImgContainer)
+    imgContainer.addEventListener('mouseleave', dontInteractWithImgContainer)
+    textContainer.addEventListener('mousemove', function(e) {
+      tracker.classList.add('active')
+    })
+    textContainer.addEventListener('mouseleave', function() {
+      tracker.classList.remove('active')
+    })
+
+    //NAV ITEMS
+    navItems.forEach(navItem => navItem.addEventListener('mousemove', interactWithNavItem));
+    navItems.forEach(navItem => navItem.addEventListener('mouseleave', dontInteractWithNavItem));
+
+    // SEARCH BTN
+    searchBtn.addEventListener('mousemove', interactWithSearchBtn)
+    searchBtn.addEventListener('mouseleave', dontInteractWithSearchBtn)
+
+    // MENU BTN
+    menuBtn.addEventListener('mousemove', interactWithMenuBtn)
+    menuBtn.addEventListener('mouseleave', dontInteractWithMenuBtn)
+
+    // LOGO
+    logo.addEventListener('mousemove', interactWithLogo)
+    logo.addEventListener('mouseleave', dontInteractWithLogo)
+
+    const tracker = document.querySelector(".cursor");
+      document.addEventListener("mousemove", e => {
+        tracker.setAttribute(
+          "style",
+          "top: " + (e.pageY - 15) + "px; left: " + (e.pageX - 15) + "px;"
+        );
+      });
+      
+  } else {
+        // FOOTER
+        copyright.removeEventListener('mousemove', interactWithCopyright)
+        copyright.removeEventListener('mouseleave', dontInteractWithCopyright)
+        privacyTerms.removeEventListener('mousemove', interactWithPrivacyTerms)
+        privacyTerms.removeEventListener('mouseleave', dontInteractWithPrivacyTerms)
+        developedBy.removeEventListener('mousemove', interactWithDevelopedBy)
+        developedBy.removeEventListener('mouseleave', dontInteractWithDevelopedBy)
+        socialIcons.forEach(socialIcon => socialIcon.removeEventListener('mousemove', interactWithSocialIcon));
+        socialIcons.forEach(socialIcon => socialIcon.removeEventListener('mouseleave', dontInteractWithSocialIcon));
+    
+        // MENU NAV ITEMS
+        menuNavItems.forEach(navItem => navItem.removeEventListener('mousemove', interactWithNavItem));
+        menuNavItems.forEach(navItem => navItem.removeEventListener('mouseleave', dontInteractWithNavItem));
+        menuContactText.removeEventListener('mousemove', interactWithMenuContactText)
+        menuContactText.removeEventListener('mouseleave', dontInteractWithMenuContactText)
+    
+        // HERO SECTION
+        headingPrimary.removeEventListener('mousemove', interactWithHeadingPrimary)
+        headingPrimary.removeEventListener('mouseleave', dontInteractWithHeadingPrimary)
+        ctaBtn.removeEventListener('mousemove', interactWithCtaBtn)
+        ctaBtn.removeEventListener('mouseleave', dontInteractWithCtaBtn)
+        heroSection.removeEventListener('mousemove', interactWithHeroSection)
+        heroSection.removeEventListener('mouseleave', dontInteractWithHeroSection)
+    
+        // ABOUT
+        imgContainer.removeEventListener('mousemove', interactWithImgContainer)
+        imgContainer.removeEventListener('mouseleave', dontInteractWithImgContainer)
+        textContainer.removeEventListener('mousemove', function(e) {
+          tracker.classList.add('active')
+        })
+        textContainer.removeEventListener('mouseleave', function() {
+          tracker.classList.remove('active')
+        })
+    
+        //NAV ITEMS
+        navItems.forEach(navItem => navItem.removeEventListener('mousemove', interactWithNavItem));
+        navItems.forEach(navItem => navItem.removeEventListener('mouseleave', dontInteractWithNavItem));
+    
+        // SEARCH BTN
+        searchBtn.removeEventListener('mousemove', interactWithSearchBtn)
+        searchBtn.removeEventListener('mouseleave', dontInteractWithSearchBtn)
+    
+        // MENU BTN
+        menuBtn.removeEventListener('mousemove', interactWithMenuBtn)
+        menuBtn.removeEventListener('mouseleave', dontInteractWithMenuBtn)
+    
+        // LOGO
+        logo.removeEventListener('mousemove', interactWithLogo)
+        logo.removeEventListener('mouseleave', dontInteractWithLogo)
+
+      const tracker = document.querySelector(".cursor");
+      tracker.style.display = "none";
+  }
+}
+myFunction(mediaQuery);
+mediaQuery.addEventListener('change', myFunction);
 
 
 
