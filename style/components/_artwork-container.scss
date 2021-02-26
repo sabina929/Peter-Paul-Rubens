@@ -231,7 +231,8 @@ main{
                     font-size: 200px;
                     line-height: 210px;
                     margin-bottom: 60px;
-                    width: 490px;
+                    // width: 490px;
+                    width: auto;
 
                     @media only screen and (max-width: 760px) {
                         font-size: 140px;
@@ -305,7 +306,7 @@ main{
                             right: -4%;
                         }
                     }
-                    div.paragraphs{
+                    div.paragraphs-pagination{
                         position: relative;
                         margin-bottom: 0px;
                         width: 100%;
@@ -325,7 +326,7 @@ main{
                             letter-spacing: 1px;
                             line-height: 33px;
                         }
-                        p:nth-child(1){
+                        p:not(:last-child){
                             margin-bottom: 40px;
                         }
 

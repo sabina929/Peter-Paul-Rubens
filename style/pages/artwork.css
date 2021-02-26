@@ -1501,7 +1501,7 @@ main section article div.artwork__info h1 {
   font-size: 200px;
   line-height: 210px;
   margin-bottom: 60px;
-  width: 490px;
+  width: auto;
 }
 
 @media only screen and (max-width: 760px) {
@@ -1624,7 +1624,7 @@ main section article div.artwork__info div.radial-beams-paragraphs img.radial-be
   }
 }
 
-main section article div.artwork__info div.radial-beams-paragraphs div.paragraphs {
+main section article div.artwork__info div.radial-beams-paragraphs div.paragraphs-pagination {
   position: relative;
   margin-bottom: 0px;
   width: 100%;
@@ -1644,28 +1644,28 @@ main section article div.artwork__info div.radial-beams-paragraphs div.paragraph
 }
 
 @media only screen and (max-width: 1120px) {
-  main section article div.artwork__info div.radial-beams-paragraphs div.paragraphs {
+  main section article div.artwork__info div.radial-beams-paragraphs div.paragraphs-pagination {
     margin-bottom: 60px;
   }
 }
 
 @media only screen and (max-width: 760px) {
-  main section article div.artwork__info div.radial-beams-paragraphs div.paragraphs {
+  main section article div.artwork__info div.radial-beams-paragraphs div.paragraphs-pagination {
     margin-bottom: 120px;
   }
 }
 
-main section article div.artwork__info div.radial-beams-paragraphs div.paragraphs p {
+main section article div.artwork__info div.radial-beams-paragraphs div.paragraphs-pagination p {
   font-size: 22px;
   letter-spacing: 1px;
   line-height: 33px;
 }
 
-main section article div.artwork__info div.radial-beams-paragraphs div.paragraphs p:nth-child(1) {
+main section article div.artwork__info div.radial-beams-paragraphs div.paragraphs-pagination p:not(:last-child) {
   margin-bottom: 40px;
 }
 
-main section article div.artwork__info div.radial-beams-paragraphs div.paragraphs div.pagination {
+main section article div.artwork__info div.radial-beams-paragraphs div.paragraphs-pagination div.pagination {
   position: absolute;
   bottom: -100px;
   left: 100%;
@@ -1687,17 +1687,17 @@ main section article div.artwork__info div.radial-beams-paragraphs div.paragraph
 }
 
 @media only screen and (max-width: 760px) {
-  main section article div.artwork__info div.radial-beams-paragraphs div.paragraphs div.pagination {
+  main section article div.artwork__info div.radial-beams-paragraphs div.paragraphs-pagination div.pagination {
     left: 69%;
   }
 }
 
-main section article div.artwork__info div.radial-beams-paragraphs div.paragraphs div.pagination img.prev-arrow {
+main section article div.artwork__info div.radial-beams-paragraphs div.paragraphs-pagination div.pagination img.prev-arrow {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-main section article div.artwork__info div.radial-beams-paragraphs div.paragraphs div.pagination div.pages {
+main section article div.artwork__info div.radial-beams-paragraphs div.paragraphs-pagination div.pagination div.pages {
   height: 36px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1716,12 +1716,12 @@ main section article div.artwork__info div.radial-beams-paragraphs div.paragraph
 }
 
 @media only screen and (max-width: 760px) {
-  main section article div.artwork__info div.radial-beams-paragraphs div.paragraphs div.pagination div.pages {
+  main section article div.artwork__info div.radial-beams-paragraphs div.paragraphs-pagination div.pagination div.pages {
     margin: 0 12px;
   }
 }
 
-main section article div.artwork__info div.radial-beams-paragraphs div.paragraphs div.pagination div.pages p.current-page {
+main section article div.artwork__info div.radial-beams-paragraphs div.paragraphs-pagination div.pagination div.pages p.current-page {
   height: 100%;
   margin: 0 5px;
   font-size: 28px;
@@ -1730,14 +1730,14 @@ main section article div.artwork__info div.radial-beams-paragraphs div.paragraph
   line-height: 35px;
 }
 
-main section article div.artwork__info div.radial-beams-paragraphs div.paragraphs div.pagination div.pages span.forwardslash {
+main section article div.artwork__info div.radial-beams-paragraphs div.paragraphs-pagination div.pagination div.pages span.forwardslash {
   height: 70%;
   font-size: 16px;
   letter-spacing: 0px;
   line-height: 21px;
 }
 
-main section article div.artwork__info div.radial-beams-paragraphs div.paragraphs div.pagination div.pages p.total-pages {
+main section article div.artwork__info div.radial-beams-paragraphs div.paragraphs-pagination div.pagination div.pages p.total-pages {
   height: 70%;
   margin: 0 5px;
   font-size: 16px;
@@ -1746,7 +1746,7 @@ main section article div.artwork__info div.radial-beams-paragraphs div.paragraph
   line-height: 21px;
 }
 
-main section article div.artwork__info div.radial-beams-paragraphs div.paragraphs div.pagination button {
+main section article div.artwork__info div.radial-beams-paragraphs div.paragraphs-pagination div.pagination button {
   cursor: pointer;
   background-color: transparent;
   border: none;
