@@ -104,11 +104,11 @@ section#artworks{
                 left: 50%;
                 transform: translate(-50%,-50%);
                 z-index: 100;
-                width: 56%;
+                width: auto;
                 height: auto;
                 @include  center;
                 border-radius: 50%;
-                padding: 12px 20px;
+                padding: 18px 32px;
                 background-color: $lighter-brown;
                 color: $cream-color;
               a{

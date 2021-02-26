@@ -1525,7 +1525,7 @@ main section#artworks div.artworks-container article.artwork .artwork__info {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 100;
-  width: 56%;
+  width: auto;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1541,7 +1541,7 @@ main section#artworks div.artworks-container article.artwork .artwork__info {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 50%;
-  padding: 12px 20px;
+  padding: 18px 32px;
   background-color: #AD8E55;
   color: #FFF8F0;
 }
