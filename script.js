@@ -840,11 +840,6 @@ artworkLinks.forEach(artworkLink => {
     sessionStorage.getItem("artworkIDNumber");
     sessionStorage.setItem("artworkIDNumber", artworkLink.dataset.artworkid);
     
-    console.log( artworkLink.dataset.artworkid)
+    // console.log( artworkLink.dataset.artworkid)
   })
 })
-
-// function passArtworkID(){
-//   // sessionStorage.getItem("artworkIDNumber");
-//   // sessionStorage.setItem("artworkIDNumber", artworkLink.dataset.artworkid);
-// }

@@ -86,16 +86,15 @@ function loading() {
 }
 
 function applyArtworkID(){
-    // sessionStorage.getItem("artworkIDNumber");
   let passedArtworkIDNumber = sessionStorage.getItem("artworkIDNumber")
-  console.log(sessionStorage.getItem("artworkIDNumber"))
+  // console.log(sessionStorage.getItem("artworkIDNumber"))
 
   currentPageNumber = parseInt(passedArtworkIDNumber)
-  console.log(currentPageNumber)
+  // console.log(currentPageNumber)
   currentPageText.innerHTML = currentPageNumber
-  console.log(artworksArr)
+  // console.log(artworksArr)
   let artworkObj = artworksArr.filter(artwork => artwork.artworkNumber === currentPageNumber)
-  console.log(artworkObj)
+  // console.log(artworkObj)
   artworkImg.src = `${artworkObj[0].artworkUrl}`
   artworkImg.alt = `${artworkObj[0].artworkName}`
   artworkHeading.innerHTML = `${artworkObj[0].artworkName}`
@@ -115,7 +114,6 @@ document.addEventListener('DOMContentLoaded', function() {
   window.addEventListener("load", function() {
     setTimeout(() => {
       loading()
-        
     }, 810);
   }, false);
 })
@@ -563,18 +561,6 @@ function myFunction(mediaQuery) {
 }
 myFunction(mediaQuery);
 mediaQuery.addEventListener('change', myFunction);
-
-// const currentPageText = document.querySelector('div.pages p.current-page span')
-// const totalPageText = document.querySelector('div.pages p.total-pages span')
-// const prevBtn = document.querySelector('button.prev-btn')
-// const nextBtn = document.querySelector('button.next-btn')
-// const artworkImg = document.querySelector('div.img-wrapper div.img-container img')
-// const artworkHeading = document.querySelector('div.artwork__info h1.heading-primary')
-// const artworkParagraphs = document.querySelector('div.artwork__info div.radial-beams-paragraphs div.paragraphs-pagination div.paragraphs')
-
-// let currentPageNumber = 1
-// let totalPages = 7
-
 
 let tlAbout = gsap
     .timeline({
