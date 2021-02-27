@@ -199,10 +199,6 @@
           box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background-color: #1A150C;
   overflow-x: hidden;
@@ -1499,7 +1495,7 @@ main section article div.artwork__info {
 
 main section article div.artwork__info h1 {
   font-size: 200px;
-  line-height: 210px;
+  line-height: 230px;
   margin-bottom: 60px;
   width: auto;
 }

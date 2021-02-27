@@ -199,10 +199,6 @@
           box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background-color: #1A150C;
   overflow-x: hidden;
