@@ -830,3 +830,21 @@ slider.addEventListener('mousemove', (e) => {
     const walk = (x - startX) * 1.4;
     slider.scrollLeft = scrollLeft - walk;
 });
+
+
+const artworkLinks = document.querySelectorAll('div.artwork__info a')
+
+artworkLinks.forEach(artworkLink => {
+  artworkLink.addEventListener('click', ()=>{
+
+    sessionStorage.getItem("artworkIDNumber");
+    sessionStorage.setItem("artworkIDNumber", artworkLink.dataset.artworkid);
+    
+    console.log( artworkLink.dataset.artworkid)
+  })
+})
+
+// function passArtworkID(){
+//   // sessionStorage.getItem("artworkIDNumber");
+//   // sessionStorage.setItem("artworkIDNumber", artworkLink.dataset.artworkid);
+// }
