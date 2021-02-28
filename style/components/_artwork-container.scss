@@ -317,7 +317,7 @@ main{
                     }
                     @media only screen and (max-width: 380px) {
                         font-size: 42px;
-                        line-height: 62px;
+                        line-height: 60px;
                         margin-bottom: 36px;
                         width: 275px;
                     }
@@ -356,31 +356,63 @@ main{
                         @media only screen and (max-width: 1120px) {
                             margin-bottom: 60px;
                             position: absolute;
-                            bottom: -49%;
+                            bottom: -28%;
                             right: 4%;
                             transform: translate(-50%,-50%);
                         }
                         
                         @media only screen and (max-width: 1000px) {
-                            bottom: -46%;
+                            bottom: -28%;
                             right: 4%;
                         }
                         @media only screen and (max-width: 900px) {
-                            bottom: -43%;
+                            bottom: -28%;
+                            right: 4%;
+                        }
+                        @media only screen and (max-width: 789px) {
+                            bottom: -26%;
                             right: 4%;
                         }
                         @media only screen and (max-width: 760px) {
-                            bottom: -37%;
-                            right: 4%;
+                            bottom: -24%;
+                            right: 5%;
                             animation: rotateReverse-sm2 30s linear 0s infinite;
                         }
+                        @media only screen and (max-width: 680px) {
+                            bottom: -22%;
+                            right: 4%;
+                        }
+                        @media only screen and (max-width: 600px) {
+                            bottom: -20%;
+                            right: 4%;
+                        }
                         @media only screen and (max-width: 500px) {
-                            bottom: -31%;
-                            right: -4%;
+                            bottom: -18%;
+                            right: 4%;
+                        }
+                        @media only screen and (max-width: 460px) {
+                            bottom: -17%;
+                            right: 4%;
+                        }
+                        @media only screen and (max-width: 420px) {
+                            bottom: -16%;
+                            right: 3%;
+                        }
+                        @media only screen and (max-width: 400px) {
+                            bottom: -15%;
+                            right: 2%;
+                        }
+                        @media only screen and (max-width: 380px) {
+                            bottom: -14%;
+                            right: -1%;
+                        }
+                        @media only screen and (max-width: 360px) {
+                            bottom: -13%;
+                            right: -3%;
                         }
                         @media only screen and (max-width: 320px) {
-                            bottom: -28%;
-                            right: -4%;
+                            bottom: -13%;
+                            right: -6%;
                         }
                     }
                     div.paragraphs-pagination{

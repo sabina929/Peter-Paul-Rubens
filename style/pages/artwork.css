@@ -1635,7 +1635,7 @@ main section article div.artwork__info h1 {
 @media only screen and (max-width: 380px) {
   main section article div.artwork__info h1 {
     font-size: 42px;
-    line-height: 62px;
+    line-height: 60px;
     margin-bottom: 36px;
     width: 275px;
   }
@@ -1701,7 +1701,7 @@ main section article div.artwork__info div.radial-beams-paragraphs img.radial-be
   main section article div.artwork__info div.radial-beams-paragraphs img.radial-beams {
     margin-bottom: 60px;
     position: absolute;
-    bottom: -49%;
+    bottom: -28%;
     right: 4%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -1710,38 +1710,94 @@ main section article div.artwork__info div.radial-beams-paragraphs img.radial-be
 
 @media only screen and (max-width: 1000px) {
   main section article div.artwork__info div.radial-beams-paragraphs img.radial-beams {
-    bottom: -46%;
+    bottom: -28%;
     right: 4%;
   }
 }
 
 @media only screen and (max-width: 900px) {
   main section article div.artwork__info div.radial-beams-paragraphs img.radial-beams {
-    bottom: -43%;
+    bottom: -28%;
+    right: 4%;
+  }
+}
+
+@media only screen and (max-width: 789px) {
+  main section article div.artwork__info div.radial-beams-paragraphs img.radial-beams {
+    bottom: -26%;
     right: 4%;
   }
 }
 
 @media only screen and (max-width: 760px) {
   main section article div.artwork__info div.radial-beams-paragraphs img.radial-beams {
-    bottom: -37%;
-    right: 4%;
+    bottom: -24%;
+    right: 5%;
     -webkit-animation: rotateReverse-sm2 30s linear 0s infinite;
             animation: rotateReverse-sm2 30s linear 0s infinite;
   }
 }
 
+@media only screen and (max-width: 680px) {
+  main section article div.artwork__info div.radial-beams-paragraphs img.radial-beams {
+    bottom: -22%;
+    right: 4%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  main section article div.artwork__info div.radial-beams-paragraphs img.radial-beams {
+    bottom: -20%;
+    right: 4%;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   main section article div.artwork__info div.radial-beams-paragraphs img.radial-beams {
-    bottom: -31%;
-    right: -4%;
+    bottom: -18%;
+    right: 4%;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  main section article div.artwork__info div.radial-beams-paragraphs img.radial-beams {
+    bottom: -17%;
+    right: 4%;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  main section article div.artwork__info div.radial-beams-paragraphs img.radial-beams {
+    bottom: -16%;
+    right: 3%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  main section article div.artwork__info div.radial-beams-paragraphs img.radial-beams {
+    bottom: -15%;
+    right: 2%;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  main section article div.artwork__info div.radial-beams-paragraphs img.radial-beams {
+    bottom: -14%;
+    right: -1%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  main section article div.artwork__info div.radial-beams-paragraphs img.radial-beams {
+    bottom: -13%;
+    right: -3%;
   }
 }
 
 @media only screen and (max-width: 320px) {
   main section article div.artwork__info div.radial-beams-paragraphs img.radial-beams {
-    bottom: -28%;
-    right: -4%;
+    bottom: -13%;
+    right: -6%;
   }
 }
 
