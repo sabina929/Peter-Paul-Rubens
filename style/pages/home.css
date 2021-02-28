@@ -1182,6 +1182,12 @@ main section#hero {
 
 @media only screen and (max-width: 760px) {
   main section#hero {
+    margin: 0px 0px 190px 0px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  main section#hero {
     margin: 0px 0px 80px 0px;
   }
 }
@@ -1211,6 +1217,12 @@ main section#hero div.hero-text-content {
   }
 }
 
+@media only screen and (max-width: 330px) {
+  main section#hero div.hero-text-content {
+    height: 50vh;
+  }
+}
+
 main section#hero div.hero-text-content img.hero-img {
   position: absolute;
   top: 50%;
@@ -1228,8 +1240,104 @@ main section#hero div.hero-text-content img.hero-img {
 
 @media only screen and (max-width: 760px) {
   main section#hero div.hero-text-content img.hero-img {
-    top: 50%;
+    top: 66%;
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  main section#hero div.hero-text-content img.hero-img {
+    top: 64%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  main section#hero div.hero-text-content img.hero-img {
+    top: 63%;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  main section#hero div.hero-text-content img.hero-img {
+    top: 61%;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  main section#hero div.hero-text-content img.hero-img {
+    top: 59%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  main section#hero div.hero-text-content img.hero-img {
+    top: 58%;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  main section#hero div.hero-text-content img.hero-img {
+    top: 56%;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  main section#hero div.hero-text-content img.hero-img {
+    top: 54%;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  main section#hero div.hero-text-content img.hero-img {
+    top: 52%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  main section#hero div.hero-text-content img.hero-img {
+    top: 50%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  main section#hero div.hero-text-content img.hero-img {
+    top: 48%;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  main section#hero div.hero-text-content img.hero-img {
+    top: 46%;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  main section#hero div.hero-text-content img.hero-img {
+    top: 44%;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  main section#hero div.hero-text-content img.hero-img {
+    top: 45%;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  main section#hero div.hero-text-content img.hero-img {
+    top: 50%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  main section#hero div.hero-text-content img.hero-img {
+    top: 48%;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  main section#hero div.hero-text-content img.hero-img {
+    top: 46%;
   }
 }
 
@@ -1249,9 +1357,29 @@ main section#hero div.hero-text-content h1 {
 @media only screen and (max-width: 760px) {
   main section#hero div.hero-text-content h1 {
     top: 11%;
+    font-size: 64px;
+    width: 320px;
+    left: 50%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  main section#hero div.hero-text-content h1 {
+    top: 15%;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  main section#hero div.hero-text-content h1 {
+    top: 11%;
     font-size: 43px;
     width: 212px;
-    left: 50%;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  main section#hero div.hero-text-content h1 {
+    top: 4%;
   }
 }
 
@@ -1273,9 +1401,114 @@ main section#hero div.hero-text-content a.cta-btn {
 
 @media only screen and (max-width: 760px) {
   main section#hero div.hero-text-content a.cta-btn {
-    padding: 18px 18px;
+    top: 116%;
+    padding: 18px 9px 18px 18px;
     left: 50%;
     width: 236px;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  main section#hero div.hero-text-content a.cta-btn {
+    top: 116%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  main section#hero div.hero-text-content a.cta-btn {
+    top: 110%;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  main section#hero div.hero-text-content a.cta-btn {
+    top: 105%;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  main section#hero div.hero-text-content a.cta-btn {
+    top: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  main section#hero div.hero-text-content a.cta-btn {
+    top: 91%;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  main section#hero div.hero-text-content a.cta-btn {
+    top: 95%;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  main section#hero div.hero-text-content a.cta-btn {
+    top: 90%;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  main section#hero div.hero-text-content a.cta-btn {
+    top: 85%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  main section#hero div.hero-text-content a.cta-btn {
+    top: 85%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  main section#hero div.hero-text-content a.cta-btn {
+    top: 79%;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  main section#hero div.hero-text-content a.cta-btn {
+    top: 75%;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  main section#hero div.hero-text-content a.cta-btn {
+    top: 70%;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  main section#hero div.hero-text-content a.cta-btn {
+    top: 70%;
+    font-size: 20px;
+    width: 232px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  main section#hero div.hero-text-content a.cta-btn {
+    top: 65%;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  main section#hero div.hero-text-content a.cta-btn {
+    top: 78%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  main section#hero div.hero-text-content a.cta-btn {
+    top: 74%;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  main section#hero div.hero-text-content a.cta-btn {
+    top: 76%;
   }
 }
 
@@ -1295,9 +1528,21 @@ main section#hero div.hero-text-content a.cta-btn::before {
           clip-path: polygon(26% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
+@media only screen and (max-width: 420px) {
+  main section#hero div.hero-text-content a.cta-btn::before {
+    width: 42%;
+  }
+}
+
 main section#hero div.hero-text-content a.cta-btn svg {
   margin-left: 20px;
   margin-bottom: -2px;
+}
+
+@media only screen and (max-width: 420px) {
+  main section#hero div.hero-text-content a.cta-btn svg {
+    margin-left: 25px;
+  }
 }
 
 main section#hero div.hero-text-content a.cta-btn svg line {
@@ -1319,6 +1564,12 @@ main section#hero div.hero-text-content a.cta-btn:hover {
   font-weight: 300;
 }
 
+@media only screen and (max-width: 420px) {
+  main section#hero div.hero-text-content a.cta-btn:hover svg {
+    margin-left: 27px;
+  }
+}
+
 main section#hero div.lines {
   position: absolute;
   top: 22%;
@@ -1333,6 +1584,12 @@ main section#hero div.lines {
   main section#hero div.lines {
     -webkit-transform: translate(-50%, -50%) scale(0.8);
             transform: translate(-50%, -50%) scale(0.8);
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  main section#hero div.lines {
+    top: 23%;
   }
 }
 
@@ -1363,10 +1620,100 @@ main section#hero div.scroll-down {
 
 @media only screen and (max-width: 760px) {
   main section#hero div.scroll-down {
-    top: 100.5%;
+    top: 125%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%) scale(0.9);
             transform: translate(-50%, -50%) scale(0.9);
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  main section#hero div.scroll-down {
+    top: 125%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  main section#hero div.scroll-down {
+    top: 120%;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  main section#hero div.scroll-down {
+    top: 115.5%;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  main section#hero div.scroll-down {
+    top: 115.5%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  main section#hero div.scroll-down {
+    top: 112%;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  main section#hero div.scroll-down {
+    top: 113%;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  main section#hero div.scroll-down {
+    top: 112%;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  main section#hero div.scroll-down {
+    top: 110%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  main section#hero div.scroll-down {
+    top: 109%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  main section#hero div.scroll-down {
+    top: 108.5%;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  main section#hero div.scroll-down {
+    top: 105.5%;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  main section#hero div.scroll-down {
+    top: 103.5%;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  main section#hero div.scroll-down {
+    top: 100.5%;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  main section#hero div.scroll-down {
+    top: 85%;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  main section#hero div.scroll-down {
+    top: 101%;
   }
 }
 
@@ -1656,6 +2003,12 @@ main section#about {
   }
 }
 
+@media only screen and (max-width: 1400px) {
+  main section#about {
+    margin: 0px 30px 0px 30px;
+  }
+}
+
 @media only screen and (max-width: 1300px) {
   main section#about {
     padding: 60px 0 140px 0;
@@ -1668,7 +2021,7 @@ main section#about {
   }
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1280px) {
   main section#about {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1725,13 +2078,31 @@ main section#about div.text-container {
   }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1500px) {
+  main section#about div.text-container {
+    margin-right: 200px;
+  }
+}
+
+@media only screen and (max-width: 1450px) {
   main section#about div.text-container {
     margin-right: 160px;
   }
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1300px) {
+  main section#about div.text-container {
+    margin-right: 150px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  main section#about div.text-container {
+    margin-right: 140px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
   main section#about div.text-container {
     margin-bottom: 160px;
     margin-right: 0px;
@@ -1739,8 +2110,29 @@ main section#about div.text-container {
   }
 }
 
+@media only screen and (max-width: 760px) {
+  main section#about div.text-container {
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  main section#about div.text-container {
+    margin-bottom: 80px;
+  }
+}
+
 main section#about div.text-container h2.heading-secondary {
   margin-bottom: 60px;
+}
+
+@media only screen and (max-width: 420px) {
+  main section#about div.text-container h2.heading-secondary {
+    margin-bottom: 40px;
+    font-size: 43px;
+    line-height: 60px;
+    width: auto;
+  }
 }
 
 main section#about div.text-container p:nth-child(2) {
@@ -1769,7 +2161,7 @@ main section#about div.img-container {
           align-items: center;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1280px) {
   main section#about div.img-container {
     width: 100%;
   }
