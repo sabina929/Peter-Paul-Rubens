@@ -322,6 +322,13 @@ header.big-screen {
   }
 }
 
+@media only screen and (max-width: 420px) {
+  header.big-screen {
+    height: 74px;
+    padding: 46px 30px 0 30px;
+  }
+}
+
 header.big-screen .logo {
   -ms-flex-preferred-size: 120px;
       flex-basis: 120px;
@@ -345,6 +352,12 @@ header.big-screen .logo {
   header.big-screen .logo {
     -ms-flex-preferred-size: 100px;
         flex-basis: 100px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  header.big-screen .logo {
+    height: 28px;
   }
 }
 
@@ -374,6 +387,12 @@ header.big-screen .logo a {
   header.big-screen .logo a {
     -ms-flex-preferred-size: 100px;
         flex-basis: 100px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  header.big-screen .logo a {
+    height: 28px;
   }
 }
 

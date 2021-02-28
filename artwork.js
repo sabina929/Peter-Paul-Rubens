@@ -60,6 +60,7 @@ const mainEl = document.querySelector('main')
 const footerEl = document.querySelector('footer')
 const loadigScreen = document.querySelector('div.loading-screen')
 
+const paginationContainer = document.querySelector('div.pagination')
 const currentPageText = document.querySelector('div.pages p.current-page span')
 const totalPageText = document.querySelector('div.pages p.total-pages span')
 const prevBtn = document.querySelector('button.prev-btn')
@@ -324,6 +325,27 @@ function dontInteractWithImgContainer(e){
   this.children[0].style.transform = 'translate3d(0px, 0px, 0px) scale(1)';
 }
 
+// ARTWORK CONTENTS
+function interactWithHeading(e) {
+  tracker.classList.add('active')
+}
+function dontInteractWithHeading(e) {
+  tracker.classList.remove('active')
+}
+function interactWithParagraph(e) {
+  tracker.classList.add('active')
+}
+function dontInteractWithParagraph(e) {
+  tracker.classList.remove('active')
+}
+
+// PAGINATION
+function interactWithPagination(e) {
+  tracker.classList.add('active')
+}
+function dontInteractWithPagination(e) {
+  tracker.classList.remove('active')
+}
 
 // FOOTER
 function interactWithCopyright(e) {
@@ -486,6 +508,16 @@ function myFunction(mediaQuery) {
     // IMG CONTAINER
     imgContainer.addEventListener('mousemove', interactWithImgContainer)
     imgContainer.addEventListener('mouseleave', dontInteractWithImgContainer)
+    
+    // ARTWORK CONTENTS
+    artworkHeading.addEventListener('mousemove', interactWithHeading)
+    artworkHeading.addEventListener('mouseleave', dontInteractWithHeading)
+    artworkParagraphs.addEventListener('mousemove', interactWithParagraph)
+    artworkParagraphs.addEventListener('mouseleave', dontInteractWithParagraph)
+
+    // PAGINATION
+    paginationContainer.addEventListener('mousemove', interactWithPagination)
+    paginationContainer.addEventListener('mouseleave', dontInteractWithPagination)
 
     // FOOTER
     copyright.addEventListener('mousemove', interactWithCopyright)
@@ -532,6 +564,16 @@ function myFunction(mediaQuery) {
         imgContainer.removeEventListener('mousemove', interactWithImgContainer)
         imgContainer.removeEventListener('mouseleave', dontInteractWithImgContainer)
 
+        // ARTWORK CONTENTS
+        artworkHeading.addEventListener('mousemove', interactWithHeading)
+        artworkHeading.addEventListener('mouseleave', dontInteractWithHeading)
+        artworkParagraphs.addEventListener('mousemove', interactWithParagraph)
+        artworkParagraphs.addEventListener('mouseleave', dontInteractWithParagraph)
+
+        // PAGINATION
+        paginationContainer.addEventListener('mousemove', interactWithPagination)
+        paginationContainer.addEventListener('mouseleave', dontInteractWithPagination)
+
         // FOOTER
         copyright.removeEventListener('mousemove', interactWithCopyright)
         copyright.removeEventListener('mouseleave', dontInteractWithCopyright)
@@ -576,7 +618,7 @@ let tlAbout = gsap
       paused: false
     })
 
-    .fromTo("div.img-wrapper div.img-container img", {duration: 2,   clipPath:"polygon(0 0, 100% 0, 100% 0, 0 0)", ease: "elastic(2, .1)"}, {
+    .fromTo("div.img-wrapper div.img-container img", {duration: 1.6,  clipPath:"polygon(0 0, 100% 0, 100% 0, 0 0)", ease: "elastic(2, .1)"}, {
       clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)"
       }, "<.1")
 
@@ -587,7 +629,7 @@ let tlAbout = gsap
       }, "<0.6")
     .fromTo("div.artwork__info div.radial-beams-paragraphs div.paragraphs-pagination div.paragraphs", {clipPath:"polygon(0 0, 100% 0, 100% 0, 0 0)",opacity: 1},{
         clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
-        duration: 0.5,
+        duration: .7,
         stagger: 0,
         ease: "power4.out"
       }, "<0.3")
@@ -620,7 +662,7 @@ function goPrevPage(){
         setTimeout(()=>{
           tlAbout.play()
         },80)
-      },1600)
+      },1800)
     }  else{
         return
       }
@@ -654,7 +696,7 @@ function goNextPage(){
           setTimeout(()=>{
             tlAbout.play()
           },80)
-        },1600)
+        },1800)
       }  else if(currentPageNumber===totalPages){
         return
       }
