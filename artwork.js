@@ -596,47 +596,17 @@ prevBtn.addEventListener('click', goPrevPage)
 nextBtn.addEventListener('click', goNextPage)
 
 function goPrevPage(){  
-  window.scrollTo(0,0)
   setTimeout(()=>{
-    tlAbout.reverse()
-    setTimeout(()=>{
-  tlAbout.reverse()
-  if(currentPageNumber<=totalPages && currentPageNumber>1){
-    currentPageNumber--
+    // setTimeout(()=>{
+      if(currentPageNumber<=totalPages && currentPageNumber>1){
+        window.scrollTo(0,0)
+        currentPageNumber--
+        tlAbout.reverse()
 
     sessionStorage.setItem("artworkIDNumber", currentPageNumber);
-    
     currentPageText.innerHTML = currentPageNumber
-    let artworkObj = artworksArr.filter(artwork => artwork.artworkNumber === currentPageNumber)
-    // console.log(artworkObj)
-    artworkImg.src = `${artworkObj[0].artworkUrl}`
-    artworkImg.alt = `${artworkObj[0].artworkName}`
-    artworkHeading.innerHTML = `${artworkObj[0].artworkName}`
-    artworkParagraphs.innerHTML = artworkObj[0].artworkInfo.map((artwork, i) => {       
-      return `
-              <p class="paragraph">${artwork}</p>        
-      `
-    }).join('');
-    setTimeout(()=>{
-      tlAbout.play()
-    },100)
-  }  else{
-    return
-  }
-},1600)
 
-},0)
-}
-function goNextPage(){
-  window.scrollTo(0,0)
-  setTimeout(()=>{
-    tlAbout.reverse()
     setTimeout(()=>{
-      if(currentPageNumber<totalPages && currentPageNumber>=1){
-        currentPageNumber++
-
-        sessionStorage.setItem("artworkIDNumber", currentPageNumber);
-        currentPageText.innerHTML = currentPageNumber
         let artworkObj = artworksArr.filter(artwork => artwork.artworkNumber === currentPageNumber)
         // console.log(artworkObj)
         artworkImg.src = `${artworkObj[0].artworkUrl}`
@@ -646,15 +616,49 @@ function goNextPage(){
           return `
                   <p class="paragraph">${artwork}</p>        
           `
-        }).join('');
-    
+          }).join('');
         setTimeout(()=>{
           tlAbout.play()
         },80)
-      }  else{
+      },1600)
+    }  else{
         return
       }
-    },1600)
+    // },1600)
+
+  },0)
+}
+function goNextPage(){
+  setTimeout(()=>{
+    // setTimeout(()=>{
+      if(currentPageNumber<totalPages && currentPageNumber>=1){
+        window.scrollTo(0,0)
+        currentPageNumber++
+        tlAbout.reverse()
+
+        sessionStorage.setItem("artworkIDNumber", currentPageNumber);
+        currentPageText.innerHTML = currentPageNumber
+        
+        setTimeout(()=>{
+          let artworkObj = artworksArr.filter(artwork => artwork.artworkNumber === currentPageNumber)
+          // console.log(artworkObj)
+          artworkImg.src = `${artworkObj[0].artworkUrl}`
+          artworkImg.alt = `${artworkObj[0].artworkName}`
+          artworkHeading.innerHTML = `${artworkObj[0].artworkName}`
+          artworkParagraphs.innerHTML = artworkObj[0].artworkInfo.map((artwork, i) => {       
+            return `
+                    <p class="paragraph">${artwork}</p>        
+            `
+          }).join('');
+          
+          setTimeout(()=>{
+            tlAbout.play()
+          },80)
+        },1600)
+      }  else if(currentPageNumber===totalPages){
+        return
+      }
+    // },1600)
     
   },0)
 }

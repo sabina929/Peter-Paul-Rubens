@@ -6,6 +6,8 @@ main{
     width: 100vw;
     height: auto;
     margin: 300px auto 60px auto;
+    transition: all .3s ease;
+
     
     @media only screen and (max-width: 1000px) {
         margin: 240px auto 60px auto;
@@ -23,6 +25,8 @@ main{
         width: 100%;
         height: auto;
         position: relative;
+        transition: all .3s ease;
+
         
         article{
             display: flex;
@@ -32,6 +36,8 @@ main{
             width: 100%;
             height: auto;
             padding: 0 80px;
+            transition: all .3s ease;
+
 
             @media only screen and (max-width: 1260px) {
                 padding: 0px 50px;
@@ -44,6 +50,8 @@ main{
               }
 
               div.img-wrapper{
+                transition: all .3s ease;
+
                     width: 76%;
                   position: relative;
                   margin-bottom: 260px;
@@ -219,6 +227,7 @@ main{
                 align-items: flex-start;
                 margin-bottom: 300px;
                 position: relative;
+                transition: all .3s ease;
 
                 @media only screen and (max-width: 920px) {
                     width: 80%;
@@ -233,6 +242,7 @@ main{
                     margin-bottom: 60px;
                     // width: 490px;
                     width: auto;
+
 
                     @media only screen and (max-width: 1640px) {
                         font-size: 190px;
@@ -336,6 +346,8 @@ main{
                     align-items: flex-start;
                     width: 100%;
                     margin-bottom: 0px;
+                    transition: all .3s ease;
+
 
                     @media only screen and (max-width: 1120px) {
                         flex-direction: column;
@@ -423,6 +435,8 @@ main{
                         flex-direction: column;
                         justify-content: flex-start;
                         align-items: flex-start;
+                        transition: all .3s ease;
+
                         @media only screen and (max-width: 1120px) {
                             margin-bottom: 60px;
                         }

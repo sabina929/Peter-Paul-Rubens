@@ -1120,6 +1120,8 @@ main {
   width: 100vw;
   height: auto;
   margin: 300px auto 60px auto;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -1151,6 +1153,8 @@ main section {
   width: 100%;
   height: auto;
   position: relative;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 main section article {
@@ -1170,6 +1174,8 @@ main section article {
   width: 100%;
   height: auto;
   padding: 0 80px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 @media only screen and (max-width: 1260px) {
@@ -1191,6 +1197,8 @@ main section article {
 }
 
 main section article div.img-wrapper {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
   width: 76%;
   position: relative;
   margin-bottom: 260px;
@@ -1478,6 +1486,8 @@ main section article div.artwork__info {
           align-items: flex-start;
   margin-bottom: 300px;
   position: relative;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 @media only screen and (max-width: 920px) {
@@ -1666,6 +1676,8 @@ main section article div.artwork__info div.radial-beams-paragraphs {
           align-items: flex-start;
   width: 100%;
   margin-bottom: 0px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 @media only screen and (max-width: 1120px) {
@@ -1818,6 +1830,8 @@ main section article div.artwork__info div.radial-beams-paragraphs div.paragraph
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 @media only screen and (max-width: 1120px) {
