@@ -89,7 +89,15 @@ function applyArtworkID(){
   let passedArtworkIDNumber = sessionStorage.getItem("artworkIDNumber")
   // console.log(sessionStorage.getItem("artworkIDNumber"))
 
-  currentPageNumber = parseInt(passedArtworkIDNumber)
+  if(sessionStorage.getItem("artworkIDNumber")){
+    currentPageNumber = parseInt(passedArtworkIDNumber)
+    
+  } else{
+    currentPageNumber = 1
+
+  }
+
+
   // console.log(currentPageNumber)
   currentPageText.innerHTML = currentPageNumber
   // console.log(artworksArr)
@@ -107,7 +115,8 @@ function applyArtworkID(){
  
 }
 
-applyArtworkID()
+  applyArtworkID()
+
 
 
 document.addEventListener('DOMContentLoaded', function() {

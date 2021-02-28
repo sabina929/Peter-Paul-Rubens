@@ -1500,28 +1500,153 @@ main section article div.artwork__info h1 {
   width: auto;
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 1640px) {
+  main section article div.artwork__info h1 {
+    font-size: 190px;
+    line-height: 230px;
+  }
+}
+
+@media only screen and (max-width: 1565px) {
+  main section article div.artwork__info h1 {
+    font-size: 180px;
+    line-height: 230px;
+  }
+}
+
+@media only screen and (max-width: 1492px) {
+  main section article div.artwork__info h1 {
+    font-size: 170px;
+    line-height: 210px;
+  }
+}
+
+@media only screen and (max-width: 1418px) {
+  main section article div.artwork__info h1 {
+    font-size: 160px;
+    line-height: 200px;
+  }
+}
+
+@media only screen and (max-width: 1344px) {
+  main section article div.artwork__info h1 {
+    font-size: 150px;
+    line-height: 190px;
+  }
+}
+
+@media only screen and (max-width: 1270px) {
   main section article div.artwork__info h1 {
     font-size: 140px;
-    line-height: 160px;
+    line-height: 180px;
+  }
+}
+
+@media only screen and (max-width: 1136px) {
+  main section article div.artwork__info h1 {
+    font-size: 130px;
+    line-height: 170px;
+  }
+}
+
+@media only screen and (max-width: 1062px) {
+  main section article div.artwork__info h1 {
+    font-size: 120px;
+    line-height: 155px;
+  }
+}
+
+@media only screen and (max-width: 988px) {
+  main section article div.artwork__info h1 {
+    font-size: 110px;
+    line-height: 145px;
+  }
+}
+
+@media only screen and (max-width: 873px) {
+  main section article div.artwork__info h1 {
+    font-size: 100px;
+    line-height: 135px;
+  }
+}
+
+@media only screen and (max-width: 803px) {
+  main section article div.artwork__info h1 {
+    font-size: 90px;
+    line-height: 125px;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  main section article div.artwork__info h1 {
+    font-size: 80px;
+    line-height: 105px;
     margin-bottom: 40px;
-    width: auto;
+    width: 660px;
   }
 }
 
 @media only screen and (max-width: 640px) {
   main section article div.artwork__info h1 {
-    font-size: 120px;
-    line-height: 140px;
+    width: auto;
   }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 566px) {
   main section article div.artwork__info h1 {
-    font-size: 100px;
-    line-height: 120px;
+    font-size: 70px;
+    line-height: 95px;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  main section article div.artwork__info h1 {
+    font-size: 60px;
+    line-height: 75px;
     margin-bottom: 40px;
-    width: auto;
+  }
+}
+
+@media only screen and (max-width: 454px) {
+  main section article div.artwork__info h1 {
+    font-size: 60px;
+    line-height: 75px;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 442px) {
+  main section article div.artwork__info h1 {
+    font-size: 54px;
+    line-height: 66px;
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  main section article div.artwork__info h1 {
+    font-size: 48px;
+    line-height: 68px;
+    margin-bottom: 40px;
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  main section article div.artwork__info h1 {
+    font-size: 42px;
+    line-height: 62px;
+    margin-bottom: 36px;
+    width: 275px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  main section article div.artwork__info h1 {
+    font-size: 36px;
+    line-height: 52px;
+    margin-bottom: 36px;
+    width: 260px;
   }
 }
 
