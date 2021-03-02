@@ -219,7 +219,7 @@ main{
                     }
                 }
               }
-            div.about__info{
+            div.about__text{
                 width: 76%;
                 display: flex;
                 flex-direction: column;
@@ -444,12 +444,12 @@ main{
                             margin-bottom: 120px;
                         }
 
-                        p{
+                        p.paragraph{
                             font-size: $paragraph-font-size-2;
                             letter-spacing: 1px;
                             line-height: 33px;
                         }
-                        p:not(:last-child){
+                        p.paragraph:not(:last-child){
                             margin-bottom: 40px;
                         }
 
