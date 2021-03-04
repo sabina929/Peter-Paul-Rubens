@@ -5,6 +5,7 @@
   const footerEl = document.querySelector('footer')
   const loadigScreen = document.querySelector('div.loading-screen')
   
+  const artworkWrapper = document.querySelector('div.img-wrapper')
   const artworkImg = document.querySelector('div.img-wrapper div.img-container img')
   const artworkHeading = document.querySelector('div.about__text h1.heading-primary')
   const artworkParagraphs = document.querySelector('div.about__text div.radial-beams-paragraphs div.paragraphs')
