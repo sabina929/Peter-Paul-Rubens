@@ -1280,18 +1280,18 @@ main section article div.lines div.line-h {
   background-color: #AD8E55;
 }
 
-main section article div.img-wrapper {
+main section article div.img-app div.img-gallery {
   cursor: pointer;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
   width: 100%;
   margin-bottom: 260px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 360px 360px 360px;
       grid-template-columns: 360px 360px 360px;
-  -ms-grid-rows: 300px 300px 300px;
-      grid-template-rows: 300px 300px 300px;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
   grid-gap: 40px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1302,28 +1302,28 @@ main section article div.img-wrapper {
 }
 
 @media only screen and (max-width: 1340px) {
-  main section article div.img-wrapper {
+  main section article div.img-app div.img-gallery {
     -ms-grid-columns: 420px 420px;
         grid-template-columns: 420px 420px;
-    -ms-grid-rows: 300px 300px 300px 300px;
-        grid-template-rows: 300px 300px 300px 300px;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
   }
 }
 
 @media only screen and (max-width: 1200px) {
-  main section article div.img-wrapper {
+  main section article div.img-app div.img-gallery {
     margin-bottom: 240px;
   }
 }
 
 @media only screen and (max-width: 1100px) {
-  main section article div.img-wrapper {
+  main section article div.img-app div.img-gallery {
     margin-bottom: 200px;
   }
 }
 
 @media only screen and (max-width: 1000px) {
-  main section article div.img-wrapper {
+  main section article div.img-app div.img-gallery {
     margin-bottom: 180px;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
@@ -1333,201 +1333,132 @@ main section article div.img-wrapper {
 }
 
 @media only screen and (max-width: 920px) {
-  main section article div.img-wrapper {
+  main section article div.img-app div.img-gallery {
     margin-bottom: 160px;
   }
 }
 
 @media only screen and (max-width: 760px) {
-  main section article div.img-wrapper {
+  main section article div.img-app div.img-gallery {
     margin-bottom: 80px;
   }
 }
 
-main section article div.img-wrapper div.img-container {
+main section article div.img-app div.img-gallery figure.gallery-image {
+  margin: 0;
+  display: block;
+  position: relative;
   width: 100%;
   height: 100%;
-  -webkit-transition: all .3s ease-out;
-  transition: all .3s ease-out;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-main section article div.img-wrapper div.img-container img {
+main section article div.img-app div.img-gallery figure.gallery-image img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-transition: all .2s ease-out;
-  transition: all .2s ease-out;
+  display: block;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
 }
 
-main section article div.img-wrapper div.scroll-down {
+main section article div.img-app div.img-gallery figure.gallery-image figcaption {
   position: absolute;
-  top: 40%;
-  left: 105%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #FFF;
+  text-shadow: 0 0 1px #000;
+  opacity: 0.8;
+  padding: 1em;
+  text-align: left;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  font-family: monospace;
 }
 
-@media only screen and (max-width: 1400px) {
-  main section article div.img-wrapper div.scroll-down {
-    top: 48%;
-  }
+main section article div.img-app div.img-gallery figure.gallery-image:hover figcaption {
+  opacity: 1;
 }
 
-@media only screen and (max-width: 1300px) {
-  main section article div.img-wrapper div.scroll-down {
-    top: 54%;
-  }
+main section article .artwork-detail {
+  z-index: 999999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(26, 21, 12, 0);
+  pointer-events: none;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-@media only screen and (max-width: 1200px) {
-  main section article div.img-wrapper div.scroll-down {
-    top: 58%;
-  }
+main section article .artwork-detail .gallery-image {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-@media only screen and (max-width: 1100px) {
-  main section article div.img-wrapper div.scroll-down {
-    top: 64%;
-  }
+main section article .artwork-detail .gallery-image img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 90%;
+  height: 90%;
+  -webkit-transform: scale(1) !important;
+          transform: scale(1) !important;
 }
 
-@media only screen and (max-width: 920px) {
-  main section article div.img-wrapper div.scroll-down {
-    top: 60%;
-    left: 100%;
-  }
+main section article .artwork-detail .gallery-image figcaption {
+  display: none;
 }
 
-@media only screen and (max-width: 760px) {
-  main section article div.img-wrapper div.scroll-down {
-    top: 130%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%) scale(0.9);
-            transform: translate(-50%, -50%) scale(0.9);
-  }
+main section article div.img-app[data-state="detail"] .artwork-detail {
+  background-color: #1a150c;
+  pointer-events: auto;
 }
 
-@media only screen and (max-width: 700px) {
-  main section article div.img-wrapper div.scroll-down {
-    top: 132%;
-  }
+main section article div.img-app[data-state="detail"] .artwork-detail .gallery-image {
+  opacity: 1;
 }
 
-@media only screen and (max-width: 640px) {
-  main section article div.img-wrapper div.scroll-down {
-    top: 134%;
-  }
+main section article div#artwork-app[data-state="gallery"] .artwork-detail .gallery-image {
+  opacity: 0;
 }
 
-@media only screen and (max-width: 600px) {
-  main section article div.img-wrapper div.scroll-down {
-    top: 136%;
-  }
+main section article div#artwork-app .img-gallery .gallery-image {
+  pointer-events: auto;
 }
 
-@media only screen and (max-width: 580px) {
-  main section article div.img-wrapper div.scroll-down {
-    top: 138%;
-  }
+main section article .gallery-image {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
 }
 
-@media only screen and (max-width: 540px) {
-  main section article div.img-wrapper div.scroll-down {
-    top: 140%;
-  }
-}
-
-@media only screen and (max-width: 520px) {
-  main section article div.img-wrapper div.scroll-down {
-    top: 142%;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  main section article div.img-wrapper div.scroll-down {
-    top: 144%;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  main section article div.img-wrapper div.scroll-down {
-    top: 146%;
-  }
-}
-
-@media only screen and (max-width: 460px) {
-  main section article div.img-wrapper div.scroll-down {
-    top: 148%;
-  }
-}
-
-@media only screen and (max-width: 440px) {
-  main section article div.img-wrapper div.scroll-down {
-    top: 152%;
-  }
-}
-
-@media only screen and (max-width: 420px) {
-  main section article div.img-wrapper div.scroll-down {
-    top: 154%;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  main section article div.img-wrapper div.scroll-down {
-    top: 158%;
-  }
-}
-
-@media only screen and (max-width: 380px) {
-  main section article div.img-wrapper div.scroll-down {
-    top: 162%;
-  }
-}
-
-@media only screen and (max-width: 360px) {
-  main section article div.img-wrapper div.scroll-down {
-    top: 166%;
-  }
-}
-
-@media only screen and (max-width: 340px) {
-  main section article div.img-wrapper div.scroll-down {
-    top: 170%;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  main section article div.img-wrapper div.scroll-down {
-    top: 172%;
-  }
-}
-
-main section article div.img-wrapper div.scroll-down img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-main section article div.img-wrapper div.scroll-down img.circle-text {
-  -webkit-animation: rotate 30s linear 0s infinite;
-          animation: rotate 30s linear 0s infinite;
+main section article div#artwork-app:hover .img-gallery .gallery-image[data-flipping],
+main section article div#artwork-app:hover .img-gallery .gallery-image:hover {
+  opacity: 1;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
 }
 
 main section div.lines {
@@ -1563,6 +1494,13 @@ main section div.lines div.line-h {
   width: 168px;
   height: 1px;
   background-color: #AD8E55;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
 }
 
 div.loading-screen {

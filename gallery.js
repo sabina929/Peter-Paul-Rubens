@@ -5,9 +5,11 @@
   const footerEl = document.querySelector('footer')
   const loadigScreen = document.querySelector('div.loading-screen')
   
-  const artworkWrapper = document.querySelector('div.img-wrapper')
-  const artworkImg = document.querySelector('div.img-wrapper div.img-container img')
-  const artworkHeading = document.querySelector('div.about__text h1.heading-primary')
+  const artworkApp = document.querySelector('div#artwork-app')
+  const artworkWrapper = document.querySelector('div.img-wrapper.img-gallery')
+  const imgContainers = document.querySelectorAll('div.img-wrapper figure.img-container.gallery-image')
+  const artworkImg = document.querySelector('div.img-wrapper figure.img-container img')
+  // const artworkHeading = document.querySelector('div.about__text h1.heading-primary')
   const artworkParagraphs = document.querySelector('div.about__text div.radial-beams-paragraphs div.paragraphs')
   
   
@@ -22,10 +24,7 @@
             loadigScreen.style.clipPath = "polygon(0 0, 100% 0, 100% 0, 0 0)"
         }, 550);
     }, 250);
-  }
-  
-
-  
+  }  
   
   
   document.addEventListener('DOMContentLoaded', function() {
@@ -208,7 +207,7 @@
   const menuBtn = document.querySelector(".menu-btn");
   
   
-  const imgContainers = document.querySelectorAll(".img-container");
+  // const imgContainers = document.querySelectorAll(".img-container");
   // const artworkInfos = document.querySelectorAll(".artwork__info");
   const tracker = document.querySelector(".cursor");
   
@@ -459,14 +458,19 @@
         
     } else {
           // IMG CONTAINER
-          imgContainer.removeEventListener('mousemove', interactWithImgContainer)
-          imgContainer.removeEventListener('mouseleave', dontInteractWithImgContainer)
+          imgContainers.forEach(imgContainer => {
+            imgContainer.removeEventListener('mousemove', interactWithImgContainer)
+          })
+          imgContainers.forEach(imgContainer => {
+            imgContainer.removeEventListener('mouseleave', interactWithImgContainer)
+          })
+          
   
           // ARTWORK CONTENTS
-          artworkHeading.addEventListener('mousemove', interactWithHeading)
-          artworkHeading.addEventListener('mouseleave', dontInteractWithHeading)
-          artworkParagraphs.addEventListener('mousemove', interactWithParagraph)
-          artworkParagraphs.addEventListener('mouseleave', dontInteractWithParagraph)
+          // artworkHeading.addEventListener('mousemove', interactWithHeading)
+          // artworkHeading.addEventListener('mouseleave', dontInteractWithHeading)
+          // artworkParagraphs.addEventListener('mousemove', interactWithParagraph)
+          // artworkParagraphs.addEventListener('mouseleave', dontInteractWithParagraph)
   
           // FOOTER
           copyright.removeEventListener('mousemove', interactWithCopyright)
@@ -506,3 +510,82 @@
   }
   myFunction(mediaQuery);
   mediaQuery.addEventListener('change', myFunction);
+
+
+
+  // GALLERY FLIP ANIMATION
+  const galleryImages = Array.from(document.querySelectorAll('div.img-wrapper figure.img-container.gallery-image'))
+  const artworkDetail = document.querySelector('div.artwork-detail')
+
+  // console.clear();
+
+  // const elApp = document.querySelector("#app");
+  
+  // const elImages = Array.from(document.querySelectorAll(".gallery-image"));
+  
+  // const elDetail = document.querySelector(".detail");
+  
+  function flipImages(firstEl, lastEl, change) {
+    const firstRect = firstEl.getBoundingClientRect();
+  
+    const lastRect = lastEl.getBoundingClientRect();
+  
+    // INVERT
+    const deltaX = firstRect.left - lastRect.left;
+    const deltaY = firstRect.top - lastRect.top;
+    const deltaW = firstRect.width / lastRect.width;
+    const deltaH = firstRect.height / lastRect.height;
+    
+    // console.log(lastEl,lastRect,firstRect.width,lastRect.width)
+  
+    change();
+    lastEl.parentElement.dataset.flipping = true;
+  
+    const animation = lastEl.animate([
+      {
+        transform: `translateX(${deltaX}px) translateY(${deltaY}px) scaleX(${deltaW}) scaleY(${deltaH})`
+      },
+      {
+        transform: 'none'
+      }
+    ], {
+      duration: 500,
+      easing: 'ease'
+    });
+  
+    animation.onfinish = () => {
+      delete lastEl.parentElement.dataset.flipping;
+    }
+  
+  }
+  
+  galleryImages.forEach(figure => {
+  
+    figure.addEventListener("click", () => {
+      const elImage = figure.querySelector('img');
+  
+      artworkDetail.innerHTML = "";
+  
+      const elClone = figure.cloneNode(true);
+      artworkDetail.appendChild(elClone);
+      
+      const elCloneImage = elClone.querySelector('img');
+      // console.log(elCloneImage)
+  
+      flipImages(elImage, elCloneImage, ()=>{
+        artworkApp.dataset.state="detail";
+      });
+  
+      function revert(){
+  
+        flipImages(elCloneImage, elImage, ()=>{
+          artworkApp.dataset.state="gallery";
+          artworkDetail.removeEventListener('click',revert);
+        });
+  
+      }
+  
+      artworkDetail.addEventListener('click',revert);
+  
+    });
+  });

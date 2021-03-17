@@ -10,6 +10,12 @@
 
 @import "../components/gallery-container";
 
+img { 
+    max-width: 100%;
+    height: auto;
+    transform-origin: top left;
+  }
+
 div.loading-screen{
     width: 100vw;
     height: 100vh;
