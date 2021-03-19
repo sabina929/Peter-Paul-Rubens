@@ -568,6 +568,14 @@
   
       const elClone = figure.cloneNode(true);
       artworkDetail.appendChild(elClone);
+      let artworkNameLink = document.createElement('a')
+      artworkNameLink.href = "./artwork.html"
+      let artworkNameHeading = document.createElement('h2')
+      artworkNameHeading.innerHTML = elImage.alt
+
+      artworkNameLink.appendChild(artworkNameHeading)
+      artworkDetail.appendChild(artworkNameLink)
+      
       
       const elCloneImage = elClone.querySelector('img');
       // console.log(elCloneImage)
@@ -580,6 +588,7 @@
   
         flipImages(elCloneImage, elImage, ()=>{
           artworkApp.dataset.state="gallery";
+          artworkDetail.innerHTML = "";
           artworkDetail.removeEventListener('click',revert);
         });
   

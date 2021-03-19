@@ -1491,6 +1491,28 @@ main section article .artwork-detail .gallery-image figcaption {
   display: none;
 }
 
+main section article .artwork-detail a {
+  text-decoration: none;
+  font-size: 16px;
+  width: 240px;
+  text-align: right;
+  position: absolute;
+  right: -80px;
+  bottom: 30px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #AD8E55;
+}
+
+main section article .artwork-detail a::before {
+  content: url("../../assets/images/next-arrow.svg");
+  position: absolute;
+  right: -23px;
+  bottom: 64px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 main section article div.img-app[data-state="detail"] .artwork-detail {
   background-color: #1a150c;
   pointer-events: auto;
