@@ -563,6 +563,9 @@
   
     figure.addEventListener("click", () => {
       const elImage = figure.querySelector('img');
+
+      sessionStorage.getItem("artworkIDNumber");
+      sessionStorage.setItem("artworkIDNumber", elImage.dataset.artworkid);
   
       artworkDetail.innerHTML = "";
   

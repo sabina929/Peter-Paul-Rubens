@@ -1508,7 +1508,7 @@ main section article .artwork-detail a::before {
   content: url("../../assets/images/next-arrow.svg");
   position: absolute;
   right: -23px;
-  bottom: 64px;
+  top: -30px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
