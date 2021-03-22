@@ -1448,7 +1448,6 @@ main section article .artwork-detail {
   right: 0;
   bottom: 0;
   width: 100vw;
-  height: 100vh;
   background-color: rgba(26, 21, 12, 0);
   pointer-events: none;
   -webkit-transition: all .5s ease;
@@ -1487,6 +1486,12 @@ main section article .artwork-detail .gallery-image img {
           transform: scale(1) !important;
 }
 
+@media only screen and (max-width: 1000px) {
+  main section article .artwork-detail .gallery-image img {
+    width: 80%;
+  }
+}
+
 main section article .artwork-detail .gallery-image figcaption {
   display: none;
 }
@@ -1494,7 +1499,7 @@ main section article .artwork-detail .gallery-image figcaption {
 main section article .artwork-detail a {
   text-decoration: none;
   font-size: 16px;
-  width: 240px;
+  width: 246px;
   text-align: right;
   position: absolute;
   right: -80px;
@@ -1504,6 +1509,10 @@ main section article .artwork-detail a {
   color: #AD8E55;
 }
 
+main section article .artwork-detail a h2 {
+  line-height: 28px;
+}
+
 main section article .artwork-detail a::before {
   content: url("../../assets/images/next-arrow.svg");
   position: absolute;
@@ -1511,6 +1520,34 @@ main section article .artwork-detail a::before {
   top: -30px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 600px) {
+  main section article .artwork-detail a {
+    font-size: 14px;
+    width: 200px;
+    right: -60px;
+    bottom: 18px;
+  }
+  main section article .artwork-detail a h2 {
+    line-height: 28px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  main section article .artwork-detail a {
+    width: 200px;
+    right: -54px;
+    bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  main section article .artwork-detail a {
+    width: 200px;
+    right: -66px;
+    bottom: 30px;
+  }
 }
 
 main section article div.img-app[data-state="detail"] .artwork-detail {

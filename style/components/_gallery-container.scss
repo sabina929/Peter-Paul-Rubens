@@ -221,7 +221,7 @@ main{
                     right: 0;
                     bottom: 0;
                     width: 100vw;
-                    height: 100vh;
+                    // height: 100vh;
                     background-color: rgba($brown-color,0);
                     pointer-events: none;
                     transition: all .5s ease;
@@ -241,6 +241,10 @@ main{
                         width: 90%;
                         height: 90%;
                         transform: scale(1) !important;
+
+                        @media only screen and (max-width: 1000px) {
+                            width: 80%;
+                        }
                       }
                       
                       figcaption { display: none; }
@@ -250,7 +254,7 @@ main{
                     a{
                         text-decoration: none;
                         font-size: 16px;
-                        width: 240px;
+                        width: 246px;
                         text-align: right;
                         position: absolute;
                         right: -80px;
@@ -258,12 +262,39 @@ main{
                         transform: translate(-50%,-50%);
                         color: $lighter-brown;
 
+                        h2{
+                            line-height: 28px;
+                        }
+
                         &::before{
                             content: url('../../assets/images/next-arrow.svg');
                             position: absolute;
                             right: -23px;
                             top: -30px;
                             transform: translate(-50%,-50%);
+                        }
+
+
+                        @media only screen and (max-width: 600px) {
+                            font-size: 14px;
+                            width: 200px;
+                            right: -60px;
+                            bottom: 18px;
+
+                            h2{
+                                line-height: 28px;
+                            }
+                        }
+                        @media only screen and (max-width: 500px) {
+                            width: 200px;
+                            right: -54px;
+                            bottom: 30px;
+                        }
+                        @media only screen and (max-width: 420px) {
+                            width: 200px;
+                            right: -66px;
+                            bottom: 30px;
+                            
                         }
                     }
             }
