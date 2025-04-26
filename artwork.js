@@ -109,7 +109,7 @@ function applyArtworkID(){
   artworkHeading.innerHTML = `${artworkObj[0].artworkName}`
   artworkParagraphs.innerHTML = artworkObj[0].artworkInfo.map((artwork, i) => {       
     return `
-            <p class="paragraph">${artwork}</p>        
+            <p class="paragraph" id="paragraph-${i+1}">${artwork}</p>        
     `
   }).join('');
   
@@ -294,7 +294,7 @@ const privacyTerms = document.querySelector("footer article.lower div.privacy-te
 const developedBy = document.querySelector("footer article.lower div.developed-by");
 const menuNavItems = document.querySelectorAll("nav.menu-nav ul.menu-items li");
 const menuContactText = document.querySelector("nav.menu-nav ul.contact li");
-const logo = document.querySelector(".logo");
+const logo = document.querySelector("#logo");
 const navItems = document.querySelectorAll(".nav-item");
 const searchBtn = document.querySelector(".search-btn");
 const menuBtn = document.querySelector(".menu-btn");

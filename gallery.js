@@ -201,7 +201,7 @@
   const developedBy = document.querySelector("footer article.lower div.developed-by");
   const menuNavItems = document.querySelectorAll("nav.menu-nav ul.menu-items li");
   const menuContactText = document.querySelector("nav.menu-nav ul.contact li");
-  const logo = document.querySelector(".logo");
+  const logo = document.querySelector("#logo");
   const navItems = document.querySelectorAll(".nav-item");
   const searchBtn = document.querySelector(".search-btn");
   const menuBtn = document.querySelector(".menu-btn");

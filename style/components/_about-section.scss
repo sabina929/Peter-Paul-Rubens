@@ -8,6 +8,8 @@ section#about{
     margin: 60px 80px 80px 80px;
     padding: 80px 0 160px 0;
     // border: $border-check-2;
+    background-color: $brown-color !important;
+    color:$lighter-brown !important;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -134,7 +136,7 @@ section#about{
         div.line-v{
             width: 1px;
             height:  68.11px;
-            background-color: $lighter-brown;
+            background-color: $lighter-brown !important;
         }
         div.line-h{
             position: absolute;
@@ -143,7 +145,7 @@ section#about{
             transform: translate(-50%, -50%);
             width: 168px;
             height: 1px;
-            background-color: $lighter-brown;
+            background-color: $lighter-brown !important;
         }
     }
 

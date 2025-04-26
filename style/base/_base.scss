@@ -1,128 +1,123 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 // html {
 //     scroll-behavior: smooth;
 //   }
-  // html.has-scroll-smooth {
-  //   overflow: hidden;
-  // }
-  // html.has-scroll-dragging {
-  //   -webkit-user-select: none;
-  //   -moz-user-select: none;
-  //   -ms-user-select: none;
-  //   user-select: none;
-  // }
-  
-  // .has-scroll-smooth body {
-  //   overflow: hidden;
-  // }
+// html.has-scroll-smooth {
+//   overflow: hidden;
+// }
+// html.has-scroll-dragging {
+//   -webkit-user-select: none;
+//   -moz-user-select: none;
+//   -ms-user-select: none;
+//   user-select: none;
+// }
 
-  
-body{
-    background-color: $brown-color;
-    overflow-x: hidden;
+// .has-scroll-smooth body {
+//   overflow: hidden;
+// }
 
-    // header{
-    //   display: none;
-    // }
-    main{
-      display: none;
-    }
-    // footer{
-    //   display: none;
-    // }
+body {
+  background-color: $brown-color !important;
+  overflow-x: hidden;
+
+  // header{
+  //   display: none;
+  // }
+  main {
+    display: none;
+    background-color: $brown-color !important;
+  }
+  // footer{
+  //   display: none;
+  // }
 }
 ::-moz-selection {
-    background-color: $lighter-brown;
-    color: $cream-color;
-  }
-  
-  ::selection {
-    background-color: $lighter-brown;
-    color: $cream-color;
-  }
+  background-color: $lighter-brown !important;
+  color: $cream-color;
+}
 
-  ::-webkit-scrollbar {
-    -webkit-transition: all 0.8s ease-in;
-    transition: all 0.8s ease-in;
-    // width: 10px;
-    width: 0px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: transparent;
-    
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: transparent;
+::selection {
+  background-color: $lighter-brown !important;
+  color: $cream-color;
+}
 
-    
+::-webkit-scrollbar {
+  -webkit-transition: all 0.8s ease-in;
+  transition: all 0.8s ease-in;
+  // width: 10px;
+  width: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+.cursor {
+  width: 40px;
+  height: 40px;
+  background-color: $lighter-brown !important;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 0.99;
+  // transition: all .2s ease;
+  pointer-events: none;
+  z-index: 999999;
+
+  &.active {
+    width: 60px;
+    height: 60px;
+    mix-blend-mode: screen;
   }
+}
 
-
-  .cursor{
-    width: 40px;
-    height:40px;
-    background-color: $lighter-brown;
-    border-radius: 50%;
-    position: absolute;
-    opacity: .99;
-    // transition: all .2s ease;
-    pointer-events: none;
-    z-index: 999999;
-    
-    &.active{
-      width: 60px;
-      height: 60px;
-      mix-blend-mode: screen;
-    }
-  }
-
-  
 /*! locomotive-scroll v3.3.11 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
 /* START */
-  // .c-scrollbar {
-  //   position: absolute;
-  //   right: 0;
-  //   top: 0;
-  //   width: 11px;
-  //   height: 100vh;
-  //   transform-origin: center right;
-  //   transition: transform 0.3s, opacity 0.3s;
-  //   opacity: 0;
-  //   z-index: 9999;
-  // }
-  // .c-scrollbar:hover {
-  //   transform: scaleX(1.45);
-  // }
-  // .c-scrollbar:hover,
-  // .has-scroll-scrolling .c-scrollbar,
-  // .has-scroll-dragging .c-scrollbar {
-  //   opacity: 1;
-  // }
-  
-  // .c-scrollbar_thumb {
-  //   position: absolute;
-  //   top: 0;
-  //   right: 0;
-  //   background-color: $darker-blue;
-  //   opacity: 1;
-  //   width: 7px;
-  //   // border-radius: 10px;
-  //   margin: 2px;
-  //   cursor: -webkit-grab;
-  //   cursor: grab;
-  // }
-  // .has-scroll-dragging .c-scrollbar_thumb {
-  //   cursor: -webkit-grabbing;
-  //   cursor: grabbing;
-  // }
-  /* END */
+// .c-scrollbar {
+//   position: absolute;
+//   right: 0;
+//   top: 0;
+//   width: 11px;
+//   height: 100vh;
+//   transform-origin: center right;
+//   transition: transform 0.3s, opacity 0.3s;
+//   opacity: 0;
+//   z-index: 9999;
+// }
+// .c-scrollbar:hover {
+//   transform: scaleX(1.45);
+// }
+// .c-scrollbar:hover,
+// .has-scroll-scrolling .c-scrollbar,
+// .has-scroll-dragging .c-scrollbar {
+//   opacity: 1;
+// }
+
+// .c-scrollbar_thumb {
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   background-color: $darker-blue;
+//   opacity: 1;
+//   width: 7px;
+//   // border-radius: 10px;
+//   margin: 2px;
+//   cursor: -webkit-grab;
+//   cursor: grab;
+// }
+// .has-scroll-dragging .c-scrollbar_thumb {
+//   cursor: -webkit-grabbing;
+//   cursor: grabbing;
+// }
+/* END */
 
 // .hero-pattern{
 //     position: absolute;
@@ -134,10 +129,6 @@ body{
 //     z-index: 9999;
 //     transform: rotateZ(180deg);
 // }
-
-
-
-
 
 // img.hero-pattern{
 //   position: absolute;

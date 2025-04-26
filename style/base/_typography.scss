@@ -1,6 +1,6 @@
 body{
     font-family: $font-family-1;
-    color: $lighter-brown;
+    color: $lighter-brown !important;
     font-size: $paragraph-font-size-1;
 }
 
@@ -9,20 +9,89 @@ body{
     font-size: $heading-1-font-size;
     line-height: 65px;
     font-weight: 400;
-    color: $lighter-brown;
+    color: $lighter-brown !important;
+}
+#heading-primary{
+    font-family: $font-family-1;
+    font-size: $heading-1-font-size;
+    line-height: 65px;
+    font-weight: 400;
+    color: $lighter-brown !important;
 }
 .heading-secondary{
     font-family: $font-family-1;
     font-size: $heading-2-font-size;
     font-weight: 400;
-    color: $lighter-brown;
+    color: $lighter-brown !important;
+}
+#heading-secondary{
+    font-family: $font-family-1;
+    font-size: $heading-2-font-size;
+    font-weight: 400;
+    color: $lighter-brown !important;
 }
 
 
 .paragraph{
     font-family: $font-family-2;
     font-size: $paragraph-font-size-1;
-    color: $lighter-brown;
+    color: $lighter-brown !important;
+    line-height: 30px;
+ 
+}
+#paragraph-1{
+    font-family: $font-family-2;
+    font-size: $paragraph-font-size-1;
+    color: $lighter-brown !important;
+    line-height: 30px;
+ 
+}
+#paragraph-2{
+    font-family: $font-family-2;
+    font-size: $paragraph-font-size-1;
+    color: $lighter-brown !important;
+    line-height: 30px;
+ 
+}
+#paragraph-3{
+    font-family: $font-family-2;
+    font-size: $paragraph-font-size-1;
+    color: $lighter-brown !important;
+    line-height: 30px;
+ 
+}
+#paragraph-4{
+    font-family: $font-family-2;
+    font-size: $paragraph-font-size-1;
+    color: $lighter-brown !important;
+    line-height: 30px;
+ 
+}
+#paragraph-5{
+    font-family: $font-family-2;
+    font-size: $paragraph-font-size-1;
+    color: $lighter-brown !important;
+    line-height: 30px;
+ 
+}
+#paragraph-6{
+    font-family: $font-family-2;
+    font-size: $paragraph-font-size-1;
+    color: $lighter-brown !important;
+    line-height: 30px;
+ 
+}
+#paragraph-7{
+    font-family: $font-family-2;
+    font-size: $paragraph-font-size-1;
+    color: $lighter-brown !important;
+    line-height: 30px;
+ 
+}
+#paragraph-8{
+    font-family: $font-family-2;
+    font-size: $paragraph-font-size-1;
+    color: $lighter-brown !important;
     line-height: 30px;
  
 }
