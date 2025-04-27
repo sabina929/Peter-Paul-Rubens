@@ -253,6 +253,12 @@ header.big-screen {
           justify-content: space-between;
           cursor: pointer;
 
+          &:hover,
+          &:focus,
+          &:active {
+            background-color: transparent !important;
+          }
+
           @media only screen and (max-width: 1260px) {
             width: 46px;
           }

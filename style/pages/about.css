@@ -411,6 +411,9 @@ header.big-screen div.header-nav-search-menu-btns div.search-menu-btns .menu-btn
   justify-content: space-between;
   cursor: pointer;
 }
+header.big-screen div.header-nav-search-menu-btns div.search-menu-btns .menu-btn button:hover, header.big-screen div.header-nav-search-menu-btns div.search-menu-btns .menu-btn button:focus, header.big-screen div.header-nav-search-menu-btns div.search-menu-btns .menu-btn button:active {
+  background-color: transparent !important;
+}
 @media only screen and (max-width: 1260px) {
   header.big-screen div.header-nav-search-menu-btns div.search-menu-btns .menu-btn button {
     width: 46px;
